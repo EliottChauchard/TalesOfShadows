@@ -1,0 +1,322 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ELC_PlayerMoves : MonoBehaviour
+{
+    ELC_SteamJump SteamJumpScript;
+
+    private float horizontalInput;
+    public float horizontalSpeed;
+    public float verticalSpeed;
+
+    [SerializeField]
+    SpriteRenderer spriteRenderer;
+    [SerializeField]
+    Animator animator;
+    ELC_SteamFall SteamFallScript;
+    
+    [SerializeField]
+    public int turnPlayerFace;
+    [SerializeField]
+    private bool playerGoLeft;
+    [SerializeField]
+    private bool playerGoRight;
+    [SerializeField]
+    private bool playerImmobile;
+    //[SerializeField]
+    //private bool playerFaceLeft;
+    //[SerializeField]
+    //private bool playerFaceRight;
+    [SerializeField]
+    public bool playerIsOnGround;
+    [SerializeField]
+    public bool playerIsInGround;
+    [SerializeField]
+    private bool isTouchingTop;
+    [SerializeField]
+    private bool isTouchingFace;
+    [SerializeField]
+    public bool playerIsJumping;
+    [SerializeField]
+    public bool playerIsFalling = true;
+    [SerializeField]
+    private bool steamFallEnable;
+    [SerializeField]
+    private bool playerIsSteamJumping;
+    [SerializeField]
+    private bool steamJumpIsCharging;
+
+    [SerializeField]
+    private float speed = 1.26f;
+    [SerializeField]
+    public float jumpForce = 18f;
+    [SerializeField]
+    private float steamJumpCharge;
+    [SerializeField]
+    private float gravityForceJump = 0.2f;
+    [SerializeField]
+    private float gravityForceFall = 0.05f;
+    [SerializeField]
+    private float steamGravityForceFall;
+    [SerializeField]
+    private LayerMask collisionMask;
+
+    //Raycasts player
+    RaycastHit2D underPlayerHit;
+    RaycastHit2D roofPlayerHit;
+    RaycastHit2D facePlayerHit;
+    RaycastHit2D uponTheGroundHit;  //Détecteur pour voir si le joueur est dans le sol
+    
+    [SerializeField]
+    private float UponTheGroundRayPositionY = 0.02f;
+    [SerializeField]
+    private float underRayLenght = 0.14f;
+    [SerializeField]
+    private float underRayPositionY = 0.16f;
+    [SerializeField]
+    private float underRayPositionX = 0.07f;
+    [SerializeField]
+    private float topRayLenght = 0.2f;
+    [SerializeField]
+    private float topRayPositionY = 0.16f;
+    [SerializeField]
+    private float topRayPositionX = 0.1f;
+    [SerializeField]
+    private float faceRayLenght = 0.23f;
+    [SerializeField]
+    private float faceRayPositionX = 0.1f;
+    [SerializeField]
+    private float faceRayPositionY = 0.12f;
+
+    //Moves
+    [SerializeField]
+    private Vector3 playerMoves;
+
+
+    private void Start()
+    {
+        SteamFallScript = GetComponent<ELC_SteamFall>();
+        SteamJumpScript = GetComponent<ELC_SteamJump>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        steamFallEnable = SteamFallScript.steamFallEnable;
+        playerIsSteamJumping = SteamJumpScript.isSteamJumping;
+        steamJumpCharge = SteamJumpScript.charge;
+        steamJumpIsCharging = SteamJumpScript.isChargingSteamJump;
+        steamGravityForceFall = SteamFallScript.steamFallGravityForce;
+        
+
+        //mouvements horizontaux
+        if ((playerIsJumping == true || playerIsOnGround == true || steamFallEnable == true) && steamJumpIsCharging == false)
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+            horizontalSpeed = horizontalInput * speed;
+        }
+
+        if(steamJumpIsCharging == true) //si le joueur charge son steamJump il ne peut plus bouger
+        {
+            horizontalSpeed = 0f;
+        }
+
+
+        if (horizontalInput < 0)
+        {
+            playerGoLeft = true;
+            //playerFaceLeft = true;
+            playerGoRight = false;
+            //playerFaceRight = false;
+            playerImmobile = false;
+            spriteRenderer.flipX = true;
+            animator.SetBool("IsWalking", true);
+        }
+        else if (horizontalInput == 0)
+        {
+            playerImmobile = true;
+            playerGoRight = false;
+            playerGoLeft = false;
+            animator.SetBool("IsWalking", false);
+        }
+        else if (horizontalInput > 0)
+        {
+            playerGoRight = true;
+            //playerFaceRight = true;
+            playerGoLeft = false;
+            //playerFaceLeft = false;
+            playerImmobile = false;
+            spriteRenderer.flipX = false;
+            animator.SetBool("IsWalking", true);
+        }
+
+        //Si le joueur est au sol
+        GroundDetector();
+        if (playerIsOnGround)
+        {
+            verticalSpeed = 0;
+            playerIsFalling = false;
+        }
+
+        if(playerIsInGround)
+        {
+            transform.localPosition = transform.localPosition + (new Vector3(0f, 0.02f, 0f));
+        }
+
+
+        //Si le joueur se prend une plateforme sur la tête
+        RoofDetector();
+        if (isTouchingTop == true && playerIsOnGround == false)
+        {
+            verticalSpeed = -2;
+        }
+
+        //Si le joueur a un mur face à lui
+        FaceDetector();
+        if (isTouchingFace == true)
+        {
+            if (playerGoRight == true)
+            {
+                horizontalSpeed = 0;
+            }
+            else if (playerGoLeft == true)
+            {
+                horizontalSpeed = 0;
+            }
+        }
+
+        //faire en sorte que le joueur se tourne
+        if (playerGoLeft == true)
+        {
+            turnPlayerFace = -1;
+        }
+        else if (playerGoRight == true)
+        {
+            turnPlayerFace = 1;
+        }
+
+        
+        //saut
+        if (Input.GetKeyUp(KeyCode.Space) && playerIsOnGround == true)
+        {
+            verticalSpeed = jumpForce + steamJumpCharge;
+            playerIsJumping = true;
+            animator.SetBool("IsJumping", true);
+            animator.SetBool("IsWalking", false);
+
+        }
+
+        else
+        {
+            animator.SetBool("IsJumping", false);
+        }
+
+        if (playerIsJumping == true  && verticalSpeed <= 0)
+        {
+            playerIsFalling = true;
+            playerIsJumping = false;
+        }
+
+        //gravité
+        if (playerIsOnGround == false)
+        {
+
+            if (playerIsFalling == true && steamFallEnable == false)
+            {
+                verticalSpeed = verticalSpeed - gravityForceFall;
+            }
+            else if (playerIsJumping == true)
+            {
+                verticalSpeed = verticalSpeed - gravityForceJump;
+            }
+            else if (steamFallEnable == false)
+            {
+                verticalSpeed = verticalSpeed - gravityForceFall;
+            }
+            else if (steamFallEnable == true)
+            {
+                verticalSpeed = 0 - steamGravityForceFall;
+            }
+        }
+
+
+
+        //actualisation des mouvements en tps réel
+        playerMoves = new Vector2(horizontalSpeed, verticalSpeed) * Time.deltaTime;
+        transform.Translate(playerMoves);
+    }
+
+    IEnumerator Wait(float WaitTime)
+    {
+        yield return new WaitForSeconds(WaitTime);
+
+    }
+
+
+    void GroundDetector()
+    {
+        Vector3 startPositionRaycastUnder = new Vector3(transform.position.x - underRayPositionX, transform.position.y - underRayPositionY, transform.position.z);
+        Vector3 startPositionRaycastUponTheGround = new Vector3(startPositionRaycastUnder.x, startPositionRaycastUnder.y + UponTheGroundRayPositionY, startPositionRaycastUnder.z);
+
+        underPlayerHit = Physics2D.Raycast(startPositionRaycastUnder, transform.TransformDirection(new Vector2(1f, 0f)), underRayLenght, collisionMask);
+        uponTheGroundHit = Physics2D.Raycast(startPositionRaycastUponTheGround, transform.TransformDirection(new Vector2(1f, 0f)), underRayLenght, collisionMask); //Détecteur pour voir si le joueur est dans le sol
+        
+        Debug.DrawRay(startPositionRaycastUnder, transform.TransformDirection(new Vector2(underRayLenght, 0)), Color.green); //pour afficher le rayon de détection
+        Debug.DrawRay(startPositionRaycastUponTheGround, transform.TransformDirection(new Vector2(underRayLenght, 0)), Color.green);
+
+        if (underPlayerHit.collider != null)
+        {
+            playerIsOnGround = true;
+        }
+        else
+        {
+            playerIsOnGround = false;
+        }
+
+        if (uponTheGroundHit.collider != null)
+        {
+            playerIsInGround = true;
+        }
+        else
+        {
+            playerIsInGround = false;
+        }
+
+    }
+
+    void RoofDetector()
+    {
+        Vector3 startPositionRaycastTop = new Vector3(transform.position.x - topRayPositionX, transform.position.y + topRayPositionY, transform.position.z);
+
+        roofPlayerHit = Physics2D.Raycast(startPositionRaycastTop, transform.TransformDirection(new Vector2(1f, 0f)), topRayLenght, collisionMask);
+
+        Debug.DrawRay(startPositionRaycastTop, transform.TransformDirection(new Vector2(topRayLenght, 0f)), Color.yellow);          //fait apparaître le raycast du haut
+
+        if (roofPlayerHit.collider != null)
+        {
+            isTouchingTop = true;
+        }
+        else
+        {
+            isTouchingTop = false;
+        }
+    }
+
+    void FaceDetector()
+    {
+        Vector3 startPositionRaycastFace = new Vector3(transform.position.x + faceRayPositionX * turnPlayerFace, transform.position.y - faceRayPositionY, transform.position.z);
+
+        facePlayerHit = Physics2D.Raycast(startPositionRaycastFace, transform.TransformDirection(new Vector2(0f, 1f)), faceRayLenght, collisionMask); //rayon face vertical
+        Debug.DrawRay(startPositionRaycastFace, transform.TransformDirection(new Vector2(0f, faceRayLenght)), Color.red);
+
+        if (facePlayerHit.collider != null)
+        {
+            isTouchingFace = true;
+        }
+        else
+        {
+            isTouchingFace = false;
+        }
+    }
+}

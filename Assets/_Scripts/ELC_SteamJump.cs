@@ -44,17 +44,17 @@ public class ELC_SteamJump : MonoBehaviour
         playerIsJumping = playerMovesScript.playerIsJumping;
 
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0))
         {
             StartCoroutine("SteamJumpCharge");
         }
 
-        if (Input.GetKey(KeyCode.Space) && isChargingSteamJump == true && isFullCharged == false)
+        if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0)) && isChargingSteamJump == true && isFullCharged == false)
         {
             SteamJump();
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.JoystickButton0))
         {
             isChargingSteamJump = false;
             
@@ -81,7 +81,7 @@ public class ELC_SteamJump : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0))
         {
             isChargingSteamJump = true;
 

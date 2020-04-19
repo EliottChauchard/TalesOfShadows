@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1BA0C3E0-A16B-3B60-5C32-E338E32DAA44}</ProjectGuid>
+    <ProjectGuid>{31DF12DB-DCF7-269D-B775-430567E30040}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.PixelPerfect.Samples.Editor</AssemblyName>
@@ -64,16 +64,16 @@
   <ItemGroup>
     <Compile Include="Assets\Samples\2D Pixel Perfect\2.0.4\Sample Scenes and Extras\Scenes\Rule Tiles\Scripts\Editor\RuleTileEditor.cs" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/eliot/Desktop/Game Dev/tales_of_shadows_git/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/eliot/Desktop/Game Dev/tales_of_shadows_git/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>C:/Users/eliot/Desktop/Game Dev/tales_of_shadows_git/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Users/eliot/Desktop/Game Dev/tales_of_shadows_git/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -267,8 +267,11 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/eliot/Desktop/Game Dev/tales_of_shadows_git/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -627,7 +630,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.PixelPerfect.Samples.csproj">
-      <Project>{2B31D7D7-75F7-DF26-E7C8-3EEC6E90B9B4}</Project>
+      <Project>{A54A0726-C45E-6D74-8CB0-2E65FE91A537}</Project>
       <Name>Unity.2D.PixelPerfect.Samples</Name>
     </ProjectReference>
   </ItemGroup>

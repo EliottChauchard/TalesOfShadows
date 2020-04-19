@@ -198,7 +198,7 @@ public class ELC_PlayerMoves : MonoBehaviour
 
         
         //saut
-        if (Input.GetKeyUp(KeyCode.Space) && playerIsOnGround == true)
+        if ((Input.GetKeyUp(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space)) && playerIsOnGround == true)
         {
             verticalSpeed = jumpForce + steamJumpCharge;
             playerIsJumping = true;

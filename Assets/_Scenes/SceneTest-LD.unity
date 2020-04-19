@@ -4213,7 +4213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   steamFallEnable: 0
-  steamFallGravityForce: 0.05
+  steamFallGravityForce: 0.5
 --- !u!114 &885909025
 MonoBehaviour:
   m_ObjectHideFlags: 0

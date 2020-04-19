@@ -38,7 +38,7 @@ public class ELC_SteamPush : MonoBehaviour
         startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         ZoneAction();
 
-        if(Input.GetKeyDown(KeyCode.C))
+        if(Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.C))
         {
             if (detection1.collider != null && detection1.collider.CompareTag("SensibleObject"))
             {

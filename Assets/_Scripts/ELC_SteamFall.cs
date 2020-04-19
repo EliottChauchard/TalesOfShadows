@@ -28,7 +28,7 @@ public class ELC_SteamFall : MonoBehaviour
         verticalSpeed = playerMoves.verticalSpeed;
 
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && playerIsFalling == true)
+        if (Input.GetKey(KeyCode.LeftShift) && playerIsFalling == true)
         {
             steamFallEnable = true;
         }

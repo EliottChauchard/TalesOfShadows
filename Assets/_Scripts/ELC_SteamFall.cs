@@ -9,14 +9,34 @@ public class ELC_SteamFall : MonoBehaviour
     public bool steamFallEnable;
     private bool playerIsFalling;
     private bool playerIsOnGround;
+    private bool isChargingSteamJump;
+    [SerializeField]
+    private bool steamFuelIsFull;
+    [SerializeField]
+    private bool steamFuelIsHalfFull;
+    [SerializeField]
+    private bool steamFuelIsEmpty;
+
+
     private float verticalSpeed;
 
     [SerializeField]
+    private float steamFuel;
+    [SerializeField]
     public float steamFallGravityForce = 0.05f;
+    [SerializeField]
+    private float maxFuelCharge;
+    [SerializeField]
+    private float basicFuelChargeSpeed;
+    [SerializeField]
+    private float steamJumpFuelChargeSpeed;
+    [SerializeField]
+    private float consomationSpeed;
 
     private void Start()
     {
         playerMoves = GetComponent<ELC_PlayerMoves>();
+        steamFuel = 0f;
     }
 
     // Update is called once per frame
@@ -26,18 +46,41 @@ public class ELC_SteamFall : MonoBehaviour
         playerIsFalling = playerMoves.playerIsFalling;
         playerIsOnGround = playerMoves.playerIsOnGround;
         verticalSpeed = playerMoves.verticalSpeed;
+        isChargingSteamJump = playerMoves.steamJumpIsCharging;
 
 
-        if (Input.GetKey(KeyCode.LeftShift) && playerIsFalling == true)
+        if (Input.GetKey(KeyCode.LeftShift) && playerIsFalling == true && steamFuelIsEmpty == false)
         {
             steamFallEnable = true;
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift) || playerIsOnGround == true)
+        if (Input.GetKeyUp(KeyCode.LeftShift) || playerIsOnGround == true || steamFuelIsEmpty == true)
         {
             steamFallEnable = false;
         }
         
+        //Jauge de charge de steam
+        if (steamFuel < maxFuelCharge / 2 && playerIsFalling == false && steamFallEnable == false)
+        {
+            steamFuel = steamFuel + basicFuelChargeSpeed;
+        }
+        else if(steamFuel < maxFuelCharge && isChargingSteamJump == true)
+        {
+            steamFuel = steamFuel + steamJumpFuelChargeSpeed;
+        }
 
+        if(steamFuel <= 0)
+        {
+            steamFuelIsEmpty = true;
+        }
+        else
+        {
+            steamFuelIsEmpty = false;
+        }
+
+        if(steamFallEnable == true)
+        {
+            steamFuel = steamFuel - consomationSpeed;
+        }
 
         //Faire la jauge d'utilisation
     }

@@ -45,7 +45,7 @@ public class ELC_PlayerMoves : MonoBehaviour
     [SerializeField]
     private bool playerIsSteamJumping;
     [SerializeField]
-    private bool steamJumpIsCharging;
+    public bool steamJumpIsCharging;
 
     [SerializeField]
     private float speed = 1.26f;

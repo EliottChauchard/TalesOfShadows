@@ -5,6 +5,7 @@ using UnityEngine;
 public class ELC_SteamJump : MonoBehaviour
 {
     ELC_PlayerMoves playerMovesScript;
+    ELC_LoadingSteamJump loadSteamJump;
 
     [SerializeField]
     private float jumpForcePlayer;
@@ -27,10 +28,14 @@ public class ELC_SteamJump : MonoBehaviour
     private float maxCharge;
 
     private Vector3 LoadingBar;
+    private Vector2 jumpForce;
+    private Vector2 movesPlayer;
 
     void Start()
     {
         playerMovesScript = GetComponent<ELC_PlayerMoves>();
+        loadSteamJump = GetComponent<ELC_LoadingSteamJump>();
+
         LoadingBar = GameObject.Find("LoadingSteamJump").transform.localScale;
     }
 
@@ -42,6 +47,9 @@ public class ELC_SteamJump : MonoBehaviour
 
         playerIsFalling = playerMovesScript.playerIsFalling;
         playerIsJumping = playerMovesScript.playerIsJumping;
+        movesPlayer = playerMovesScript.playerMoves;
+        jumpForce = loadSteamJump.jumpDirection;
+
 
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0))
@@ -57,7 +65,7 @@ public class ELC_SteamJump : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.JoystickButton0))
         {
             isChargingSteamJump = false;
-            
+            movesPlayer = jumpForce * 100;
             isSteamJumping = true;
 
         }

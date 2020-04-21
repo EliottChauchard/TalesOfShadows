@@ -5,6 +5,7 @@ using UnityEngine;
 public class ELC_PlayerMoves : MonoBehaviour
 {
     ELC_SteamJump SteamJumpScript;
+    ELC_LoadingSteamJump loadSteamJumpScript;
 
     private float horizontalInput;
     public float horizontalSpeed;
@@ -91,13 +92,15 @@ public class ELC_PlayerMoves : MonoBehaviour
 
     //Moves
     [SerializeField]
-    private Vector3 playerMoves;
+    public Vector3 playerMoves;
+    private Vector2 steamJumpDir;
 
 
     private void Start()
     {
         SteamFallScript = GetComponent<ELC_SteamFall>();
         SteamJumpScript = GetComponent<ELC_SteamJump>();
+        loadSteamJumpScript = GetComponent<ELC_LoadingSteamJump>();
     }
 
     // Update is called once per frame
@@ -108,7 +111,9 @@ public class ELC_PlayerMoves : MonoBehaviour
         steamJumpCharge = SteamJumpScript.charge;
         steamJumpIsCharging = SteamJumpScript.isChargingSteamJump;
         steamGravityForceFall = SteamFallScript.steamFallGravityForce;
-        
+
+        steamJumpDir = loadSteamJumpScript.jumpDirection;
+
 
         //mouvements horizontaux
         if ((playerIsJumping == true || playerIsOnGround == true || steamFallEnable == true) && steamJumpIsCharging == false)

@@ -1489,7 +1489,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236779230}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4391,7 +4391,7 @@ Animator:
   m_GameObject: {fileID: 922024455}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9c03a5e89bac806438f2da77d64db805, type: 2}
+  m_Controller: {fileID: 9100000, guid: e934c7e54c8f4b249ba907ef8b8a1fbd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

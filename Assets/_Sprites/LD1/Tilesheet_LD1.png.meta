@@ -671,10 +671,10 @@ TextureImporter:
         x: 23
         y: 193
         width: 164
-        height: 58
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 86, w: 0}
+      border: {x: 0, y: 0, z: 86, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1127,16 +1127,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pipe_Small_Larg
+      name: Tilesheet_LD1_0
       rect:
         serializedVersion: 2
-        x: 535
-        y: 294
-        width: 32
-        height: 12
+        x: 240
+        y: 179
+        width: 54
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 4, y: 0, z: 4, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0

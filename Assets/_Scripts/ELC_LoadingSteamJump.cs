@@ -6,6 +6,7 @@ public class ELC_LoadingSteamJump : MonoBehaviour
 {
     ELC_SteamJump steamJumpScript;
     private float charge;
+    private bool isChargingSJ;
 
     public Vector2 jumpDirection;
 
@@ -16,11 +17,12 @@ public class ELC_LoadingSteamJump : MonoBehaviour
 
     void Update()
     {
+
+        isChargingSJ = steamJumpScript.isChargingSteamJump;
         charge = steamJumpScript.charge;
-        transform.localScale = new Vector3 (charge * 0.05f, 0.1f, 1f);
 
-        jumpDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        Debug.DrawRay(transform.localPosition, new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")), Color.blue);
+        jumpDirection = Vector2.ClampMagnitude(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")), 0.5f);
 
+        Debug.DrawRay(transform.localPosition, jumpDirection, Color.blue);
     }
 }

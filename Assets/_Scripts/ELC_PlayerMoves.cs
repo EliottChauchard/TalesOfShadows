@@ -47,6 +47,9 @@ public class ELC_PlayerMoves : MonoBehaviour
     private bool playerIsSteamJumping;
     [SerializeField]
     public bool steamJumpIsCharging;
+    [SerializeField]
+    public bool steamJumpPhase;
+
 
     [SerializeField]
     private float speed = 1.26f;
@@ -93,7 +96,7 @@ public class ELC_PlayerMoves : MonoBehaviour
     //Moves
     [SerializeField]
     public Vector3 playerMoves;
-    private Vector2 steamJumpDir;
+    private Vector2 steamJumpVector;
 
 
     private void Start()
@@ -111,8 +114,7 @@ public class ELC_PlayerMoves : MonoBehaviour
         steamJumpCharge = SteamJumpScript.charge;
         steamJumpIsCharging = SteamJumpScript.isChargingSteamJump;
         steamGravityForceFall = SteamFallScript.steamFallGravityForce;
-
-        steamJumpDir = loadSteamJumpScript.jumpDirection;
+        steamJumpVector = SteamJumpScript.steamJumpImpulse;
 
 
         //mouvements horizontaux
@@ -209,7 +211,6 @@ public class ELC_PlayerMoves : MonoBehaviour
             playerIsJumping = true;
             animator.SetBool("IsJumping", true);
             animator.SetBool("IsWalking", false);
-
         }
 
         else
@@ -245,10 +246,18 @@ public class ELC_PlayerMoves : MonoBehaviour
             }
         }
 
-
-
+        if (playerIsSteamJumping == true || steamJumpIsCharging == true)
+        {
+            steamJumpPhase = true;
+        }
+        else
+        {
+            steamJumpPhase = false;
+        }
+        
         //actualisation des mouvements en tps réel
         playerMoves = new Vector2(horizontalSpeed, verticalSpeed) * Time.deltaTime;
+
         transform.Translate(playerMoves);
     }
 

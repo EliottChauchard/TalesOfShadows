@@ -14,11 +14,13 @@ public class ELC_SteamJump : MonoBehaviour
     [SerializeField]
     private bool playerIsJumping;
     [SerializeField]
+    private bool isOnGround;
+    [SerializeField]
     private bool isFullCharged;
 
     public bool isChargingSteamJump;
     public bool isSteamJumping;
-
+    
 
     [SerializeField]
     public float charge = 0f;
@@ -30,6 +32,7 @@ public class ELC_SteamJump : MonoBehaviour
     private Vector3 LoadingBar;
     private Vector2 jumpForce;
     private Vector2 movesPlayer;
+    public Vector2 steamJumpImpulse;
 
     void Start()
     {
@@ -48,7 +51,11 @@ public class ELC_SteamJump : MonoBehaviour
         playerIsFalling = playerMovesScript.playerIsFalling;
         playerIsJumping = playerMovesScript.playerIsJumping;
         movesPlayer = playerMovesScript.playerMoves;
+        isOnGround = playerMovesScript.playerIsOnGround;
         jumpForce = loadSteamJump.jumpDirection;
+        
+
+        steamJumpImpulse = jumpForce * charge;
 
 
 
@@ -65,7 +72,6 @@ public class ELC_SteamJump : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.JoystickButton0))
         {
             isChargingSteamJump = false;
-            movesPlayer = jumpForce * 100;
             isSteamJumping = true;
 
         }
@@ -75,7 +81,7 @@ public class ELC_SteamJump : MonoBehaviour
             isFullCharged = false;
             charge = 0f;
         }
-        if (playerIsFalling == true)
+        if (playerIsFalling == true || isOnGround == true)
         {
             isSteamJumping = false;
         }

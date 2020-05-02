@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284234151161265598}
   - component: {fileID: 1284234151161265596}
-  - component: {fileID: 1284234151161265599}
+  - component: {fileID: 7206994767305801147}
   m_Layer: 0
   m_Name: LoadingSteamJump
   m_TagString: Untagged
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1284234151161265599
+--- !u!114 &7206994767305801147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1284234151161265601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8551052e7ed4f584b9ef82d9245cc391, type: 3}
+  m_Script: {fileID: 11500000, guid: 42c9d5111c9598c489dc58de1978cb0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1284234152500128485
@@ -230,6 +230,7 @@ MonoBehaviour:
   steamFallEnable: 0
   playerIsSteamJumping: 0
   steamJumpIsCharging: 0
+  steamJumpPhase: 0
   speed: 1.5
   jumpForce: 5.5
   steamJumpCharge: 0
@@ -282,12 +283,14 @@ MonoBehaviour:
   jumpForcePlayer: 0
   playerIsFalling: 0
   playerIsJumping: 0
+  isOnGround: 0
   isFullCharged: 0
   isChargingSteamJump: 0
   isSteamJumping: 0
   charge: 0
   chargeSpeed: 5
   maxCharge: 2.25
+  steamJumpImpulse: {x: 0, y: 0}
 --- !u!114 &1284234152500128478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,3 +325,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8551052e7ed4f584b9ef82d9245cc391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpDirection: {x: 0, y: 0}

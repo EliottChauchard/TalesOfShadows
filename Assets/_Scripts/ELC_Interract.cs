@@ -7,14 +7,17 @@ public class ELC_Interract : MonoBehaviour
 
     private ELC_DoorInterruptor DoorInterruptorScript;
     private ELC_Collectibles CollectiblesScript;
+    private ELC_LastChekpoint CheckpointValueScript;
+
     private string tagOfCollidedObject;
-    
+
+    private Vector3 checkpointTransform;
 
     // Update is called once per frame
     void Update()
     {
         CollectiblesScript = gameObject.GetComponent<ELC_Collectibles>();
-
+        CheckpointValueScript = gameObject.GetComponent<ELC_LastChekpoint>();
     }
 
     private void OnTriggerEnter2D(Collider2D collide)
@@ -33,5 +36,11 @@ public class ELC_Interract : MonoBehaviour
                 CollectiblesScript.numberOfKeys = CollectiblesScript.numberOfKeys - DoorInterruptorScript.numberOfKeyNeeded;
             }
         }
+        else if(tagOfCollidedObject == "Checkpoint")
+        {
+            checkpointTransform = new Vector3(collide.gameObject.transform.localPosition.x, collide.gameObject.transform.localPosition.y, collide.gameObject.transform.localPosition.z);
+        }
+
+        CheckpointValueScript.CheckPointTransform = checkpointTransform;
     }
 }

@@ -10,6 +10,8 @@ TagManager:
   - Key
   - DoorInterruptor
   - Door
+  - Checkpoint
+  - Monster
   layers:
   - Default
   - TransparentFX

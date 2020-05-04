@@ -62,6 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ELC_DoorInterruptor.cs" />
+    <Compile Include="Assets\ELC_OpenDoor.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Scenes\OverTheShoulderAim\ActivateOnKeypress.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Scenes\Scripting\ScriptingExample.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Scenes\Trigger volumes\GenericTrigger.cs" />
@@ -74,7 +76,9 @@
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMoveOnSphere.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMovePhysics.cs" />
+    <Compile Include="Assets\_Scripts\ELC_Collectibles.cs" />
     <Compile Include="Assets\_Scripts\ELC_IALittleMonster.cs" />
+    <Compile Include="Assets\_Scripts\ELC_Interract.cs" />
     <Compile Include="Assets\_Scripts\ELC_LoadingBar.cs" />
     <Compile Include="Assets\_Scripts\ELC_LoadingSteamJump.cs" />
     <Compile Include="Assets\_Scripts\ELC_PlayerMoves.cs" />

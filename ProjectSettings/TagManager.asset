@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Plateforme
   - SensibleObject
+  - Key
+  - DoorInterruptor
+  - Door
   layers:
   - Default
   - TransparentFX

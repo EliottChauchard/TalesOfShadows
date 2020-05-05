@@ -122,6 +122,9 @@ TextureImporter:
   - first:
       213: -4347745693564536164
     second: ElisaIdle_19
+  - first:
+      213: -7524887053167163060
+    second: ElisaIdle_20
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -621,6 +624,27 @@ TextureImporter:
       bones: []
       spriteID: c9af959b354b9a3c0800000000000000
       internalID: -4347745693564536164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElisaIdle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 460
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49090df71b329790800000000000000
+      internalID: -7524887053167163060
       vertices: []
       indices: 
       edges: []

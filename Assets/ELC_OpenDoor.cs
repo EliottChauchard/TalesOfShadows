@@ -17,5 +17,9 @@ public class ELC_OpenDoor : MonoBehaviour
         {
             BoxCollider.enabled = false;
         }
+        else
+        {
+            BoxCollider.enabled = true;
+        }
     }
 }

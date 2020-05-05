@@ -105,14 +105,16 @@ GameObject:
   - component: {fileID: 1284234152500128480}
   - component: {fileID: 1284234152500128483}
   - component: {fileID: 1284234152500128481}
+  - component: {fileID: 8378397002279584052}
   - component: {fileID: 1284234152500128477}
   - component: {fileID: 1284234152500128476}
   - component: {fileID: 1284234152500128479}
   - component: {fileID: 1284234152500128478}
   - component: {fileID: 1284234152500128482}
-  - component: {fileID: 8378397002279584052}
   - component: {fileID: 2808281624915194386}
   - component: {fileID: 4647143386499241957}
+  - component: {fileID: 31178276541379845}
+  - component: {fileID: 6783597879879049958}
   m_Layer: 0
   m_Name: Elisa
   m_TagString: Player
@@ -204,6 +206,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &8378397002279584052
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284234152500128485}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.15
 --- !u!114 &1284234152500128477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,22 +347,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpDirection: {x: 0, y: 0}
---- !u!58 &8378397002279584052
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1284234152500128485}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.15
 --- !u!114 &2808281624915194386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,5 +372,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a7814784af9531449e35a638fa3d627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &31178276541379845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284234152500128485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0bbe3f118fb100479879e1d00ad9ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckPointTransform: {x: 0, y: 0, z: 0}
+--- !u!114 &6783597879879049958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284234152500128485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7b6474145497b43b335bca2288c18b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

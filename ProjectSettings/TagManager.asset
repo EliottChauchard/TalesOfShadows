@@ -12,6 +12,7 @@ TagManager:
   - Door
   - Checkpoint
   - Monster
+  - Levier
   layers:
   - Default
   - TransparentFX

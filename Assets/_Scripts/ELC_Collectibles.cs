@@ -32,4 +32,8 @@ public class ELC_Collectibles : MonoBehaviour
             Destroy(gameObjectTouched);
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        tagOfTheObject = "Nothing";
+    }
 }

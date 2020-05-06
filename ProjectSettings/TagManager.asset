@@ -13,6 +13,8 @@ TagManager:
   - Checkpoint
   - Monster
   - Levier
+  - Button
+  - Spikes
   layers:
   - Default
   - TransparentFX

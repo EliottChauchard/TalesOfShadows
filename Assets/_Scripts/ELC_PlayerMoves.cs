@@ -49,6 +49,8 @@ public class ELC_PlayerMoves : MonoBehaviour
     public bool steamJumpIsCharging;
     [SerializeField]
     public bool steamJumpPhase;
+    [SerializeField]
+    private bool playerCanMove;
 
 
     [SerializeField]
@@ -58,7 +60,7 @@ public class ELC_PlayerMoves : MonoBehaviour
     [SerializeField]
     private float steamJumpCharge;
     [SerializeField]
-    private float gravityForceJump = 0.2f;
+    public float gravityForceJump = 0.2f;
     [SerializeField]
     private float gravityForceFall = 0.05f;
     [SerializeField]
@@ -115,16 +117,34 @@ public class ELC_PlayerMoves : MonoBehaviour
         steamJumpIsCharging = SteamJumpScript.isChargingSteamJump;
         steamGravityForceFall = SteamFallScript.steamFallGravityForce;
         steamJumpVector = SteamJumpScript.steamJumpImpulse;
+        playerCanMove = SteamJumpScript.canMove;
 
-
-        //mouvements horizontaux
-        if ((playerIsJumping == true || playerIsOnGround == true || steamFallEnable == true) && steamJumpIsCharging == false)
+        //statut pour dire que le joueur est en phase de SteamJump
+        if (playerIsSteamJumping == true || steamJumpIsCharging == true)
         {
-            horizontalInput = Input.GetAxis("Horizontal");
-            horizontalSpeed = horizontalInput * speed;
+            steamJumpPhase = true;
+        }
+        else
+        {
+            steamJumpPhase = false;
         }
 
-        if(steamJumpIsCharging == true) //si le joueur charge son steamJump il ne peut plus bouger
+        //mouvements horizontaux
+        if ((playerIsJumping == true || playerIsOnGround == true || steamFallEnable == true))
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+
+            if(steamJumpPhase == true)
+            {
+                horizontalSpeed = steamJumpVector.x * steamJumpCharge * 2;
+            }
+            else if (steamJumpIsCharging == false)
+            {
+                horizontalSpeed = horizontalInput * speed;
+            }
+        }
+
+        if(playerCanMove == false) //si le joueur charge son steamJump il ne peut plus bouger
         {
             horizontalSpeed = 0f;
         }
@@ -203,16 +223,24 @@ public class ELC_PlayerMoves : MonoBehaviour
             turnPlayerFace = 1;
         }
 
-        
+
+
         //saut
         if ((Input.GetKeyUp(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space)) && playerIsOnGround == true)
         {
-            verticalSpeed = jumpForce + steamJumpCharge;
             playerIsJumping = true;
             animator.SetBool("IsJumping", true);
             animator.SetBool("IsWalking", false);
+            //verticalSpeed = jumpForce + steamJumpCharge;
+            if(steamJumpPhase == false)
+            {
+                verticalSpeed = jumpForce;
+            }
+            else
+            {
+                verticalSpeed = steamJumpVector.y * steamJumpCharge * 3.5f;
+            }
         }
-
         else
         {
             animator.SetBool("IsJumping", false);
@@ -223,6 +251,10 @@ public class ELC_PlayerMoves : MonoBehaviour
             playerIsFalling = true;
             playerIsJumping = false;
         }
+
+        
+        
+
 
         //gravité
         if (playerIsOnGround == false)
@@ -246,14 +278,7 @@ public class ELC_PlayerMoves : MonoBehaviour
             }
         }
 
-        if (playerIsSteamJumping == true || steamJumpIsCharging == true)
-        {
-            steamJumpPhase = true;
-        }
-        else
-        {
-            steamJumpPhase = false;
-        }
+
         
         //actualisation des mouvements en tps réel
         playerMoves = new Vector2(horizontalSpeed, verticalSpeed) * Time.deltaTime;

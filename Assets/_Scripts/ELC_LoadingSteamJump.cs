@@ -17,7 +17,6 @@ public class ELC_LoadingSteamJump : MonoBehaviour
 
     void Update()
     {
-
         isChargingSJ = steamJumpScript.isChargingSteamJump;
         charge = steamJumpScript.charge;
 

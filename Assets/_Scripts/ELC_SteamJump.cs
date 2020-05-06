@@ -17,10 +17,11 @@ public class ELC_SteamJump : MonoBehaviour
     private bool isOnGround;
     [SerializeField]
     private bool isFullCharged;
+    private bool steamJumpPhase;
 
     public bool isChargingSteamJump;
     public bool isSteamJumping;
-    
+    public bool canMove = true;
 
     [SerializeField]
     public float charge = 0f;
@@ -28,6 +29,9 @@ public class ELC_SteamJump : MonoBehaviour
     private float chargeSpeed;
     [SerializeField]
     private float maxCharge;
+    private float gravityForce;
+    [SerializeField]
+    private float testValues;
 
     private Vector3 LoadingBar;
     private Vector2 jumpForce;
@@ -53,11 +57,13 @@ public class ELC_SteamJump : MonoBehaviour
         movesPlayer = playerMovesScript.playerMoves;
         isOnGround = playerMovesScript.playerIsOnGround;
         jumpForce = loadSteamJump.jumpDirection;
+        gravityForce = playerMovesScript.gravityForceJump;
+        steamJumpPhase = playerMovesScript.steamJumpPhase;
         
 
         steamJumpImpulse = jumpForce * charge;
 
-
+        testValues = jumpForce.x * charge * 5;
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0))
         {
@@ -71,17 +77,21 @@ public class ELC_SteamJump : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.JoystickButton0))
         {
-            isChargingSteamJump = false;
-            isSteamJumping = true;
+            canMove = true;
+            StartCoroutine("Transition");
+        }
 
+        if(steamJumpPhase == false)
+        {
+            charge = 0f;
+            isFullCharged = false;
         }
 
         if(playerIsJumping == true)
         {
             isFullCharged = false;
-            charge = 0f;
         }
-        if (playerIsFalling == true || isOnGround == true)
+        if ((playerIsFalling == true || isOnGround == true) && isChargingSteamJump == false)
         {
             isSteamJumping = false;
         }
@@ -98,8 +108,14 @@ public class ELC_SteamJump : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0))
         {
             isChargingSteamJump = true;
-
+            canMove = false;
         }
+    }
+    IEnumerator Transition()
+    {
+        isSteamJumping = true;
+        yield return new WaitForSeconds(0.5f);
+        isChargingSteamJump = false;
     }
 
     void SteamJump()
@@ -110,6 +126,5 @@ public class ELC_SteamJump : MonoBehaviour
         {
             isFullCharged = true;
         }
-
     }
 }

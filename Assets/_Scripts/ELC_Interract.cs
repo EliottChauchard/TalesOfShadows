@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ELC_Interract : MonoBehaviour
 {
-
+    
     private ELC_DoorInterruptor DoorInterruptorScript;
     private ELC_Collectibles CollectiblesScript;
     private ELC_LastChekpoint CheckpointValueScript;

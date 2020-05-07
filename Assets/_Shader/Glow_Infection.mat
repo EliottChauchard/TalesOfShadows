@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MasseInfection
-  m_Shader: {fileID: -6465566751694194690, guid: d02fdda5545459a4c9c64f0ab4db49d6,
+  m_Name: Glow_Infection
+  m_Shader: {fileID: -6465566751694194690, guid: 22c44c4492564ae4b998564ad3f0c4e3,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -20,24 +20,15 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Glow:
+        m_Texture: {fileID: 2800000, guid: 33db7beaf92619c49a2b25052833bf30, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2994f5492bca2164eac3eb04715eeb94, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MaskTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - Vector1_36BC0FD6: 0.07
-    - Vector1_3AEF5FB5: 19.21
-    - Vector1_52D24AB4: 0.1
-    - Vector1_7AA64B76: 16.48
+    m_Floats: []
     m_Colors:
-    - Color_3C5F263D: {r: 1, g: 0.8718326, b: 0.33490568, a: 1}
-    - RimColor: {r: 0, g: 0, b: 0, a: 1}
-    - Vector2_AB971143: {r: 1, g: -0.2, b: 2, a: 0}
+    - Color_1E201EF0: {r: 0.17325662, g: 0, b: 0.00853481, a: 0}
+    - Color_39D6A3EA: {r: 0.86782205, g: 0.03566392, b: 0.20209555, a: 0}

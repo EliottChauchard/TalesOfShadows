@@ -4,3 +4,5 @@ Unity.2D.PixelPerfect.Samples.csproj
 Unity.2D.PixelPerfect.Samples.Editor.csproj
 
 Assembly-CSharp.csproj
+
+Temp/

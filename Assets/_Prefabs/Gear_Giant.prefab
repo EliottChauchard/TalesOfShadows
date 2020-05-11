@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5257243963397665237}
   - component: {fileID: 6039999179414391575}
   - component: {fileID: 9218642243769309366}
+  - component: {fileID: 8985756299786714884}
   m_Layer: 0
   m_Name: Gear_Giant
   m_TagString: Untagged
@@ -196,3 +197,22 @@ PolygonCollider2D:
       - {x: 0.074999996, y: 0.285}
       - {x: 0.195, y: 0.235}
       - {x: 0.155, y: 0.205}
+--- !u!95 &8985756299786714884
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446241338196304567}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58699bdc03cf9024ba15737fd60c5fae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

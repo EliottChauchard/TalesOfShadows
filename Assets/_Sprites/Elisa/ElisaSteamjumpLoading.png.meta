@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 271bc41ca81afd64695c90f610bc5cc6
+guid: 905851b3d37fd554d9ef89c026891f35
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5234705471549430889
-    second: Run Spritesheet_0
+      213: 842836418146554165
+    second: ElisaSteamjumpLoading_0
   - first:
-      213: -8707280104607861850
-    second: Run Spritesheet_1
+      213: -8222844557514765442
+    second: ElisaSteamjumpLoading_1
   - first:
-      213: -7611540299550854598
-    second: Run Spritesheet_2
+      213: 1529875202735477518
+    second: ElisaSteamjumpLoading_2
   - first:
-      213: -8545837740062524858
-    second: Run Spritesheet_3
+      213: -326247188345606433
+    second: ElisaSteamjumpLoading_3
   - first:
-      213: -3721343507264839178
-    second: Run Spritesheet_4
+      213: -1267141335319241506
+    second: ElisaSteamjumpLoading_4
   - first:
-      213: -1662030661325027313
-    second: Run Spritesheet_5
+      213: -1010662785485474639
+    second: ElisaSteamjumpLoading_5
   - first:
-      213: -5850832025861170260
-    second: Run Spritesheet_6
+      213: 8720143699101795459
+    second: ElisaSteamjumpLoading_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,19 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run Spritesheet_0
+      name: ElisaSteamjumpLoading_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 1
         y: 0
-        width: 14
-        height: 26
+        width: 15
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 793a088bb179a57b0800000000000000
-      internalID: -5234705471549430889
+      spriteID: 531536bb14b52bb00800000000000000
+      internalID: 842836418146554165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Spritesheet_1
+      name: ElisaSteamjumpLoading_1
       rect:
         serializedVersion: 2
-        x: 22
+        x: 18
         y: 0
-        width: 17
-        height: 26
+        width: 15
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a3b505c0e6892780800000000000000
-      internalID: -8707280104607861850
+      spriteID: e7b0412017692ed80800000000000000
+      internalID: -8222844557514765442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Spritesheet_2
+      name: ElisaSteamjumpLoading_2
       rect:
         serializedVersion: 2
-        x: 42
+        x: 36
         y: 0
-        width: 16
-        height: 26
+        width: 15
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3273bbdc606e5690800000000000000
-      internalID: -7611540299550854598
+      spriteID: e031ab924653b3510800000000000000
+      internalID: 1529875202735477518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Spritesheet_3
+      name: ElisaSteamjumpLoading_3
       rect:
         serializedVersion: 2
-        x: 61
+        x: 53
         y: 0
-        width: 17
-        height: 26
+        width: 15
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64a327b6ad5176980800000000000000
-      internalID: -8545837740062524858
+      spriteID: fdea0b529efe87bf0800000000000000
+      internalID: -326247188345606433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Spritesheet_4
+      name: ElisaSteamjumpLoading_4
       rect:
         serializedVersion: 2
-        x: 81
+        x: 70
         y: 0
-        width: 14
-        height: 26
+        width: 15
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f1e542fbc12b5cc0800000000000000
-      internalID: -3721343507264839178
+      spriteID: edc151c4ba53a6ee0800000000000000
+      internalID: -1267141335319241506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Spritesheet_5
+      name: ElisaSteamjumpLoading_5
       rect:
         serializedVersion: 2
-        x: 98
+        x: 87
         y: 0
-        width: 13
-        height: 26
+        width: 15
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f080ae95be74fe8e0800000000000000
-      internalID: -1662030661325027313
+      spriteID: 1b47e632d8769f1f0800000000000000
+      internalID: -1010662785485474639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run Spritesheet_6
+      name: ElisaSteamjumpLoading_6
       rect:
         serializedVersion: 2
-        x: 114
+        x: 104
         y: 0
-        width: 11
-        height: 26
+        width: 15
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cabd012854badcea0800000000000000
-      internalID: -5850832025861170260
+      spriteID: 384c2573e7c240970800000000000000
+      internalID: 8720143699101795459
       vertices: []
       indices: 
       edges: []

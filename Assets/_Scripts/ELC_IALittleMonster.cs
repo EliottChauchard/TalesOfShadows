@@ -63,9 +63,17 @@ public class ELC_IALittleMonster : MonoBehaviour
 
         if (faceMonsterHit.collider != null)
         {
-            monsterCollideWall = true;
+            if(faceMonsterHit.collider.tag == "Spikes" || faceMonsterHit.collider.tag == "Contamination")
+            {
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                monsterCollideWall = true;
+            }
         }
         else
+
         {
             monsterCollideWall = false;
         }

@@ -14,7 +14,7 @@ public class ELC_Death : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if(collision.gameObject.tag == "Monster" || collision.gameObject.tag == "Spikes")
+        if(collision.gameObject.tag == "Monster" || collision.gameObject.tag == "Spikes" || collision.gameObject.tag == "Contamination")
         {
             Debug.Log("Touche l'ennemi");
             transform.position = LastCheckpointScript.CheckPointTransform;

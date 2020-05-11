@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class ELC_Levier : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject objectToSummon;
+    [SerializeField]
+    private GameObject objectToDesactivate;
+    [SerializeField]
+    private GameObject objectWithAnimationToTrigger;
+    private Animator objectAnimator;
+
     private Animator animator;
     [SerializeField]
     private GameObject DoorToTrigger;
-    [SerializeField]
-    private Sprite SpriteBasicON;
-    [SerializeField]
-    private Sprite SpriteBasicOFF;
-    [SerializeField]
-    private Sprite SpriteTimedON;
-    [SerializeField]
-    private Sprite SpriteTimedOFF;
 
     private ELC_OpenDoor openDoorScript;
-    private SpriteRenderer SpriteRenderer;
 
     [SerializeField]
     private bool isTimed;
@@ -29,39 +28,93 @@ public class ELC_Levier : MonoBehaviour
 
     private void Start()
     {
-        SpriteRenderer = this.GetComponent<SpriteRenderer>();
-        openDoorScript = DoorToTrigger.GetComponent<ELC_OpenDoor>();
+        if(DoorToTrigger != null)
+        {
+            openDoorScript = DoorToTrigger.GetComponent<ELC_OpenDoor>();
+        }
         animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        openDoorScript.doorIsOpen = isActivated;
+        if(DoorToTrigger != null)
+        {
+            openDoorScript.doorIsOpen = isActivated;
+        }
+
+        if(objectWithAnimationToTrigger !=null)
+        {
+            objectAnimator = objectWithAnimationToTrigger.GetComponent<Animator>();
+        }
 
         if (isActivated == true && isTimed == false)
         {
-            SpriteRenderer.sprite = SpriteBasicON;
             animator.SetBool("SwitchBasicOn", true);
             animator.SetBool("SwitchBasicOff", false);
+
+            SummonGameObject(true);
+
+            DesactivateGameObject(false);
+
+            ActivateAnimator(true);
         }
         else if(isActivated == false && isTimed == false)
         {
             animator.SetBool("SwitchBasicOff", true);
             animator.SetBool("SwitchBasicOn", false);
-            SpriteRenderer.sprite = SpriteBasicOFF;
+
+            SummonGameObject(false);
+
+            DesactivateGameObject(true);
+
+            ActivateAnimator(false);
         }
         else if (isActivated == true && isTimed == true && timerIsOn == false)
         {
             animator.SetBool("SwitchTimedOn", true);
             animator.SetBool("SwitchTimedOff", false);
-            SpriteRenderer.sprite = SpriteTimedON;
+
             StartCoroutine("ActivationTime");
+
+            SummonGameObject(true);
+
+            DesactivateGameObject(false);
+
+            ActivateAnimator(true);
         }
         else if (isActivated == false && isTimed == true)
         {
-            SpriteRenderer.sprite = SpriteTimedOFF;
             animator.SetBool("SwitchTimedOff", true);
+
+            SummonGameObject(false);
+
+            DesactivateGameObject(true);
+
+            ActivateAnimator(false);
+        }
+    }
+
+    void SummonGameObject(bool isEnable)
+    {
+        if(objectToSummon != null)
+        {
+            objectToSummon.GetComponent<SpriteRenderer>().enabled = isEnable;
+            objectToSummon.GetComponent<BoxCollider2D>().enabled = isEnable;
+        }
+    }
+    void DesactivateGameObject(bool isActivated)
+    {
+        if(objectToDesactivate != null)
+        {
+            objectToDesactivate.SetActive(isActivated);
+        }
+    }
+    void ActivateAnimator(bool enable)
+    {
+        if (objectWithAnimationToTrigger != null)
+        {
+            objectAnimator.enabled = enable;
         }
     }
 

@@ -4,22 +4,10 @@ using UnityEngine;
 
 public class ELC_TriggerMonster : MonoBehaviour
 {
-    private ELC_MediumMonster MediumMonsterScript;
     public GameObject playerGameObject;
 
-    private bool playerIsInside;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        MediumMonsterScript = gameObject.GetComponentInParent<ELC_MediumMonster>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        MediumMonsterScript.playerIsInTheRadius = playerIsInside;
-    }
+    public bool playerIsInside;
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

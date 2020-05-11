@@ -51,8 +51,12 @@ public class ELC_PlayerMoves : MonoBehaviour
     public bool steamJumpPhase;
     [SerializeField]
     private bool playerCanMove;
+    [SerializeField]
+    private bool canJump;
 
 
+    [SerializeField]
+    private float ghostJumpDelay;
     [SerializeField]
     private float speed = 1.26f;
     [SerializeField]
@@ -226,7 +230,7 @@ public class ELC_PlayerMoves : MonoBehaviour
 
 
         //saut
-        if ((Input.GetKeyUp(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space)) && playerIsOnGround == true)
+        if ((Input.GetKeyUp(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space)) && (playerIsOnGround == true|| canJump == true))
         {
             playerIsJumping = true;
             animator.SetBool("IsJumping", true);
@@ -286,11 +290,6 @@ public class ELC_PlayerMoves : MonoBehaviour
         transform.Translate(playerMoves);
     }
 
-    IEnumerator Wait(float WaitTime)
-    {
-        yield return new WaitForSeconds(WaitTime);
-
-    }
 
 
     void GroundDetector()
@@ -307,9 +306,11 @@ public class ELC_PlayerMoves : MonoBehaviour
         if (underPlayerHit.collider != null)
         {
             playerIsOnGround = true;
+            canJump = true;
         }
-        else
+        else if(playerIsOnGround == true)
         {
+            StartCoroutine("GhostJump");
             playerIsOnGround = false;
         }
 
@@ -357,5 +358,13 @@ public class ELC_PlayerMoves : MonoBehaviour
         {
             isTouchingFace = false;
         }
+    }
+    
+    IEnumerator GhostJump()
+    {
+        Debug.Log("ghostJump start");
+        yield return new WaitForSeconds(ghostJumpDelay);
+        Debug.Log("GhostJump Finish");
+        canJump = false;
     }
 }

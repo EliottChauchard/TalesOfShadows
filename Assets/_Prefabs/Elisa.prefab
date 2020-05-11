@@ -252,6 +252,9 @@ MonoBehaviour:
   playerIsSteamJumping: 0
   steamJumpIsCharging: 0
   steamJumpPhase: 0
+  playerCanMove: 0
+  canJump: 0
+  ghostJumpDelay: 0.2
   speed: 1.5
   jumpForce: 5.5
   steamJumpCharge: 0
@@ -308,9 +311,11 @@ MonoBehaviour:
   isFullCharged: 0
   isChargingSteamJump: 0
   isSteamJumping: 0
+  canMove: 1
   charge: 0
   chargeSpeed: 5
   maxCharge: 2.25
+  testValues: 0
   steamJumpImpulse: {x: 0, y: 0}
 --- !u!114 &1284234152500128478
 MonoBehaviour:
@@ -346,6 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8551052e7ed4f584b9ef82d9245cc391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  limitY: 0
   jumpDirection: {x: 0, y: 0}
 --- !u!114 &2808281624915194386
 MonoBehaviour:
@@ -374,6 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a7814784af9531449e35a638fa3d627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagOfCollidedObject: 
 --- !u!114 &31178276541379845
 MonoBehaviour:
   m_ObjectHideFlags: 0

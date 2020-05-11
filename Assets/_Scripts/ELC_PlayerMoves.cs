@@ -258,6 +258,7 @@ public class ELC_PlayerMoves : MonoBehaviour
 
         
         
+        
 
 
         //gravité
@@ -307,11 +308,13 @@ public class ELC_PlayerMoves : MonoBehaviour
         {
             playerIsOnGround = true;
             canJump = true;
+            animator.SetBool("IsColliding", true);
         }
         else if(playerIsOnGround == true)
         {
             StartCoroutine("GhostJump");
             playerIsOnGround = false;
+            animator.SetBool("IsColliding", false);
         }
 
         if (uponTheGroundHit.collider != null)

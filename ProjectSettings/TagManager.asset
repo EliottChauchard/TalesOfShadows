@@ -15,6 +15,7 @@ TagManager:
   - Levier
   - Button
   - Spikes
+  - Contamination
   layers:
   - Default
   - TransparentFX

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ELC_SteamFall : MonoBehaviour
 {
     ELC_PlayerMoves playerMoves;
+    private Animator animator;
 
     public bool steamFallEnable;
     private bool playerIsFalling;
@@ -36,6 +37,7 @@ public class ELC_SteamFall : MonoBehaviour
     private void Start()
     {
         playerMoves = GetComponent<ELC_PlayerMoves>();
+        animator = gameObject.GetComponent<Animator>();
         steamFuel = 0f;
     }
 
@@ -52,10 +54,12 @@ public class ELC_SteamFall : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && playerIsFalling == true && steamFuelIsEmpty == false)
         {
             steamFallEnable = true;
+            animator.SetBool("SteamFallEnable", true);
         }
         if (Input.GetKeyUp(KeyCode.LeftShift) || playerIsOnGround == true || steamFuelIsEmpty == true)
         {
             steamFallEnable = false;
+            animator.SetBool("SteamFallEnable", false);
         }
         
         //Jauge de charge de steam

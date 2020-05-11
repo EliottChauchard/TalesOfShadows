@@ -9,6 +9,8 @@ public class ELC_Interract : MonoBehaviour
     private ELC_Collectibles CollectiblesScript;
     private ELC_LastChekpoint CheckpointValueScript;
     private ELC_Levier LevierScript;
+    [SerializeField]
+    private GameObject gameObjectDetected;
 
     [SerializeField]
     private string tagOfCollidedObject;
@@ -20,36 +22,39 @@ public class ELC_Interract : MonoBehaviour
     {
         CollectiblesScript = gameObject.GetComponent<ELC_Collectibles>();
         CheckpointValueScript = gameObject.GetComponent<ELC_LastChekpoint>();
-    }
 
-    private void OnTriggerEnter2D(Collider2D collide) //Cette fonction ne trigger qu'une fois que le joueur entre en collision avec l'objet et n'agit que pendant 1 frame, si on veut un truc où il faut vérif que le joueur soit dans l'objet + qu'il appuie sur une touche il vaut mieux uiliser OnTriggerStay2D (je crois que c'est ça)
-    {
-        tagOfCollidedObject = collide.gameObject.tag;
-
-        if (tagOfCollidedObject == "DoorInterruptor")
+        if (tagOfCollidedObject == "DoorInterruptor" )
         {
-            DoorInterruptorScript = collide.gameObject.GetComponent<ELC_DoorInterruptor>();
+            DoorInterruptorScript = gameObjectDetected.GetComponent<ELC_DoorInterruptor>();
 
-            if (DoorInterruptorScript.numberOfKeyNeeded <= CollectiblesScript.numberOfKeys)
+            if (DoorInterruptorScript.numberOfKeyNeeded <= CollectiblesScript.numberOfKeys && Input.GetKeyDown(KeyCode.E))
             {
                 DoorInterruptorScript.playerHaveEnoughKey = true;
-                collide.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                gameObjectDetected.GetComponent<BoxCollider2D>().enabled = false;
                 CollectiblesScript.numberOfKeys = CollectiblesScript.numberOfKeys - DoorInterruptorScript.numberOfKeyNeeded;
             }
         }
-        else if(tagOfCollidedObject == "Checkpoint")
+        else if (tagOfCollidedObject == "Checkpoint")
         {
-            checkpointTransform = new Vector3(collide.gameObject.transform.localPosition.x, collide.gameObject.transform.localPosition.y, collide.gameObject.transform.localPosition.z);
+            checkpointTransform = new Vector3(gameObjectDetected.transform.localPosition.x, gameObjectDetected.transform.localPosition.y, gameObjectDetected.transform.localPosition.z);
             CheckpointValueScript.CheckPointTransform = checkpointTransform;
         }
-        else if(tagOfCollidedObject == "Levier")
+        else if (tagOfCollidedObject == "Levier")
         {
-            LevierScript = collide.gameObject.GetComponent<ELC_Levier>();
-            if(LevierScript.timerIsOn == false)
+            Debug.Log("Levier detect");
+            LevierScript = gameObjectDetected.GetComponent<ELC_Levier>();
+            if (LevierScript.timerIsOn == false && Input.GetKeyDown(KeyCode.E))
             {
+                Debug.Log("Levier activé");
                 LevierScript.isActivated = !LevierScript.isActivated;
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collide)
+    {
+        tagOfCollidedObject = collide.gameObject.tag;
+        gameObjectDetected = collide.gameObject;
     }
 
     private void OnTriggerExit2D(Collider2D collision)

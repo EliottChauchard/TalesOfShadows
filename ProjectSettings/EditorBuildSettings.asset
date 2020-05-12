@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/SceneTest-LD.unity
     guid: e57ae3ccf2aa33649bcaa65c298b6dc0
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/LCR_SceneTest.unity
     guid: 55dc043828e4f5a44a51ce8b7e1b05f0
+  - enabled: 1
+    path: Assets/_Scenes/KNF_SceneLD1.unity
+    guid: 423eff32b36b5dd4f9b44352d6509296
   m_configObjects: {}

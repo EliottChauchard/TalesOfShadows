@@ -4319,12 +4319,12 @@ PrefabInstance:
     - target: {fileID: 1284234152500128480, guid: 221d50daa10af6247a16542f53aae875,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.41
+      value: -1.581
       objectReference: {fileID: 0}
     - target: {fileID: 1284234152500128480, guid: 221d50daa10af6247a16542f53aae875,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.48
+      value: -0.563
       objectReference: {fileID: 0}
     - target: {fileID: 1284234152500128480, guid: 221d50daa10af6247a16542f53aae875,
         type: 3}
@@ -4385,6 +4385,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Elisa
+      objectReference: {fileID: 0}
+    - target: {fileID: 6783597879879049958, guid: 221d50daa10af6247a16542f53aae875,
+        type: 3}
+      propertyPath: waitTime
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 221d50daa10af6247a16542f53aae875, type: 3}
@@ -27488,6 +27493,7 @@ GameObject:
   - component: {fileID: 973237465}
   - component: {fileID: 973237464}
   - component: {fileID: 973237466}
+  - component: {fileID: 973237467}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -27538,7 +27544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973237463}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.41, y: -1.48, z: -10}
+  m_LocalPosition: {x: -1.581, y: -0.563, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1293506003}
@@ -27560,6 +27566,23 @@ MonoBehaviour:
   m_Offset: {x: 0.1, y: 0.4, z: -38.25}
   m_ApplyAfter: 1
   m_PreserveComposition: 1
+--- !u!114 &973237467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973237463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87263fc052d6694a9620af83cb71116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0
+  durationDecreaseSpeed: 0
+  variationScale: 0
+  timeRemaining: 0
+  isEnable: 0
 --- !u!1001 &978799455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31189,7 +31212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160370858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.309999, y: -1.08, z: -48.25}
+  m_LocalPosition: {x: -1.481, y: -0.16300002, z: -48.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

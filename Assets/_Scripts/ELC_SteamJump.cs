@@ -7,6 +7,8 @@ public class ELC_SteamJump : MonoBehaviour
     ELC_PlayerMoves playerMovesScript;
     ELC_LoadingSteamJump loadSteamJump;
 
+    private Animator animator;
+
     [SerializeField]
     private float jumpForcePlayer;
     [SerializeField]
@@ -42,6 +44,7 @@ public class ELC_SteamJump : MonoBehaviour
     {
         playerMovesScript = GetComponent<ELC_PlayerMoves>();
         loadSteamJump = GetComponent<ELC_LoadingSteamJump>();
+        animator = GetComponent<Animator>();
 
         LoadingBar = GameObject.Find("LoadingSteamJump").transform.localScale;
     }
@@ -61,6 +64,7 @@ public class ELC_SteamJump : MonoBehaviour
         steamJumpPhase = playerMovesScript.steamJumpPhase;
         
 
+
         steamJumpImpulse = jumpForce * charge;
 
         testValues = jumpForce.x * charge * 5;
@@ -68,6 +72,7 @@ public class ELC_SteamJump : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0))
         {
             StartCoroutine("SteamJumpCharge");
+            animator.SetBool("JumpIsCharging", true);
         }
 
         if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0)) && isChargingSteamJump == true && isFullCharged == false)
@@ -79,6 +84,7 @@ public class ELC_SteamJump : MonoBehaviour
         {
             canMove = true;
             StartCoroutine("Transition");
+            animator.SetBool("JumpIsCharging", false);
         }
 
         if(steamJumpPhase == false)
@@ -107,6 +113,7 @@ public class ELC_SteamJump : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0))
         {
+
             isChargingSteamJump = true;
             canMove = false;
         }

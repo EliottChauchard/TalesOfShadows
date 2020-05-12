@@ -267,19 +267,19 @@ public class ELC_PlayerMoves : MonoBehaviour
 
             if (playerIsFalling == true && steamFallEnable == false)
             {
-                verticalSpeed = verticalSpeed - gravityForceFall;
+                verticalSpeed = verticalSpeed - gravityForceFall * Time.deltaTime;
             }
             else if (playerIsJumping == true)
             {
-                verticalSpeed = verticalSpeed - gravityForceJump;
+                verticalSpeed = verticalSpeed - gravityForceJump * Time.deltaTime;
             }
             else if (steamFallEnable == false)
             {
-                verticalSpeed = verticalSpeed - gravityForceFall;
+                verticalSpeed = verticalSpeed - gravityForceFall * Time.deltaTime;
             }
             else if (steamFallEnable == true)
             {
-                verticalSpeed = 0 - steamGravityForceFall;
+                verticalSpeed = 0 - steamGravityForceFall * Time.deltaTime;
             }
         }
 

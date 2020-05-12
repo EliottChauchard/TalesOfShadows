@@ -17,7 +17,7 @@ public class ELC_ScreenShake : MonoBehaviour
     private Vector3 initialPosition;
 
     [SerializeField]
-    private bool isEnable;
+    private bool launchScreenShake;
 
     private float variationValueX;
     private float variationValueY;
@@ -36,9 +36,10 @@ public class ELC_ScreenShake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isEnable == true)
+        if(launchScreenShake == true)
         {
             timeRemaining = duration;
+            launchScreenShake = false;
         }
 
         if (timeRemaining > 0)

@@ -65,6 +65,69 @@ TextureImporter:
   - first:
       213: 5483587663814139677
     second: Levier_Timer_LD1_20
+  - first:
+      213: -4978027520430519890
+    second: Levier_Timer_LD1_0
+  - first:
+      213: 1160508611492224556
+    second: Levier_Timer_LD1_1
+  - first:
+      213: -1147141162754318133
+    second: Levier_Timer_LD1_2
+  - first:
+      213: 5757258996358832069
+    second: Levier_Timer_LD1_3
+  - first:
+      213: 9126311946586587680
+    second: Levier_Timer_LD1_4
+  - first:
+      213: -8357287863946452498
+    second: Levier_Timer_LD1_5
+  - first:
+      213: 5023762754719208531
+    second: Levier_Timer_LD1_6
+  - first:
+      213: 647410625498055786
+    second: Levier_Timer_LD1_7
+  - first:
+      213: -7640415097987720381
+    second: Levier_Timer_LD1_8
+  - first:
+      213: 7235499006059505823
+    second: Levier_Timer_LD1_9
+  - first:
+      213: 2758845610148792289
+    second: Levier_Timer_LD1_10
+  - first:
+      213: 7163784406279094043
+    second: Levier_Timer_LD1_11
+  - first:
+      213: 4591701179535161505
+    second: Levier_Timer_LD1_12
+  - first:
+      213: 9142566353984722042
+    second: Levier_Timer_LD1_13
+  - first:
+      213: -2003508393758699597
+    second: Levier_Timer_LD1_14
+  - first:
+      213: -1160527134921098396
+    second: Levier_Timer_LD1_15
+  - first:
+      213: -1287276382287554535
+    second: Levier_Timer_LD1_16
+  - first:
+      213: -4454126552929521719
+    second: Levier_Timer_LD1_17
+  - first:
+      213: 4654986155478976115
+    second: Levier_Timer_LD1_18
+  - first:
+      213: 8478783665004317879
+    second: Levier_Timer_LD1_19
+  - first:
+      213: -4616096624252190633
+    second: Levier_Timer_LD1_20
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -154,17 +217,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9464d3d3309e41d60800000000000000
-      internalID: 7860163449789957705
+      spriteID: ea9ce9a485e7aeab0800000000000000
+      internalID: -4978027520430519890
       vertices: []
       indices: 
       edges: []
@@ -173,19 +236,19 @@ TextureImporter:
       name: Levier_Timer_LD1_1
       rect:
         serializedVersion: 2
-        x: 47
+        x: 42
         y: 0
-        width: 32
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42da078a419752b30800000000000000
-      internalID: 4261945752008305956
+      spriteID: c2e96cafe64fa1010800000000000000
+      internalID: 1160508611492224556
       vertices: []
       indices: 
       edges: []
@@ -194,19 +257,19 @@ TextureImporter:
       name: Levier_Timer_LD1_2
       rect:
         serializedVersion: 2
-        x: 89
+        x: 84
         y: 0
-        width: 32
+        width: 42
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dc1f5e392c8a2a10800000000000000
-      internalID: 1885473502775942357
+      spriteID: bc0ecc6b0398410f0800000000000000
+      internalID: -1147141162754318133
       vertices: []
       indices: 
       edges: []
@@ -215,19 +278,19 @@ TextureImporter:
       name: Levier_Timer_LD1_3
       rect:
         serializedVersion: 2
-        x: 131
+        x: 126
         y: 0
-        width: 32
+        width: 42
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72b16b843d8f69560800000000000000
-      internalID: 7320311830679001895
+      spriteID: 5cfd3edcd84e5ef40800000000000000
+      internalID: 5757258996358832069
       vertices: []
       indices: 
       edges: []
@@ -236,19 +299,19 @@ TextureImporter:
       name: Levier_Timer_LD1_4
       rect:
         serializedVersion: 2
-        x: 174
+        x: 168
         y: 0
-        width: 32
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac489f8ae954f4e0800000000000000
-      internalID: -1948833874778239827
+      spriteID: 02282b5bc5c27ae70800000000000000
+      internalID: 9126311946586587680
       vertices: []
       indices: 
       edges: []
@@ -257,19 +320,19 @@ TextureImporter:
       name: Levier_Timer_LD1_5
       rect:
         serializedVersion: 2
-        x: 215
+        x: 210
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b814cde614617aa70800000000000000
-      internalID: 8838057264026501515
+      spriteID: ee1e9cf67f2f40c80800000000000000
+      internalID: -8357287863946452498
       vertices: []
       indices: 
       edges: []
@@ -278,19 +341,19 @@ TextureImporter:
       name: Levier_Timer_LD1_6
       rect:
         serializedVersion: 2
-        x: 257
+        x: 252
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f0d0c69ecd1f3870800000000000000
-      internalID: 8664676981213810935
+      spriteID: 35450eebb9df7b540800000000000000
+      internalID: 5023762754719208531
       vertices: []
       indices: 
       edges: []
@@ -299,19 +362,19 @@ TextureImporter:
       name: Levier_Timer_LD1_7
       rect:
         serializedVersion: 2
-        x: 299
+        x: 294
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b3ab4ac84b422690800000000000000
-      internalID: -7628452042808515659
+      spriteID: a6400a4a8801cf800800000000000000
+      internalID: 647410625498055786
       vertices: []
       indices: 
       edges: []
@@ -320,19 +383,19 @@ TextureImporter:
       name: Levier_Timer_LD1_8
       rect:
         serializedVersion: 2
-        x: 341
+        x: 336
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e389aa0cdf96f8fd0800000000000000
-      internalID: -2337533143001950146
+      spriteID: 34b19e3f2fac7f590800000000000000
+      internalID: -7640415097987720381
       vertices: []
       indices: 
       edges: []
@@ -341,19 +404,19 @@ TextureImporter:
       name: Levier_Timer_LD1_9
       rect:
         serializedVersion: 2
-        x: 383
+        x: 378
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e690a8802992f9160800000000000000
-      internalID: 7034386850161232238
+      spriteID: f986edcb208a96460800000000000000
+      internalID: 7235499006059505823
       vertices: []
       indices: 
       edges: []
@@ -362,19 +425,19 @@ TextureImporter:
       name: Levier_Timer_LD1_10
       rect:
         serializedVersion: 2
-        x: 425
+        x: 420
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2fa3e25849261fe0800000000000000
-      internalID: -1218741258552103124
+      spriteID: 1e780172773694620800000000000000
+      internalID: 2758845610148792289
       vertices: []
       indices: 
       edges: []
@@ -383,19 +446,19 @@ TextureImporter:
       name: Levier_Timer_LD1_11
       rect:
         serializedVersion: 2
-        x: 467
+        x: 462
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f05c56f115fa2e50800000000000000
-      internalID: 6785505246083567864
+      spriteID: b1f7fbf46ffda6360800000000000000
+      internalID: 7163784406279094043
       vertices: []
       indices: 
       edges: []
@@ -404,19 +467,19 @@ TextureImporter:
       name: Levier_Timer_LD1_12
       rect:
         serializedVersion: 2
-        x: 509
+        x: 504
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b2745f0902ad3380800000000000000
-      internalID: -8989851121366043979
+      spriteID: 1a87fe815eff8bf30800000000000000
+      internalID: 4591701179535161505
       vertices: []
       indices: 
       edges: []
@@ -425,19 +488,19 @@ TextureImporter:
       name: Levier_Timer_LD1_13
       rect:
         serializedVersion: 2
-        x: 551
+        x: 546
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cde9ef92e59d21c40800000000000000
-      internalID: 5481682694918020828
+      spriteID: a7492b8d8abe0ee70800000000000000
+      internalID: 9142566353984722042
       vertices: []
       indices: 
       edges: []
@@ -446,19 +509,19 @@ TextureImporter:
       name: Levier_Timer_LD1_14
       rect:
         serializedVersion: 2
-        x: 593
+        x: 588
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d19f677e3c06a620800000000000000
-      internalID: 2784926882006536658
+      spriteID: 3bfcf7d1bbb1234e0800000000000000
+      internalID: -2003508393758699597
       vertices: []
       indices: 
       edges: []
@@ -467,19 +530,19 @@ TextureImporter:
       name: Levier_Timer_LD1_15
       rect:
         serializedVersion: 2
-        x: 635
+        x: 630
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98d483e5b1f6d1a20800000000000000
-      internalID: 3034703887253130633
+      spriteID: 46b73d238baf4efe0800000000000000
+      internalID: -1160527134921098396
       vertices: []
       indices: 
       edges: []
@@ -488,19 +551,19 @@ TextureImporter:
       name: Levier_Timer_LD1_16
       rect:
         serializedVersion: 2
-        x: 677
+        x: 672
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f8e1dcf291e4efc0800000000000000
-      internalID: -3466397791745349389
+      spriteID: 918100a53fca22ee0800000000000000
+      internalID: -1287276382287554535
       vertices: []
       indices: 
       edges: []
@@ -509,19 +572,19 @@ TextureImporter:
       name: Levier_Timer_LD1_17
       rect:
         serializedVersion: 2
-        x: 719
+        x: 714
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeef2d7ce80f0a470800000000000000
-      internalID: 8403981400701861610
+      spriteID: 9cf2004cf73cf22c0800000000000000
+      internalID: -4454126552929521719
       vertices: []
       indices: 
       edges: []
@@ -530,19 +593,19 @@ TextureImporter:
       name: Levier_Timer_LD1_18
       rect:
         serializedVersion: 2
-        x: 761
+        x: 756
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27a86619dafa919e0800000000000000
-      internalID: -1650094628450956686
+      spriteID: 3768fa7ce35d99040800000000000000
+      internalID: 4654986155478976115
       vertices: []
       indices: 
       edges: []
@@ -551,19 +614,19 @@ TextureImporter:
       name: Levier_Timer_LD1_19
       rect:
         serializedVersion: 2
-        x: 803
+        x: 798
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 447397dfccb411240800000000000000
-      internalID: 4760669624905316164
+      spriteID: 7bc87ff12d0baa570800000000000000
+      internalID: 8478783665004317879
       vertices: []
       indices: 
       edges: []
@@ -572,19 +635,19 @@ TextureImporter:
       name: Levier_Timer_LD1_20
       rect:
         serializedVersion: 2
-        x: 845
+        x: 840
         y: 0
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1f1b5c4ded991c40800000000000000
-      internalID: 5483587663814139677
+      spriteID: 750819ec39450ffb0800000000000000
+      internalID: -4616096624252190633
       vertices: []
       indices: 
       edges: []

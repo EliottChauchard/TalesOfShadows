@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -72,7 +72,6 @@ public class ELC_SteamJump : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0))
         {
             StartCoroutine("SteamJumpCharge");
-            animator.SetBool("JumpIsCharging", true);
         }
 
         if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0)) && isChargingSteamJump == true && isFullCharged == false)
@@ -113,9 +112,10 @@ public class ELC_SteamJump : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0))
         {
-
+            animator.SetBool("JumpIsCharging", true);
             isChargingSteamJump = true;
             canMove = false;
+
         }
     }
     IEnumerator Transition()

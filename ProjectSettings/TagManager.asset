@@ -16,6 +16,7 @@ TagManager:
   - Button
   - Spikes
   - Contamination
+  - VerticalMovingPlatform
   layers:
   - Default
   - TransparentFX

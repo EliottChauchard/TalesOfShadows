@@ -54,7 +54,10 @@ public class ELC_PlayerMoves : MonoBehaviour
     [SerializeField]
     private bool canJump;
 
-
+    [SerializeField]
+    private float steamJumpForceMultiplier;
+    [SerializeField]
+    private float minimalSteamJumpForce;
     [SerializeField]
     private float ghostJumpDelay;
     [SerializeField]
@@ -140,7 +143,7 @@ public class ELC_PlayerMoves : MonoBehaviour
 
             if(steamJumpPhase == true)
             {
-                horizontalSpeed = steamJumpVector.x * steamJumpCharge * 2;
+                horizontalSpeed = steamJumpVector.x * 3;
             }
             else if (steamJumpIsCharging == false)
             {
@@ -242,7 +245,11 @@ public class ELC_PlayerMoves : MonoBehaviour
             }
             else
             {
-                verticalSpeed = steamJumpVector.y * steamJumpCharge * 3.5f;
+                verticalSpeed = steamJumpVector.y * steamJumpCharge * steamJumpForceMultiplier;
+                if( verticalSpeed < minimalSteamJumpForce)
+                {
+                    verticalSpeed = minimalSteamJumpForce;
+                }
             }
         }
         else

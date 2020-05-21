@@ -24,7 +24,7 @@ public class ELC_SteamFall : MonoBehaviour
     [SerializeField]
     private float steamFuel;
     [SerializeField]
-    public float steamFallGravityForce = 0.05f;
+    public float steamFallGravityForce;
     [SerializeField]
     private float maxFuelCharge;
     [SerializeField]

@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1284234151161265598}
-  - component: {fileID: 1284234151161265596}
-  - component: {fileID: 7206994767305801147}
+  - component: {fileID: 6142261391375346043}
+  - component: {fileID: 3976797968805098913}
+  - component: {fileID: 88343250945566451}
   m_Layer: 0
   m_Name: LoadingSteamJump
   m_TagString: Untagged
@@ -32,7 +33,26 @@ Transform:
   m_Father: {fileID: 1284234152500128480}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1284234151161265596
+--- !u!95 &6142261391375346043
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284234151161265601}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 916828d1675be334cb5d6a107f1cb689, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &3976797968805098913
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,18 +91,19 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ef7118deaf9cc04438f2a867d0e86d69, type: 3}
+  m_Sprite: {fileID: -495628257920204164, guid: 849b2318629d8b642816b85c30d70a9d,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.66, y: 0.18}
+  m_Size: {x: 0.25, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7206994767305801147
+--- !u!114 &88343250945566451
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,12 +275,14 @@ MonoBehaviour:
   steamJumpPhase: 0
   playerCanMove: 0
   canJump: 0
+  steamJumpForceMultiplier: 3.5
+  minimalSteamJumpForce: 4
   ghostJumpDelay: 0.2
   speed: 1.5
   jumpForce: 5.5
   steamJumpCharge: 0
-  gravityForceJump: 0.09
-  gravityForceFall: 0.05
+  gravityForceJump: 13
+  gravityForceFall: 13
   steamGravityForceFall: 0
   collisionMask:
     serializedVersion: 2
@@ -314,7 +337,7 @@ MonoBehaviour:
   canMove: 1
   charge: 0
   chargeSpeed: 5
-  maxCharge: 2.25
+  maxCharge: 2
   testValues: 0
   steamJumpImpulse: {x: 0, y: 0}
 --- !u!114 &1284234152500128478
@@ -334,7 +357,7 @@ MonoBehaviour:
   steamFuelIsHalfFull: 0
   steamFuelIsEmpty: 0
   steamFuel: 0
-  steamFallGravityForce: 0.5
+  steamFallGravityForce: 50
   maxFuelCharge: 10
   basicFuelChargeSpeed: 0.01
   steamJumpFuelChargeSpeed: 0.05
@@ -380,6 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a7814784af9531449e35a638fa3d627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObjectDetected: {fileID: 0}
   tagOfCollidedObject: 
 --- !u!114 &31178276541379845
 MonoBehaviour:
@@ -406,3 +430,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7b6474145497b43b335bca2288c18b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDying: 0
+  waitTime: 0.5

@@ -20,7 +20,7 @@ public class ELC_Collectibles : MonoBehaviour
     {
         
     }
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         tagOfTheObject = collision.tag;
@@ -28,6 +28,7 @@ public class ELC_Collectibles : MonoBehaviour
         if(tagOfTheObject == "Key")
         {
             numberOfKeys += 1;
+            GlobalScoreValues.keysCollected += 1;
             gameObjectTouched = collision.gameObject;
             Destroy(gameObjectTouched);
         }

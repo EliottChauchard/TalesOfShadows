@@ -6,17 +6,29 @@ public class ELC_LoadingBar : MonoBehaviour
 {
     ELC_SteamJump steamJumpScript;
     private float charge;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
     
 
     void Start()
     {
         steamJumpScript = GetComponentInParent<ELC_SteamJump>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         charge = steamJumpScript.charge;
-        
-        transform.localScale = new Vector3(charge * 0.05f, 0.1f, 1f);
+        if (charge > 0)
+        {
+            animator.SetBool("IsChargingSteamJump", true);
+            spriteRenderer.enabled = true;
+        }
+        else
+        {
+            animator.SetBool("IsChargingSteamJump", false);
+            spriteRenderer.enabled = false;
+        }
     }
 }

@@ -49,7 +49,7 @@ public class ELC_ScreenShake : MonoBehaviour
 
             cameraTransform.localPosition = new Vector3 (initialPosition.x + variationValueX, initialPosition.y + variationValueY) ;
 
-            timeRemaining = durationDecreaseSpeed * Time.deltaTime;
+            timeRemaining = timeRemaining - durationDecreaseSpeed * Time.deltaTime;
         }
         else
         {

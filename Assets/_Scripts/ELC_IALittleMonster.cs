@@ -65,6 +65,7 @@ public class ELC_IALittleMonster : MonoBehaviour
         {
             if(faceMonsterHit.collider.tag == "Spikes" || faceMonsterHit.collider.tag == "Contamination")
             {
+                GlobalScoreValues.littleEnemyKilled += 1;
                 Destroy(this.gameObject);
             }
             else

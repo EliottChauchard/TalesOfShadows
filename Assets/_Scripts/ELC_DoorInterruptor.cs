@@ -10,6 +10,8 @@ public class ELC_DoorInterruptor : MonoBehaviour
     [SerializeField]
     public int numberOfKeyNeeded;
     public bool playerHaveEnoughKey;
+    [SerializeField]
+    private bool hasAlreadyBeenActivated;
 
 
     [SerializeField]
@@ -31,7 +33,25 @@ public class ELC_DoorInterruptor : MonoBehaviour
         DoorScript.doorIsOpen = statutOfTheDoor;
         if (playerHaveEnoughKey == true)
         {
-            statutOfTheDoor = true;;
+            statutOfTheDoor = true;
+            if(hasAlreadyBeenActivated == false)
+            {
+                if(numberOfKeyNeeded == 1)
+                {
+                    GlobalScoreValues.activateOneKeyMachine += 1;
+                    hasAlreadyBeenActivated = true;
+                }
+                if (numberOfKeyNeeded == 2)
+                {
+                    GlobalScoreValues.activateTwoKeyMachine += 1;
+                    hasAlreadyBeenActivated = true;
+                }
+                if (numberOfKeyNeeded == 3)
+                {
+                    GlobalScoreValues.activateThreeKeyMachine += 1;
+                    hasAlreadyBeenActivated = true;
+                }
+            }
         }
     }
 }

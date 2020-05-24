@@ -19,6 +19,8 @@ public class ELC_Levier : MonoBehaviour
     private ELC_OpenDoor openDoorScript;
 
     [SerializeField]
+    private bool hasAlreadyBeenActivated = false;
+    [SerializeField]
     private bool isTimed;
     [SerializeField]
     private float timeBeforeTurnOff;
@@ -58,6 +60,12 @@ public class ELC_Levier : MonoBehaviour
             DesactivateGameObject(false);
 
             ActivateAnimator(true);
+
+            if (hasAlreadyBeenActivated == false)
+            {
+                GlobalScoreValues.activateBasicLever += 1;
+                hasAlreadyBeenActivated = true;
+            }
         }
         else if(isActivated == false && isTimed == false)
         {

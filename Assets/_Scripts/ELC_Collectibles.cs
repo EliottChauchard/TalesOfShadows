@@ -9,6 +9,7 @@ public class ELC_Collectibles : MonoBehaviour
 
     public int numberOfKeys;
     public string tagOfTheObject;
+    private float totalKeysCollected;
 
 
     [SerializeField]
@@ -18,7 +19,7 @@ public class ELC_Collectibles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        totalKeysCollected = PlayerPrefs.GetFloat("TotalKeysCollected");
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,6 +30,7 @@ public class ELC_Collectibles : MonoBehaviour
         {
             numberOfKeys += 1;
             GlobalScoreValues.keysCollected += 1;
+            PlayerPrefs.SetFloat("TotalKeysCollected", totalKeysCollected + 1);
             gameObjectTouched = collision.gameObject;
             Destroy(gameObjectTouched);
         }

@@ -75,12 +75,13 @@
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMoveOnSphere.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMovePhysics.cs" />
-    <Compile Include="Assets\_Scripts\ELC_AffichageScore.cs" />
+    <Compile Include="Assets\_Scripts\Buttons\ELC_PlayButton.cs" />
     <Compile Include="Assets\_Scripts\ELC_BossMonster.cs" />
     <Compile Include="Assets\_Scripts\ELC_Button.cs" />
     <Compile Include="Assets\_Scripts\ELC_Collectibles.cs" />
     <Compile Include="Assets\_Scripts\ELC_Death.cs" />
     <Compile Include="Assets\_Scripts\ELC_DoorInterruptor.cs" />
+    <Compile Include="Assets\_Scripts\ELC_EndLevelSave.cs" />
     <Compile Include="Assets\_Scripts\ELC_IALittleMonster.cs" />
     <Compile Include="Assets\_Scripts\ELC_Interract.cs" />
     <Compile Include="Assets\_Scripts\ELC_LastChekpoint.cs" />
@@ -90,12 +91,19 @@
     <Compile Include="Assets\_Scripts\ELC_MediumMonster.cs" />
     <Compile Include="Assets\_Scripts\ELC_OpenDoor.cs" />
     <Compile Include="Assets\_Scripts\ELC_PlayerMoves.cs" />
-    <Compile Include="Assets\_Scripts\ELC_ScoreScript.cs" />
     <Compile Include="Assets\_Scripts\ELC_SteamFall.cs" />
     <Compile Include="Assets\_Scripts\ELC_SteamJump.cs" />
     <Compile Include="Assets\_Scripts\ELC_SteamPush.cs" />
     <Compile Include="Assets\_Scripts\ELC_TriggerMonster.cs" />
     <Compile Include="Assets\_Scripts\KNF_ParallaxLayer.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_AffichageBestScore.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_AffichageFinalScore.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_AffichageMorts.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_AffichageNombreClés.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_AffichageScore.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_AffichageTotalClés.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_ScoreScript.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_Timer.cs" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
       <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>

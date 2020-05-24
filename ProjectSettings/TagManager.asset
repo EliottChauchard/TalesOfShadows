@@ -17,6 +17,7 @@ TagManager:
   - Spikes
   - Contamination
   - VerticalMovingPlatform
+  - Timer
   layers:
   - Default
   - TransparentFX

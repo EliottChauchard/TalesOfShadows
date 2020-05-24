@@ -113,7 +113,15 @@ public class ELC_MediumMonster : MonoBehaviour
 
         if(faceMonsterHit.collider != null)
         {
-            wallDetected = true;
+            if(faceMonsterHit.collider.CompareTag("Spikes") || faceMonsterHit.collider.CompareTag("Contamination"))
+            {
+                GlobalScoreValues.mediumEnemyKilled += 1;
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                wallDetected = true;
+            }
         }
         else
         {

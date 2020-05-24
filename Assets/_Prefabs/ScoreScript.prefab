@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: 0
+  lastScoreSaved: 0
+  bestScoreSaved: 0
   imagesScore: 180
   keyScore: 50
   basicLeverScore: 20
@@ -52,6 +54,6 @@ MonoBehaviour:
   threeKeyMachineScore: 150
   killLittleEnemyScore: 120
   killMediumEnemyScore: 180
-  percentOfLoosedScorePerDeath: 95
+  percentLoosedScorePerDeath: 0.95
   endLevelScore: 200
   maxTimeScore: 800

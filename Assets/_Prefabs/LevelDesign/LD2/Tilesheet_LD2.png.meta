@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2117bea521bf49439fa7ba757cda2ad
+guid: 55d6a575b99284a479b3b79824202315
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -142,7 +142,7 @@ TextureImporter:
     second: Tilesheet_LD1_0
   - first:
       213: 8198677006529610278
-    second: Tilesheet_LD1_1
+    second: CrossColumn
   - first:
       213: 6328918507300908018
     second: Tilesheet_LD1_2
@@ -158,6 +158,207 @@ TextureImporter:
   - first:
       213: -3901688911446662970
     second: Tilesheet_LD1_6
+  - first:
+      213: -2658385892198942586
+    second: Clouds
+  - first:
+      213: -4057775055918628940
+    second: BG_City
+  - first:
+      213: 1604189950065726399
+    second: Sun
+  - first:
+      213: -1245063950719754094
+    second: FG_Pipes
+  - first:
+      213: 4219302473447378427
+    second: BG_Ruins
+  - first:
+      213: 8542553808913630479
+    second: FG_ConstructionBar
+  - first:
+      213: 6265049225611097940
+    second: Stairs_Rails_Top
+  - first:
+      213: -7918655409299364578
+    second: Stairs_Top
+  - first:
+      213: 1205475005716562369
+    second: Stairs_Rails_Middle
+  - first:
+      213: -4220485183770234868
+    second: Stairs_Middle
+  - first:
+      213: -2062525273482479816
+    second: Stairs_Rails_End
+  - first:
+      213: 4140444138401060624
+    second: Stairs_End
+  - first:
+      213: -2071750464819555974
+    second: Tilesheet_LD2_0
+  - first:
+      213: -7080904108798700111
+    second: Tilesheet_LD2_0
+  - first:
+      213: 1367942237580612310
+    second: Tilesheet_LD2_1
+  - first:
+      213: 2878353820323204733
+    second: Tilesheet_LD2_2
+  - first:
+      213: -7130043788192900364
+    second: Tilesheet_LD2_3
+  - first:
+      213: -686354204313328597
+    second: Tilesheet_LD2_4
+  - first:
+      213: 6721198032663629403
+    second: Tilesheet_LD2_5
+  - first:
+      213: -999509545758158550
+    second: Tilesheet_LD2_6
+  - first:
+      213: -2750520698903194747
+    second: Tilesheet_LD2_7
+  - first:
+      213: -6140066650635894465
+    second: Tilesheet_LD2_8
+  - first:
+      213: -164873527847763213
+    second: Tilesheet_LD2_9
+  - first:
+      213: -3375311348678759647
+    second: Tilesheet_LD2_10
+  - first:
+      213: 8084670355024633070
+    second: Tilesheet_LD2_11
+  - first:
+      213: 1510681682059946956
+    second: Tilesheet_LD2_12
+  - first:
+      213: -2081647078945369198
+    second: Tilesheet_LD2_13
+  - first:
+      213: 3144279375437216986
+    second: Tilesheet_LD2_14
+  - first:
+      213: 1322379761235038834
+    second: Tilesheet_LD2_15
+  - first:
+      213: -2507837893861245488
+    second: Tilesheet_LD2_16
+  - first:
+      213: -1209636297603953520
+    second: Tilesheet_LD2_17
+  - first:
+      213: -8692507208417952039
+    second: Tilesheet_LD2_18
+  - first:
+      213: 5423129086924258007
+    second: Tilesheet_LD2_19
+  - first:
+      213: 801847982171330787
+    second: Tilesheet_LD2_20
+  - first:
+      213: 4170706475561787247
+    second: Tilesheet_LD2_21
+  - first:
+      213: 3322112448766674931
+    second: Tilesheet_LD2_22
+  - first:
+      213: -5622133111674785928
+    second: Tilesheet_LD2_23
+  - first:
+      213: -1594037430914585562
+    second: Tilesheet_LD2_24
+  - first:
+      213: 482518688050347731
+    second: Tilesheet_LD2_25
+  - first:
+      213: 341679828330450219
+    second: Tilesheet_LD2_26
+  - first:
+      213: 3152543751653668416
+    second: Tilesheet_LD2_27
+  - first:
+      213: -7018661483456027930
+    second: Tilesheet_LD2_28
+  - first:
+      213: -5286821189674396241
+    second: Tilesheet_LD2_29
+  - first:
+      213: -6337897184910766068
+    second: Tilesheet_LD2_30
+  - first:
+      213: -1765301765244905025
+    second: Tilesheet_LD2_31
+  - first:
+      213: -2312411310248788452
+    second: Tilesheet_LD2_32
+  - first:
+      213: -1923737883707777532
+    second: Tilesheet_LD2_33
+  - first:
+      213: -1711807409057345248
+    second: Tilesheet_LD2_34
+  - first:
+      213: 927113077406621577
+    second: Tilesheet_LD2_35
+  - first:
+      213: -1985683255381491955
+    second: Tilesheet_LD2_36
+  - first:
+      213: -6487473696093564518
+    second: Tilesheet_LD2_37
+  - first:
+      213: 3309797768267560133
+    second: Tilesheet_LD2_38
+  - first:
+      213: 3179927900850875157
+    second: Tilesheet_LD2_39
+  - first:
+      213: 5725567450822467451
+    second: Tilesheet_LD2_40
+  - first:
+      213: -2256592464249488475
+    second: Tilesheet_LD2_41
+  - first:
+      213: -460496441939584790
+    second: Tilesheet_LD2_42
+  - first:
+      213: -7698532928461926687
+    second: Tilesheet_LD2_43
+  - first:
+      213: -1916943690347621389
+    second: Tilesheet_LD2_44
+  - first:
+      213: 3484419347863615649
+    second: Tilesheet_LD2_45
+  - first:
+      213: 4377056580600153080
+    second: Tilesheet_LD2_46
+  - first:
+      213: -8997898251105831607
+    second: Tilesheet_LD2_47
+  - first:
+      213: 5074980532103914102
+    second: Tilesheet_LD2_48
+  - first:
+      213: 2687185825762450343
+    second: Tilesheet_LD2_49
+  - first:
+      213: 874616328579744261
+    second: Tilesheet_LD2_50
+  - first:
+      213: -1243423630923253061
+    second: Tilesheet_LD2_51
+  - first:
+      213: -2005133066082375913
+    second: Tilesheet_LD2_52
+  - first:
+      213: 1042498035803423397
+    second: Tilesheet_LD2_53
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -216,7 +417,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -228,7 +429,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -245,7 +446,7 @@ TextureImporter:
       name: Clock
       rect:
         serializedVersion: 2
-        x: 133
+        x: 134
         y: 353
         width: 104
         height: 104
@@ -415,8 +616,8 @@ TextureImporter:
         serializedVersion: 2
         x: 209
         y: 234
-        width: 64
-        height: 111
+        width: 63
+        height: 110
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 105}
@@ -498,9 +699,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 137
-        y: 298
-        width: 3
-        height: 12
+        y: 293
+        width: 22
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,7 +763,7 @@ TextureImporter:
         serializedVersion: 2
         x: 472
         y: 294
-        width: 35
+        width: 106
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -608,7 +809,7 @@ TextureImporter:
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 5, z: 21, w: 7}
+      border: {x: 6, y: 5, z: 21, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -692,7 +893,7 @@ TextureImporter:
         height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 86, w: 2}
+      border: {x: 0, y: 0, z: 86, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -708,9 +909,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 209
-        y: 195
-        width: 29
-        height: 32
+        y: 191
+        width: 12
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 4}
@@ -797,7 +998,7 @@ TextureImporter:
         height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 31, w: 2}
+      border: {x: 0, y: 0, z: 31, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -919,7 +1120,7 @@ TextureImporter:
         serializedVersion: 2
         x: 538
         y: 127
-        width: 16
+        width: 43
         height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -961,11 +1162,11 @@ TextureImporter:
         serializedVersion: 2
         x: 25
         y: 91
-        width: 61
+        width: 92
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 2}
+      border: {x: 0, y: 0, z: 31, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1001,10 +1202,10 @@ TextureImporter:
       name: Plateform_Neutral_Dark
       rect:
         serializedVersion: 2
-        x: 26
+        x: 25
         y: 53
-        width: 24
-        height: 26
+        width: 26
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 1, z: 0, w: 0}
@@ -1022,10 +1223,10 @@ TextureImporter:
       name: Plateform_Neutral_Light
       rect:
         serializedVersion: 2
-        x: 57
-        y: 54
-        width: 24
-        height: 26
+        x: 56
+        y: 53
+        width: 26
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 1}
@@ -1166,7 +1367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilesheet_LD1_1
+      name: CrossColumn
       rect:
         serializedVersion: 2
         x: 32
@@ -1174,7 +1375,7 @@ TextureImporter:
         width: 77
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1195,7 +1396,7 @@ TextureImporter:
         width: 8
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1216,7 +1417,7 @@ TextureImporter:
         width: 8
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1237,7 +1438,7 @@ TextureImporter:
         width: 8
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1258,7 +1459,7 @@ TextureImporter:
         width: 8
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1279,7 +1480,7 @@ TextureImporter:
         width: 8
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1287,6 +1488,279 @@ TextureImporter:
       bones: []
       spriteID: 6c024296b9a6ad9c0800000000000000
       internalID: -3901688911446662970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clouds
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 525
+        width: 1422
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 40, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6887293ad148b1bd0800000000000000
+      internalID: -2658385892198942586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_City
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 454
+        width: 840
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf778de513efa7c0800000000000000
+      internalID: -4057775055918628940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 446
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb35bed924a334610800000000000000
+      internalID: 1604189950065726399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Pipes
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 344
+        width: 27
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29064b6fee4a8bee0800000000000000
+      internalID: -1245063950719754094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Ruins
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 6
+        width: 787
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd02c9ae39fd8a30800000000000000
+      internalID: 4219302473447378427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_ConstructionBar
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 94
+        width: 298
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0505f6cd6f3d8670800000000000000
+      internalID: 8542553808913630479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Rails_Top
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 104
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457b2e8b31de1f650800000000000000
+      internalID: 6265049225611097940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Top
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 104
+        width: 59
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e156cfd2cd84b1290800000000000000
+      internalID: -7918655409299364578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Rails_Middle
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 86
+        width: 33
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1095d7125bab010800000000000000
+      internalID: 1205475005716562369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Middle
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 86
+        width: 74
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0073912613dd65c0800000000000000
+      internalID: -4220485183770234868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Rails_End
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 59
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837bfc501307063e0800000000000000
+      internalID: -2062525273482479816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_End
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 53
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0175eb1c100d57930800000000000000
+      internalID: 4140444138401060624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD2_0
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 191
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a711e29cde9af33e0800000000000000
+      internalID: -2071750464819555974
       vertices: []
       indices: 
       edges: []

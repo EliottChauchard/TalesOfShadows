@@ -260,6 +260,12 @@
  <Reference Include="ICSharpCode.NRefactory">
  <HintPath>D:/Users/Lucrezia/OneDrive/Images/RUBIKA/TalesOfShadows/TalesOfShadows/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
+ <Reference Include="AmplifyColorEditor">
+ <HintPath>D:/Users/Lucrezia/OneDrive/Images/RUBIKA/TalesOfShadows/TalesOfShadows/Assets/AmplifyColor/Plugins/Editor/AmplifyColorEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColor">
+ <HintPath>D:/Users/Lucrezia/OneDrive/Images/RUBIKA/TalesOfShadows/TalesOfShadows/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+ </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Users/Lucrezia/OneDrive/Programmes/Unity/Hub/Editor/Unity-2019.3.1f1/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
  </Reference>

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7094445675965887419}
   - component: {fileID: 3167302530304735645}
   m_Layer: 0
-  m_Name: Levier 1
+  m_Name: DoorAndLevier
   m_TagString: Levier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 54440069f07394440a9818a0232757ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -146,15 +146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1241eba5858925943a53f77febc3c538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToSummon: {fileID: 0}
+  objectToDesactivate: {fileID: 0}
+  objectWithAnimationToTrigger: {fileID: 0}
   DoorToTrigger: {fileID: 3756662051683553992}
-  SpriteBasicON: {fileID: 7963744232905459612, guid: c2117bea521bf49439fa7ba757cda2ad,
-    type: 3}
-  SpriteBasicOFF: {fileID: -2070914062774739171, guid: c2117bea521bf49439fa7ba757cda2ad,
-    type: 3}
-  SpriteTimedON: {fileID: 7963744232905459612, guid: c2117bea521bf49439fa7ba757cda2ad,
-    type: 3}
-  SpriteTimedOFF: {fileID: -2070914062774739171, guid: c2117bea521bf49439fa7ba757cda2ad,
-    type: 3}
+  hasAlreadyBeenActivated: 0
   isTimed: 0
   timeBeforeTurnOff: 5
   timerIsOn: 0
@@ -245,6 +241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 7656791281518655687, guid: f07e1ba162264204eaac0629379cb679,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d4c9d13408d7f54db2e027d4162880c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07e1ba162264204eaac0629379cb679, type: 3}
 --- !u!1 &3756662051683553992 stripped

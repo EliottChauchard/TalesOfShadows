@@ -150,6 +150,10 @@ MonoBehaviour:
   objectToDesactivate: {fileID: 0}
   objectWithAnimationToTrigger: {fileID: 0}
   DoorToTrigger: {fileID: 1892730916747061408}
+<<<<<<< Updated upstream
+=======
+  hasAlreadyBeenActivated: 0
+>>>>>>> Stashed changes
   isTimed: 0
   timeBeforeTurnOff: 5
   timerIsOn: 0

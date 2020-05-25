@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5488554619194842145}
   - component: {fileID: 5488554619194842144}
+  - component: {fileID: 4995944493495391847}
   m_Layer: 0
   m_Name: Gear_Medium_Thin
   m_TagString: Untagged
@@ -82,3 +83,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4995944493495391847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5488554619194842146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255b6dfc609b6974b881b67a54ccf928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUnitsPerSecond:
+    value: {x: 0, y: 0, z: 0}
+    space: 1
+  rotateDegreesPerSecond:
+    value: {x: 0, y: 0, z: 40}
+    space: 1
+  ignoreTimescale: 0

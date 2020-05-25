@@ -158,6 +158,9 @@ TextureImporter:
   - first:
       213: -3901688911446662970
     second: Tilesheet_LD1_6
+  - first:
+      213: -3848029701769476372
+    second: Tilesheet_LD1_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -918,9 +921,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 538
-        y: 127
+        y: 126
         width: 16
-        height: 6
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,11 +964,11 @@ TextureImporter:
         serializedVersion: 2
         x: 25
         y: 91
-        width: 61
+        width: 92
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 2}
+      border: {x: 0, y: 0, z: 31, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1128,9 +1131,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 565
-        y: 127
+        y: 126
         width: 16
-        height: 6
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1165,132 +1168,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Tilesheet_LD1_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 440
-        width: 77
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6224c5a8c4d87c170800000000000000
-      internalID: 8198677006529610278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilesheet_LD1_2
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 378
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fbe010b9d5d4d750800000000000000
-      internalID: 6328918507300908018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilesheet_LD1_3
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 378
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bc53669709a842c0800000000000000
-      internalID: -4447118781975405389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilesheet_LD1_4
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 378
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c81844aa1d6b092b0800000000000000
-      internalID: -5579758926691008116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilesheet_LD1_5
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 378
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fd98248f694c0500800000000000000
-      internalID: 363746413217619448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilesheet_LD1_6
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 394
-        width: 8
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c024296b9a6ad9c0800000000000000
-      internalID: -3901688911446662970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1300,7 +1177,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 001aec125b0b33b428d8bb2f3e08682d, type: 3}
+      name: _Glow
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

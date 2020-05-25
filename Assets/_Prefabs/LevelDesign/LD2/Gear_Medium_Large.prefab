@@ -10,6 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8697334626831815325}
   - component: {fileID: 1475097035575780171}
+<<<<<<< Updated upstream
+=======
+  - component: {fileID: 6733128164626038068}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Gear_Medium_Large
   m_TagString: Untagged
@@ -82,3 +86,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
+=======
+--- !u!114 &6733128164626038068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5560977775759631014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255b6dfc609b6974b881b67a54ccf928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUnitsPerSecond:
+    value: {x: 0, y: 0, z: 0}
+    space: 1
+  rotateDegreesPerSecond:
+    value: {x: 0, y: 0, z: 30}
+    space: 1
+  ignoreTimescale: 0
+>>>>>>> Stashed changes

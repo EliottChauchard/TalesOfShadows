@@ -18,6 +18,7 @@ TagManager:
   - Contamination
   - VerticalMovingPlatform
   - Timer
+  - Journal
   layers:
   - Default
   - TransparentFX

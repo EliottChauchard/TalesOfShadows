@@ -11,6 +11,7 @@ public class ELC_Collectibles : MonoBehaviour
     public string tagOfTheObject;
     private float totalKeysCollected;
 
+    private int journalNumber;
 
     [SerializeField]
     private GameObject gameObjectTouched;
@@ -33,6 +34,11 @@ public class ELC_Collectibles : MonoBehaviour
             PlayerPrefs.SetFloat("TotalKeysCollected", totalKeysCollected + 1);
             gameObjectTouched = collision.gameObject;
             Destroy(gameObjectTouched);
+        }
+        else if(tagOfTheObject == "Journal")
+        {
+            journalNumber = collision.GetComponent<ELC_Journal>().refNumber;
+            PlayerPrefs.SetInt("Collectible" + journalNumber, 1);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

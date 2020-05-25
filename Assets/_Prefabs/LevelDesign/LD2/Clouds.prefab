@@ -10,10 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8743679853066385791}
   - component: {fileID: 4483141552392774380}
-<<<<<<< Updated upstream
-=======
   - component: {fileID: 8114512667105227116}
->>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Clouds
   m_TagString: Untagged
@@ -86,8 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-=======
 --- !u!114 &8114512667105227116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,4 +102,3 @@ MonoBehaviour:
     value: {x: 0, y: 0, z: 0}
     space: 1
   ignoreTimescale: 0
->>>>>>> Stashed changes

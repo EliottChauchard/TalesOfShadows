@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glow_Gears
+  m_Name: Glow_Metal_LD2
   m_Shader: {fileID: -6465566751694194690, guid: 22c44c4492564ae4b998564ad3f0c4e3,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA

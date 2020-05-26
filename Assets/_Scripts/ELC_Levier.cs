@@ -19,6 +19,8 @@ public class ELC_Levier : MonoBehaviour
     private ELC_OpenDoor openDoorScript;
 
     [SerializeField]
+    private string animationName;
+    [SerializeField]
     private bool hasAlreadyBeenActivated = false;
     [SerializeField]
     private bool isTimed;
@@ -122,7 +124,7 @@ public class ELC_Levier : MonoBehaviour
     {
         if (objectWithAnimationToTrigger != null)
         {
-            objectAnimator.enabled = enable;
+            objectAnimator.SetBool(animationName, enable);
         }
     }
 

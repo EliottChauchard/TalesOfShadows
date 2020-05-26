@@ -239,7 +239,7 @@ public class ELC_PlayerMoves : MonoBehaviour
             animator.SetBool("IsJumping", true);
             animator.SetBool("IsWalking", false);
             //verticalSpeed = jumpForce + steamJumpCharge;
-            if(steamJumpPhase == false)
+            if (steamJumpPhase == false)
             {
                 verticalSpeed = jumpForce;
             }
@@ -257,7 +257,7 @@ public class ELC_PlayerMoves : MonoBehaviour
             animator.SetBool("IsJumping", false);
         }
 
-        if (playerIsJumping == true  && verticalSpeed <= 0)
+        if (/*playerIsJumping == true  &&*/ verticalSpeed < 0)
         {
             playerIsFalling = true;
             playerIsJumping = false;

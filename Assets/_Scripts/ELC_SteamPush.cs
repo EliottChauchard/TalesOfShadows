@@ -5,6 +5,8 @@ using UnityEngine;
 public class ELC_SteamPush : MonoBehaviour
 {
     ELC_PlayerMoves PlayerMovesScript;
+    private Animator animator;
+    public bool SteamPush;
 
     RaycastHit2D detection1;
     RaycastHit2D detection2;
@@ -29,6 +31,7 @@ public class ELC_SteamPush : MonoBehaviour
     void Start()
     {
         PlayerMovesScript = GetComponent<ELC_PlayerMoves>();
+        animator = gameObject.GetComponent<Animator>();
     }
     
     void Update()
@@ -38,8 +41,10 @@ public class ELC_SteamPush : MonoBehaviour
         startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         ZoneAction();
 
-        if(Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.C))
+        if(Input.GetKey(KeyCode.JoystickButton2) || Input.GetKey(KeyCode.C))
         {
+            animator.SetBool("SteamPush", true);
+
             if (detection1.collider != null && detection1.collider.CompareTag("SensibleObject"))
             {
                 detection1.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
@@ -61,8 +66,11 @@ public class ELC_SteamPush : MonoBehaviour
                 detection5.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
             }
         }
+        if (Input.GetKeyUp(KeyCode.JoystickButton2) || Input.GetKeyUp(KeyCode.C))
+        {
+            animator.SetBool("SteamPush", false);
+        }
 
-        
     }
 
     void ZoneAction()

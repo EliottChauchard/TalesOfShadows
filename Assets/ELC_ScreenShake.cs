@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ELC_ScreenShake : MonoBehaviour
 {
-    private Transform cameraTransform;
+    private CinemachineCameraOffset cameraCinemachineTransform;
 
     [SerializeField]
     private float duration;
@@ -14,10 +14,13 @@ public class ELC_ScreenShake : MonoBehaviour
     private float variationScale;
     [SerializeField]
     private float timeRemaining;
+    [SerializeField]
     private Vector3 initialPosition;
 
     [SerializeField]
-    private bool launchScreenShake;
+    public bool launchScreenShake;
+    [SerializeField]
+    private bool isScreenShaking;
 
     private float variationValueX;
     private float variationValueY;
@@ -25,12 +28,8 @@ public class ELC_ScreenShake : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cameraTransform = GetComponent<Transform>();
-    }
-
-    private void OnEnable()
-    {
-        initialPosition = cameraTransform.localPosition;
+        cameraCinemachineTransform = GetComponent<CinemachineCameraOffset>();
+        initialPosition = cameraCinemachineTransform.m_Offset;
     }
 
     // Update is called once per frame
@@ -39,6 +38,8 @@ public class ELC_ScreenShake : MonoBehaviour
         if(launchScreenShake == true)
         {
             timeRemaining = duration;
+            
+            isScreenShaking = true;
             launchScreenShake = false;
         }
 
@@ -47,14 +48,15 @@ public class ELC_ScreenShake : MonoBehaviour
             variationValueX = Random.Range(-variationScale, variationScale);
             variationValueY = Random.Range(-variationScale, variationScale);
 
-            cameraTransform.localPosition = new Vector3 (initialPosition.x + variationValueX, initialPosition.y + variationValueY) ;
+            cameraCinemachineTransform.m_Offset = new Vector3 (initialPosition.x + variationValueX, initialPosition.y + variationValueY, - 400) ;
 
             timeRemaining = timeRemaining - durationDecreaseSpeed * Time.deltaTime;
         }
-        else
+        else if(timeRemaining <= 0 && isScreenShaking == true)
         {
-            duration = 0f;
-            cameraTransform.localPosition = initialPosition;
+            timeRemaining = 0f;
+            cameraCinemachineTransform.m_Offset = initialPosition;
+            isScreenShaking = false;
         }
 
 

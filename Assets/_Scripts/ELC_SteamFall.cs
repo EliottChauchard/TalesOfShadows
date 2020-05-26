@@ -51,12 +51,12 @@ public class ELC_SteamFall : MonoBehaviour
         isChargingSteamJump = playerMoves.steamJumpIsCharging;
 
 
-        if (Input.GetKey(KeyCode.LeftShift) && playerIsFalling == true && steamFuelIsEmpty == false)
+        if ((Input.GetKey(KeyCode.LeftShift) || Input.GetAxis("SteamFall") > 0) && playerIsFalling == true && steamFuelIsEmpty == false)
         {
             steamFallEnable = true;
             animator.SetBool("SteamFallEnable", true);
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift) || playerIsOnGround == true || steamFuelIsEmpty == true)
+        if ((Input.GetKeyUp(KeyCode.LeftShift) || Input.GetAxis("SteamFall") == 0) || playerIsOnGround == true || steamFuelIsEmpty == true)
         {
             steamFallEnable = false;
             animator.SetBool("SteamFallEnable", false);

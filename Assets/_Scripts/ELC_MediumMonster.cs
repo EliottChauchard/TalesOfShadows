@@ -107,7 +107,7 @@ public class ELC_MediumMonster : MonoBehaviour
 
     void faceDetector()
     {
-        raycastStartPosition = new Vector3(transform.localPosition.x + faceRayPositionX * turnMonster, transform.localPosition.y + faceRayPositionY, 0f);
+        raycastStartPosition = new Vector3(transform.position.x + faceRayPositionX * turnMonster, transform.position.y + faceRayPositionY, 0f);
         faceMonsterHit = Physics2D.Raycast(raycastStartPosition, new Vector2(0f, 1f), faceRayLenght, collisionMask);
         Debug.DrawRay(raycastStartPosition, new Vector2(0f, faceRayLenght), Color.green);
 

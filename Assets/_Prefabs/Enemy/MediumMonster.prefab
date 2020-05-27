@@ -232,7 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 33536
   playerIsInTheRadius: 0
   wallDetected: 0
   turnMonster: 1

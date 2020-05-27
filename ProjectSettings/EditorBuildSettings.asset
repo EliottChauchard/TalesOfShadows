@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/KNF_SceneLD1.unity
     guid: 423eff32b36b5dd4f9b44352d6509296
   - enabled: 1
+    path: Assets/_Scenes/ELC_MenuScene.unity
+    guid: 6e38b15d1ca37ca4cad62a7f3a285a23
+  - enabled: 1
     path: Assets/_Scenes/ELC_SceneTestScripts.unity
     guid: 436f7d942580b0b40849cc8eafbc18bb
   - enabled: 1
@@ -26,7 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/ELC_ScoreBoardScene.unity
     guid: 65d5cfc3f09b30b4f986751574dbe84e
-  - enabled: 1
-    path: Assets/_Scenes/ELC_MenuScene.unity
-    guid: 6e38b15d1ca37ca4cad62a7f3a285a23
   m_configObjects: {}

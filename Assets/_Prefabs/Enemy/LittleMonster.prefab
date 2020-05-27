@@ -105,7 +105,7 @@ MonoBehaviour:
   monsterFaceRight: 0
   collisionMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 33024
   Speed: 0.7
   faceRayPositionY: 0.14
   faceRayPositionX: 0.23

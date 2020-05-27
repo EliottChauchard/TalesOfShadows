@@ -27,7 +27,7 @@ public class ELC_Interract : MonoBehaviour
         {
             DoorInterruptorScript = gameObjectDetected.GetComponent<ELC_DoorInterruptor>();
 
-            if (DoorInterruptorScript.numberOfKeyNeeded <= CollectiblesScript.numberOfKeys && Input.GetKeyDown(KeyCode.E))
+            if (DoorInterruptorScript.numberOfKeyNeeded <= CollectiblesScript.numberOfKeys && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton1)))
             {
                 DoorInterruptorScript.playerHaveEnoughKey = true;
                 gameObjectDetected.GetComponent<BoxCollider2D>().enabled = false;
@@ -36,14 +36,14 @@ public class ELC_Interract : MonoBehaviour
         }
         else if (tagOfCollidedObject == "Checkpoint")
         {
-            checkpointTransform = new Vector3(gameObjectDetected.transform.localPosition.x, gameObjectDetected.transform.localPosition.y, gameObjectDetected.transform.localPosition.z);
+            checkpointTransform = new Vector3(gameObjectDetected.transform.position.x, gameObjectDetected.transform.position.y, gameObjectDetected.transform.position.z);
             CheckpointValueScript.CheckPointTransform = checkpointTransform;
         }
         else if (tagOfCollidedObject == "Levier")
         {
             Debug.Log("Levier detect");
             LevierScript = gameObjectDetected.GetComponent<ELC_Levier>();
-            if (LevierScript.timerIsOn == false && Input.GetKeyDown(KeyCode.E))
+            if (LevierScript.timerIsOn == false && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton1)))
             {
                 Debug.Log("Levier activé");
                 LevierScript.isActivated = !LevierScript.isActivated;

@@ -299,7 +299,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   rayLenght: 1
-  ejectForce: 200
+  ejectForce: 50
 --- !u!114 &2792491413843219641
 MonoBehaviour:
   m_ObjectHideFlags: 0

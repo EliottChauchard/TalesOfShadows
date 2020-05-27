@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6bd7f4a14360848baf8f36f2e844e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: ELC_SceneTestScripts
+  sceneName: KNF_SceneLD1
 --- !u!1 &1591615862
 GameObject:
   m_ObjectHideFlags: 0

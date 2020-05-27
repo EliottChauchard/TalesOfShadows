@@ -109,7 +109,7 @@ public class ELC_SteamJump : MonoBehaviour
         }
         
         
-        if ((playerIsFalling == true || isOnGround == true) && isChargingSteamJump == false)
+        if (isOnGround == true && isChargingSteamJump == false)
         {
             isSteamJumping = false;
             charge = 0f;

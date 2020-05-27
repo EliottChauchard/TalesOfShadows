@@ -259,6 +259,7 @@ MonoBehaviour:
   steamJumpPhase: 0
   playerCanMove: 0
   canJump: 0
+  canSteamJump: 0
   steamJumpForceMultiplier: 3.5
   minimalSteamJumpForce: 4
   ghostJumpDelay: 0.2
@@ -268,6 +269,7 @@ MonoBehaviour:
   gravityForceJump: 13
   gravityForceFall: 13
   steamGravityForceFall: 0
+  limitAngleSteamJumpY: 0
   collisionMask:
     serializedVersion: 2
     m_Bits: 768
@@ -299,7 +301,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   rayLenght: 1
-  ejectForce: 50
+  ejectForce: 20
 --- !u!114 &2792491413843219641
 MonoBehaviour:
   m_ObjectHideFlags: 0

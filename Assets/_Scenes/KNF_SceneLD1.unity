@@ -3405,6 +3405,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 496522185180850184, guid: 9bbe17cce097f1242a5ec3a433438518,
+        type: 3}
+      propertyPath: ejectForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 496522185180850187, guid: 9bbe17cce097f1242a5ec3a433438518,
+        type: 3}
+      propertyPath: chargeSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 496522185180850228, guid: 9bbe17cce097f1242a5ec3a433438518,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3418,7 +3428,7 @@ PrefabInstance:
     - target: {fileID: 496522185180850230, guid: 9bbe17cce097f1242a5ec3a433438518,
         type: 3}
       propertyPath: limitY
-      value: 0.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2175557582221848660, guid: 9bbe17cce097f1242a5ec3a433438518,
         type: 3}

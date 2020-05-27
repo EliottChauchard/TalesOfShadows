@@ -148,9 +148,9 @@ public class ELC_PlayerMoves : MonoBehaviour
 
             if(steamJumpPhase == true)
             {
-                horizontalSpeed = steamJumpVector.x * 3;
+                horizontalSpeed = /*steamJumpVector.x*/ horizontalInput * 2;
             }
-            else if (steamJumpIsCharging == false)
+            else if (steamJumpIsCharging == false && steamJumpPhase == false)
             {
                 horizontalSpeed = horizontalInput * speed;
             }

@@ -24,7 +24,7 @@ public class ELC_LoadingSteamJump : MonoBehaviour
 
         jumpDirection = Vector2.ClampMagnitude(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")), 0.5f);
 
-        if(jumpDirection.y < limitY)
+        if (jumpDirection.y < limitY)
         {
             jumpDirection.y = limitY;
         }

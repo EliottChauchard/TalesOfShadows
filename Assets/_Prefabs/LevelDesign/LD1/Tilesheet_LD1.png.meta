@@ -142,7 +142,7 @@ TextureImporter:
     second: Tilesheet_LD1_0
   - first:
       213: 8198677006529610278
-    second: Tilesheet_LD1_1
+    second: Clock_Aiguilles
   - first:
       213: 6328918507300908018
     second: Tilesheet_LD1_2
@@ -1164,6 +1164,27 @@ TextureImporter:
       bones: []
       spriteID: 77b09840a4ede44b0800000000000000
       internalID: -5454177689214055561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock_Aiguilles
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 385
+        width: 79
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6224c5a8c4d87c170800000000000000
+      internalID: 8198677006529610278
       vertices: []
       indices: 
       edges: []

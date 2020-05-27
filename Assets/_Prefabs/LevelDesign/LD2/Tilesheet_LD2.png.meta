@@ -202,7 +202,7 @@ TextureImporter:
     second: Tilesheet_LD2_0
   - first:
       213: 1367942237580612310
-    second: Tilesheet_LD2_1
+    second: Clock_Aiguilles_Big
   - first:
       213: 2878353820323204733
     second: Tilesheet_LD2_2
@@ -359,6 +359,9 @@ TextureImporter:
   - first:
       213: 1042498035803423397
     second: Tilesheet_LD2_53
+  - first:
+      213: -6510850572480346568
+    second: Clock_Aiguilles_Small
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1761,6 +1764,48 @@ TextureImporter:
       bones: []
       spriteID: a711e29cde9af33e0800000000000000
       internalID: -2071750464819555974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock_Aiguilles_Big
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 427
+        width: 9
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2de38a738ebf210800000000000000
+      internalID: 1367942237580612310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock_Aiguilles_Small
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 427
+        width: 44
+        height: 9
+      alignment: 9
+      pivot: {x: 0.10368624, y: 0.49731785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83609a976efc4a5a0800000000000000
+      internalID: -6510850572480346568
       vertices: []
       indices: 
       edges: []

@@ -938,12 +938,12 @@ PrefabInstance:
     - target: {fileID: 2801731645114093609, guid: f5c6c6bb9a7f5c147ac3ddef2f50e757,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.849825
+      value: -5.839825
       objectReference: {fileID: 0}
     - target: {fileID: 2801731645114093609, guid: f5c6c6bb9a7f5c147ac3ddef2f50e757,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1722097
+      value: -0.6277902
       objectReference: {fileID: 0}
     - target: {fileID: 2801731645114093609, guid: f5c6c6bb9a7f5c147ac3ddef2f50e757,
         type: 3}
@@ -1014,12 +1014,12 @@ PrefabInstance:
     - target: {fileID: 496522185180850228, guid: 9bbe17cce097f1242a5ec3a433438518,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.16
+      value: -6.15
       objectReference: {fileID: 0}
     - target: {fileID: 496522185180850228, guid: 9bbe17cce097f1242a5ec3a433438518,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.77
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 496522185180850228, guid: 9bbe17cce097f1242a5ec3a433438518,
         type: 3}
@@ -2890,12 +2890,12 @@ PrefabInstance:
     - target: {fileID: 1996746917890092142, guid: ffc8c66fe7784e544bb13c90b7646153,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.929825
+      value: -5.919825
       objectReference: {fileID: 0}
     - target: {fileID: 1996746917890092142, guid: ffc8c66fe7784e544bb13c90b7646153,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4122097
+      value: -0.3877902
       objectReference: {fileID: 0}
     - target: {fileID: 1996746917890092142, guid: ffc8c66fe7784e544bb13c90b7646153,
         type: 3}
@@ -4322,10 +4322,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 407302661}
     m_Modifications:
+    - target: {fileID: 1266673604951466477, guid: 56fb3b56cd525d542ab2fbc340b40400,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266673604951466477, guid: 56fb3b56cd525d542ab2fbc340b40400,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.58
+      objectReference: {fileID: 0}
     - target: {fileID: 7503301044947329984, guid: 56fb3b56cd525d542ab2fbc340b40400,
         type: 3}
       propertyPath: nextSceneName
       value: ELC_FinalScore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503301044947329984, guid: 56fb3b56cd525d542ab2fbc340b40400,
+        type: 3}
+      propertyPath: teleportDoor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503301044947329984, guid: 56fb3b56cd525d542ab2fbc340b40400,
+        type: 3}
+      propertyPath: switchSceneDoor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7503301044947329988, guid: 56fb3b56cd525d542ab2fbc340b40400,
         type: 3}

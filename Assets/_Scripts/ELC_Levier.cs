@@ -10,6 +10,10 @@ public class ELC_Levier : MonoBehaviour
     private GameObject objectToDesactivate;
     [SerializeField]
     private GameObject objectWithAnimationToTrigger;
+    [SerializeField]
+    private GameObject objectWithAnimationToTrigger2;
+    [SerializeField]
+    private GameObject objectWithAnimationToTrigger3;
     private Animator objectAnimator;
 
     private Animator animator;
@@ -45,11 +49,6 @@ public class ELC_Levier : MonoBehaviour
         if(DoorToTrigger != null)
         {
             openDoorScript.doorIsOpen = isActivated;
-        }
-
-        if(objectWithAnimationToTrigger !=null)
-        {
-            objectAnimator = objectWithAnimationToTrigger.GetComponent<Animator>();
         }
 
         if (isActivated == true && isTimed == false)
@@ -124,6 +123,11 @@ public class ELC_Levier : MonoBehaviour
     {
         if (objectWithAnimationToTrigger != null)
         {
+            objectAnimator = objectWithAnimationToTrigger.GetComponent<Animator>();
+            objectAnimator.SetBool(animationName, enable);
+            objectAnimator = objectWithAnimationToTrigger2.GetComponent<Animator>();
+            objectAnimator.SetBool(animationName, enable);
+            objectAnimator = objectWithAnimationToTrigger3.GetComponent<Animator>();
             objectAnimator.SetBool(animationName, enable);
         }
     }

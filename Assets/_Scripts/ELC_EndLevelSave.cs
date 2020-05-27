@@ -5,7 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class ELC_EndLevelSave : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject objectsPositionToTeleport;
+    [SerializeField]
+    private GameObject playerGameObject;
+
+    [SerializeField]
+    private Vector3 playerPosition;
+    [SerializeField]
+    private Vector3 positionToTP;
     private bool playerIsAtTheEnd;
+
+    [SerializeField]
+    private bool switchSceneDoor;
+    [SerializeField]
+    private bool teleportDoor;
+
     [SerializeField]
     private string nextSceneName;
     private int entireScore;
@@ -19,9 +34,10 @@ public class ELC_EndLevelSave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerIsAtTheEnd == true)
+        positionToTP = objectsPositionToTeleport.GetComponent<Transform>().position;
+
+        if (playerIsAtTheEnd == true && switchSceneDoor == true)
         {
-            //faire les calculs du score en fonction du temps + morts
             GlobalScoreValues.actualTotalScore += GlobalScoreValues.timerScore;
 
             for(int i = 0; i < GlobalScoreValues.playerDeaths; i++)
@@ -48,13 +64,23 @@ public class ELC_EndLevelSave : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            playerGameObject = collision.gameObject;
+            playerPosition = playerGameObject.GetComponent<Transform>().localPosition;
             playerIsAtTheEnd = true;
             StartCoroutine("NextLevel");
+            Debug.Log("PlayerRegister");
         }
     }
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(nextSceneName);
+        if(switchSceneDoor == true)
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else if(teleportDoor == true)
+        {
+            playerGameObject.GetComponent<Transform>().localPosition = positionToTP;
+        }
     }
 }

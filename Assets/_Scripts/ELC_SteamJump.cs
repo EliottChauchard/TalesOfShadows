@@ -21,6 +21,9 @@ public class ELC_SteamJump : MonoBehaviour
     private bool isFullCharged;
     private bool steamJumpPhase;
 
+    private bool launchLoad;
+    private bool endLoad;
+
     public bool isChargingSteamJump;
     public bool isSteamJumping;
     public bool canMove = true;
@@ -62,43 +65,55 @@ public class ELC_SteamJump : MonoBehaviour
         jumpForce = loadSteamJump.jumpDirection;
         gravityForce = playerMovesScript.gravityForceJump;
         steamJumpPhase = playerMovesScript.steamJumpPhase;
-        
+
+        if (charge >= maxCharge)
+        {
+            isFullCharged = true;
+        }
+        else if (charge < maxCharge)
+        {
+            isFullCharged = false;
+        }
 
 
         steamJumpImpulse = jumpForce * charge;
 
         testValues = jumpForce.x * charge * 5;
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0))
+        if (Input.GetKeyDown(KeyCode.Space) || (Input.GetAxis("SteamJump") > 0 && launchLoad ==true))
         {
             StartCoroutine("SteamJumpCharge");
+            launchLoad = false;
+            Debug.Log("Launch chargingSJ");
+            charge = 0f;
         }
 
-        if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0)) && isChargingSteamJump == true && isFullCharged == false)
+        if ((Input.GetKey(KeyCode.Space) || (Input.GetAxis("SteamJump") > 0 && Input.GetKey(KeyCode.Space) == false)) && isChargingSteamJump == true && isFullCharged == false)
         {
             SteamJump();
+            if(Input.GetKey(KeyCode.Space) == false)
+            {
+                endLoad = true;
+            }
+            
+            Debug.Log("chargingSJ");
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.JoystickButton0))
+        if (Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && endLoad == true && isSteamJumping == false))
         {
             canMove = true;
             StartCoroutine("Transition");
             animator.SetBool("JumpIsCharging", false);
+            endLoad = false;
+            Debug.Log("Launch SteamJump");
         }
-
-        if(steamJumpPhase == false)
-        {
-            charge = 0f;
-            isFullCharged = false;
-        }
-
-        if(playerIsJumping == true)
-        {
-            isFullCharged = false;
-        }
+        
+        
         if ((playerIsFalling == true || isOnGround == true) && isChargingSteamJump == false)
         {
             isSteamJumping = false;
+            charge = 0f;
+            launchLoad = true;
         }
 
 
@@ -110,18 +125,18 @@ public class ELC_SteamJump : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton0))
+        if(Input.GetKey(KeyCode.Space) || (Input.GetAxis("SteamJump") > 0 && Input.GetKey(KeyCode.Space) == false))
         {
             animator.SetBool("JumpIsCharging", true);
             isChargingSteamJump = true;
             canMove = false;
-
         }
     }
     IEnumerator Transition()
     {
         isSteamJumping = true;
         yield return new WaitForSeconds(0.5f);
+        charge = 0f;
         isChargingSteamJump = false;
     }
 

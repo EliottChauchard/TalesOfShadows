@@ -53,6 +53,8 @@ public class ELC_PlayerMoves : MonoBehaviour
     private bool playerCanMove;
     [SerializeField]
     private bool canJump;
+    [SerializeField]
+    private bool canSteamJump;
 
     [SerializeField]
     private float steamJumpForceMultiplier;
@@ -137,7 +139,7 @@ public class ELC_PlayerMoves : MonoBehaviour
         }
 
         //mouvements horizontaux
-        if ((playerIsJumping == true || playerIsOnGround == true || steamFallEnable == true))
+        if ((playerIsJumping == true || playerIsOnGround == true || steamFallEnable == true || playerIsFalling == true))
         {
             horizontalInput = Input.GetAxis("Horizontal");
 
@@ -233,7 +235,7 @@ public class ELC_PlayerMoves : MonoBehaviour
 
 
         //saut
-        if ((Input.GetKeyUp(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space)) && (playerIsOnGround == true|| canJump == true))
+        if ((Input.GetKeyUp(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && steamJumpPhase == true && canSteamJump == true)) && (playerIsOnGround == true|| canJump == true))
         {
             playerIsJumping = true;
             animator.SetBool("IsJumping", true);
@@ -245,16 +247,24 @@ public class ELC_PlayerMoves : MonoBehaviour
             }
             else
             {
-                verticalSpeed = steamJumpVector.y * steamJumpCharge * steamJumpForceMultiplier;
-                if( verticalSpeed < minimalSteamJumpForce)
+                if (steamJumpVector.y <= 0)
                 {
-                    verticalSpeed = minimalSteamJumpForce;
+                    verticalSpeed = 1f * steamJumpCharge * steamJumpForceMultiplier;
                 }
+                else
+                {
+                    verticalSpeed = steamJumpVector.y * steamJumpCharge * steamJumpForceMultiplier;
+                }
+                canSteamJump = false;
             }
         }
         else
         {
             animator.SetBool("IsJumping", false);
+            if (steamJumpPhase == false)
+            {
+                canSteamJump = true;
+            }
         }
 
         if (/*playerIsJumping == true  &&*/ verticalSpeed < 0)

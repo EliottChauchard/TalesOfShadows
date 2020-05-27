@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2792491413032502183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.018, y: -0.174, z: -0.94}
-  m_LocalScale: {x: 0.33845165, y: 0.13032286, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2792491413843219590}
   m_RootOrder: 0
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 7581324373828394112}
   - component: {fileID: 7491754999345884099}
   m_Layer: 0
-  m_Name: Elisa 1
+  m_Name: ElisaPerso
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,6 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cadeccfa6efd55b4ca6aa2ccf29c91f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SteamPush: 0
   collisionMask:
     serializedVersion: 2
     m_Bits: 512

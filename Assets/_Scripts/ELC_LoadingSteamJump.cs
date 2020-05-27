@@ -8,7 +8,7 @@ public class ELC_LoadingSteamJump : MonoBehaviour
     private float charge;
     private bool isChargingSJ;
     [SerializeField]
-    private float limitY;
+    public float limitY;
 
     public Vector2 jumpDirection;
 

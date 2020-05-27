@@ -7,6 +7,10 @@ public class ELC_OpenDoor : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private Animator animator;
+    [SerializeField]
+    private bool horizontalDoor;
+    [SerializeField]
+    private bool verticalDoor;
 
     public bool doorIsOpen = false;
 
@@ -26,13 +30,26 @@ public class ELC_OpenDoor : MonoBehaviour
         if (doorIsOpen == true)
         {
             BoxCollider.enabled = false;
-            animator.SetBool("DoorOpen", true);
+            if(horizontalDoor == true)
+            {
+                animator.SetBool("HorizontalDoorOpen", true);
+            }
+            else if (verticalDoor == true)
+            {
+                animator.SetBool("VerticalDoorOpen", true);
+            }
         }
         else
         {
             BoxCollider.enabled = true;
-            animator.SetBool("DoorOpen", false);
-
+            if (horizontalDoor == true)
+            {
+                animator.SetBool("HorizontalDoorOpen", false);
+            }
+            else if (verticalDoor == true)
+            {
+                animator.SetBool("VerticalDoorOpen", false);
+            }
         }
     }
 }

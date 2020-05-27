@@ -78,7 +78,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 1
+  m_DrawMode: 2
   m_Size: {x: 0.12, y: 0.59}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  horizontalDoor: 0
+  verticalDoor: 0
   doorIsOpen: 0
 --- !u!61 &5859734605369131534
 BoxCollider2D:
@@ -112,18 +114,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.008773565}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0.11, z: 0, w: 0.35}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.12, y: 0.59}
     newSize: {x: 0.12, y: 0.59}
     adaptiveTilingThreshold: 0.5
-    drawMode: 1
+    drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.12, y: 0.59}
+  m_Size: {x: 0.12, y: 0.56645155}
   m_EdgeRadius: 0
 --- !u!95 &5122303230728949831
 Animator:

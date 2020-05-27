@@ -75,6 +75,8 @@ public class ELC_PlayerMoves : MonoBehaviour
     [SerializeField]
     private float steamGravityForceFall;
     [SerializeField]
+    private float limitAngleSteamJumpY;
+    [SerializeField]
     private LayerMask collisionMask;
 
     //Raycasts player
@@ -127,6 +129,7 @@ public class ELC_PlayerMoves : MonoBehaviour
         steamGravityForceFall = SteamFallScript.steamFallGravityForce;
         steamJumpVector = SteamJumpScript.steamJumpImpulse;
         playerCanMove = SteamJumpScript.canMove;
+        limitAngleSteamJumpY = loadSteamJumpScript.limitY;
 
         //statut pour dire que le joueur est en phase de SteamJump
         if (playerIsSteamJumping == true || steamJumpIsCharging == true)
@@ -235,7 +238,7 @@ public class ELC_PlayerMoves : MonoBehaviour
 
 
         //saut
-        if ((Input.GetKeyUp(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && steamJumpPhase == true && canSteamJump == true)) && (playerIsOnGround == true|| canJump == true))
+        if ((Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && steamJumpPhase == true && canSteamJump == true)) && (playerIsOnGround == true|| canJump == true))
         {
             playerIsJumping = true;
             animator.SetBool("IsJumping", true);

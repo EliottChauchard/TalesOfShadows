@@ -80,7 +80,7 @@ public class ELC_EndLevelSave : MonoBehaviour
         }
         else if(teleportDoor == true)
         {
-            playerGameObject.GetComponent<Transform>().localPosition = positionToTP;
+            playerGameObject.GetComponent<Transform>().position = positionToTP;
         }
     }
 }

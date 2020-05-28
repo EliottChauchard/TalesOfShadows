@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 125698b33af1aa844895722342a0bdaf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6095876445618310262
+    second: LT
+  - first:
+      213: 6264901669625353607
+    second: RT
+  - first:
+      213: 8662317781247122514
+    second: A
+  - first:
+      213: 1702102459413707244
+    second: B
+  - first:
+      213: -1858618935974378804
+    second: X
+  - first:
+      213: -5257058390635752710
+    second: Tutorial_Buttons_5
+  - first:
+      213: 9032837369289392247
+    second: Tutorial_Buttons_6
+  - first:
+      213: -3679605278371408315
+    second: Tutorial_Buttons_7
+  - first:
+      213: 6982431333180765906
+    second: Tutorial_Buttons_8
+  - first:
+      213: 9121299427122677529
+    second: Tutorial_Buttons_9
+  - first:
+      213: -1598298648519573064
+    second: Tutorial_Buttons_10
+  - first:
+      213: 2260923424487723503
+    second: Tutorial_Buttons_11
+  - first:
+      213: -104894913719683144
+    second: Tutorial_Buttons_12
+  - first:
+      213: -3144059766349911787
+    second: Tutorial_Buttons_13
+  - first:
+      213: 2993434539215246501
+    second: Tutorial_Buttons_14
+  - first:
+      213: -5317876188722938653
+    second: Tutorial_Buttons_15
+  - first:
+      213: -8681394795822459159
+    second: Tutorial_Buttons_16
+  - first:
+      213: -5165377527048649460
+    second: Tutorial_Buttons_17
+  - first:
+      213: 6754126104157339074
+    second: Tutorial_Buttons_18
+  - first:
+      213: 565041026398480096
+    second: Tutorial_Buttons_19
+  - first:
+      213: -8626005548635899332
+    second: Tutorial_Buttons_20
+  - first:
+      213: 4402371082915593435
+    second: Tutorial_Buttons_21
+  - first:
+      213: -4087846821207969079
+    second: Tutorial_Buttons_22
+  - first:
+      213: -4433764234791749213
+    second: Tutorial_Buttons_23
+  - first:
+      213: 3134596374469045446
+    second: Tutorial_Buttons_24
+  - first:
+      213: 5804950707019658456
+    second: Tutorial_Buttons_25
+  - first:
+      213: -2779313757253378642
+    second: Tutorial_Buttons_26
+  - first:
+      213: 6398594756527059048
+    second: Tutorial_Buttons_27
+  - first:
+      213: -4443734245623599801
+    second: Tutorial_Buttons_28
+  - first:
+      213: -5028755377350257504
+    second: Tutorial_Buttons_29
+  - first:
+      213: -336484875964404057
+    second: Tutorial_Buttons_30
+  - first:
+      213: -6266845781716381006
+    second: Tutorial_Buttons_31
+  - first:
+      213: 4291966290884029323
+    second: Tutorial_Buttons_32
+  - first:
+      213: 8557457433327914082
+    second: Tutorial_Buttons_33
+  - first:
+      213: 7553189962704076300
+    second: Tutorial_Buttons_34
+  - first:
+      213: 1949309569700562350
+    second: Tutorial_Buttons_35
+  - first:
+      213: 6816971449957330860
+    second: Tutorial_Buttons_36
+  - first:
+      213: -6712886286183087929
+    second: Tutorial_Buttons_37
+  - first:
+      213: 7084413141470352424
+    second: Tutorial_Buttons_38
+  - first:
+      213: -3136004911067397404
+    second: Tutorial_Buttons_39
+  - first:
+      213: -2539129234173600013
+    second: Tutorial_Buttons_40
+  - first:
+      213: -2880301138257161406
+    second: Tutorial_Buttons_41
+  - first:
+      213: -2578493037816415653
+    second: Tutorial_Buttons_42
+  - first:
+      213: 47327917389015913
+    second: Tutorial_Buttons_43
+  - first:
+      213: -1325705304648520010
+    second: LT
+  - first:
+      213: -7286838651356006648
+    second: RT
+  - first:
+      213: 3930425395262843793
+    second: A
+  - first:
+      213: 6966030830416630674
+    second: B
+  - first:
+      213: 7218290841337567384
+    second: X
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LT
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 183
+        width: 88
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bee29f9c062a9de0800000000000000
+      internalID: -1325705304648520010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RT
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 181
+        width: 75
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807b65a9ad2ffda90800000000000000
+      internalID: -7286838651356006648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 73
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19be0dc921dab8630800000000000000
+      internalID: 3930425395262843793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 70
+        width: 69
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2931765f1205ca060800000000000000
+      internalID: 6966030830416630674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 69
+        width: 86
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898916ba6458c2460800000000000000
+      internalID: 7218290841337567384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 3ce679efb3f7d184a84a5cb5983b72ef, type: 3}
+      name: _Glow
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,35 +1,25 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: cb0a80f2b3289714eb729fc8e3061b20
-=======
-guid: 45f32bf12ec463746b830a989ce2107a
->>>>>>> Stashed changes
+guid: 38d92d9ba7af9254eaceb429913b9b07
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4306384292792242332
-    second: Jauges_0
+      213: 7020711796793319600
+    second: Spritesheet_Cle2_0
   - first:
-      213: 63495503787765751
-    second: Jauges_1
+      213: 3529416886352523037
+    second: Spritesheet_Cle2_1
   - first:
-      213: -1968456328723191599
-    second: Jauges_2
+      213: -495295565681495336
+    second: Spritesheet_Cle2_2
   - first:
-      213: -2673905005395590237
-    second: Jauges_3
+      213: 6569375944359309224
+    second: Spritesheet_Cle2_3
   - first:
-      213: -2822308156643565929
-    second: Jauges_4
+      213: 8778537205181553480
+    second: Spritesheet_Cle2_4
   - first:
-      213: -7318293198683255125
-    second: Jauges_5
-  - first:
-      213: -3553305050833206358
-    second: Jauges_6
-  - first:
-      213: 3340188852754225592
-    second: Jauges_7
+      213: 6820205507415722402
+    second: Spritesheet_Cle2_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -62,25 +52,15 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-<<<<<<< Updated upstream
     wrapU: 1
     wrapV: 1
     wrapW: 1
-=======
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
->>>>>>> Stashed changes
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-<<<<<<< Updated upstream
   spriteMeshType: 1
-=======
-  spriteMeshType: 0
->>>>>>> Stashed changes
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -120,32 +100,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jauges_0
+      name: Spritesheet_Cle2_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 27
-        width: 22
-        height: 82
+        x: 1
+        y: 0
+        width: 55
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c901436b2b953cb30800000000000000
-      internalID: 4306384292792242332
+      spriteID: 0b0a24e8e249e6160800000000000000
+      internalID: 7020711796793319600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jauges_1
+      name: Spritesheet_Cle2_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 35
-        width: 7
-        height: 29
+        x: 58
+        y: 0
+        width: 55
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ffaa1403d491e000800000000000000
-      internalID: 63495503787765751
+      spriteID: d1fae4f55f10bf030800000000000000
+      internalID: 3529416886352523037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jauges_2
+      name: Spritesheet_Cle2_2
       rect:
         serializedVersion: 2
-        x: 41
-        y: 43
-        width: 7
-        height: 29
+        x: 115
+        y: 0
+        width: 55
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d8a59af563aea4e0800000000000000
-      internalID: -1968456328723191599
+      spriteID: 8d27ab4ae4b5029f0800000000000000
+      internalID: -495295565681495336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jauges_3
+      name: Spritesheet_Cle2_3
       rect:
         serializedVersion: 2
-        x: 50
-        y: 51
-        width: 7
-        height: 29
+        x: 172
+        y: 0
+        width: 55
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a3c146809164ead0800000000000000
-      internalID: -2673905005395590237
+      spriteID: 8af68878d9c1b2b50800000000000000
+      internalID: 6569375944359309224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jauges_4
+      name: Spritesheet_Cle2_4
       rect:
         serializedVersion: 2
-        x: 55
-        y: 43
-        width: 24
-        height: 6
+        x: 229
+        y: 0
+        width: 55
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e929c4fa525d8d0800000000000000
-      internalID: -2822308156643565929
+      spriteID: 84b9562d311a3d970800000000000000
+      internalID: 8778537205181553480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jauges_5
+      name: Spritesheet_Cle2_5
       rect:
         serializedVersion: 2
-        x: 46
-        y: 35
-        width: 24
-        height: 6
+        x: 286
+        y: 0
+        width: 55
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,50 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baec35a1c13307a90800000000000000
-      internalID: -7318293198683255125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jauges_6
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 27
-        width: 24
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa34c7ae1ef10bec0800000000000000
-      internalID: -3553305050833206358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jauges_7
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 4
-        width: 78
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b99223801cba5e20800000000000000
-      internalID: 3340188852754225592
+      spriteID: 2a94da426cc36ae50800000000000000
+      internalID: 6820205507415722402
       vertices: []
       indices: 
       edges: []

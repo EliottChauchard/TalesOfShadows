@@ -1,35 +1,31 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: cb0a80f2b3289714eb729fc8e3061b20
-=======
-guid: 45f32bf12ec463746b830a989ce2107a
->>>>>>> Stashed changes
+guid: da405e889f71e784a8f740d035b631e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4306384292792242332
-    second: Jauges_0
+      213: 2583928142083820863
+    second: Spritesheet_CleNoMachine 1_0
   - first:
-      213: 63495503787765751
-    second: Jauges_1
+      213: 4190295821057643619
+    second: Spritesheet_CleNoMachine 1_1
   - first:
-      213: -1968456328723191599
-    second: Jauges_2
+      213: 77152278555975929
+    second: Spritesheet_CleNoMachine 1_2
   - first:
-      213: -2673905005395590237
-    second: Jauges_3
+      213: -8190480572418922583
+    second: Spritesheet_CleNoMachine 1_3
   - first:
-      213: -2822308156643565929
-    second: Jauges_4
+      213: 7848820067602091585
+    second: Spritesheet_CleNoMachine 1_0
   - first:
-      213: -7318293198683255125
-    second: Jauges_5
+      213: -156168398328897577
+    second: Spritesheet_CleNoMachine 1_1
   - first:
-      213: -3553305050833206358
-    second: Jauges_6
+      213: 7973355872472109917
+    second: Spritesheet_CleNoMachine 1_2
   - first:
-      213: 3340188852754225592
-    second: Jauges_7
+      213: 5752806938929086316
+    second: Spritesheet_CleNoMachine 1_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -62,25 +58,15 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-<<<<<<< Updated upstream
     wrapU: 1
     wrapV: 1
     wrapW: 1
-=======
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
->>>>>>> Stashed changes
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-<<<<<<< Updated upstream
   spriteMeshType: 1
-=======
-  spriteMeshType: 0
->>>>>>> Stashed changes
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -120,115 +106,16 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jauges_0
+      name: Spritesheet_CleNoMachine 1_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 27
-        width: 22
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c901436b2b953cb30800000000000000
-      internalID: 4306384292792242332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jauges_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 35
-        width: 7
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ffaa1403d491e000800000000000000
-      internalID: 63495503787765751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jauges_2
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 43
-        width: 7
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d8a59af563aea4e0800000000000000
-      internalID: -1968456328723191599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jauges_3
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 51
-        width: 7
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a3c146809164ead0800000000000000
-      internalID: -2673905005395590237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jauges_4
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 43
-        width: 24
+        x: 2
+        y: 16
+        width: 10
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -237,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e929c4fa525d8d0800000000000000
-      internalID: -2822308156643565929
+      spriteID: 14e4163444c9cec60800000000000000
+      internalID: 7848820067602091585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jauges_5
+      name: Spritesheet_CleNoMachine 1_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 35
-        width: 24
+        x: 62
+        y: 16
+        width: 6
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -258,19 +145,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baec35a1c13307a90800000000000000
-      internalID: -7318293198683255125
+      spriteID: 7dfd67c4bad25ddf0800000000000000
+      internalID: -156168398328897577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jauges_6
+      name: Spritesheet_CleNoMachine 1_2
       rect:
         serializedVersion: 2
-        x: 37
-        y: 27
-        width: 24
+        x: 125
+        y: 16
+        width: 118
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -279,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa34c7ae1ef10bec0800000000000000
-      internalID: -3553305050833206358
+      spriteID: d53997edbec07ae60800000000000000
+      internalID: 7973355872472109917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jauges_7
+      name: Spritesheet_CleNoMachine 1_3
       rect:
         serializedVersion: 2
-        x: 17
-        y: 4
-        width: 78
-        height: 20
+        x: 294
+        y: 18
+        width: 8
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b99223801cba5e20800000000000000
-      internalID: 3340188852754225592
+      spriteID: c6f35486e6316df40800000000000000
+      internalID: 5752806938929086316
       vertices: []
       indices: 
       edges: []

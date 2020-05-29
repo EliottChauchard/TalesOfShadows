@@ -10,6 +10,7 @@ public class ELC_Collectibles : MonoBehaviour
     public int numberOfKeys;
     public string tagOfTheObject;
     private float totalKeysCollected;
+    private int totalJournaux;
 
     private int journalNumber;
 
@@ -21,6 +22,7 @@ public class ELC_Collectibles : MonoBehaviour
     void Update()
     {
         totalKeysCollected = PlayerPrefs.GetFloat("TotalKeysCollected");
+        totalJournaux = PlayerPrefs.GetInt("NumberOfCollectibles");
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,6 +41,7 @@ public class ELC_Collectibles : MonoBehaviour
         {
             journalNumber = collision.GetComponent<ELC_Journal>().refNumber;
             PlayerPrefs.SetInt("Collectible" + journalNumber, 1);
+            PlayerPrefs.SetInt("NumberOfCollectibles", totalJournaux + 1);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

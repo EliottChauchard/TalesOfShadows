@@ -8,7 +8,7 @@ public class GlobalScoreValues : MonoBehaviour
         imagesCollected, keysCollected, activateBasicLever, activateOneKeyMachine, activateTwoKeyMachine, activateThreeKeyMachine,
         littleEnemyKilled, mediumEnemyKilled,
         percentOfLoosedScorePerDeath, playerDeaths, endLevel,
-        timerScore;
+        timerScore, bestTime;
 }
 
 public class ELC_ScoreScript : MonoBehaviour

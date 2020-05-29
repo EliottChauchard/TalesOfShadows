@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ELC_Audio.cs" />
+    <Compile Include="Assets\ELC_ButtonNavigation.cs" />
     <Compile Include="Assets\ELC_ScreenShake.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Scenes\OverTheShoulderAim\ActivateOnKeypress.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Scenes\Scripting\ScriptingExample.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMovePhysics.cs" />
     <Compile Include="Assets\_Scripts\AutoMoveAndRotate.cs" />
     <Compile Include="Assets\_Scripts\Buttons\ELC_PlayButton.cs" />
+    <Compile Include="Assets\_Scripts\Buttons\ELC_SceneLoader.cs" />
     <Compile Include="Assets\_Scripts\ELC_BossMonster.cs" />
     <Compile Include="Assets\_Scripts\ELC_Button.cs" />
     <Compile Include="Assets\_Scripts\ELC_Collectibles.cs" />
@@ -95,15 +98,19 @@
     <Compile Include="Assets\_Scripts\ELC_MorceauJournal.cs" />
     <Compile Include="Assets\_Scripts\ELC_OpenDoor.cs" />
     <Compile Include="Assets\_Scripts\ELC_PlayerMoves.cs" />
+    <Compile Include="Assets\_Scripts\ELC_SoundVolume.cs" />
     <Compile Include="Assets\_Scripts\ELC_SteamFall.cs" />
     <Compile Include="Assets\_Scripts\ELC_SteamJump.cs" />
     <Compile Include="Assets\_Scripts\ELC_SteamPush.cs" />
     <Compile Include="Assets\_Scripts\ELC_TriggerMonster.cs" />
     <Compile Include="Assets\_Scripts\KNF_ParallaxLayer.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_AffichageBestScore.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_AffichageBestTime.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_AffichageFinalScore.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_AffichageLastTime.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_AffichageMorts.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_AffichageNombreClés.cs" />
+    <Compile Include="Assets\_Scripts\Scores\ELC_AffichageNombreJournaux.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_AffichageScore.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_AffichageTotalClés.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_ScoreScript.cs" />

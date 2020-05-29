@@ -17,9 +17,15 @@ public class ELC_EndLevelSave : MonoBehaviour
     private bool playerIsAtTheEnd;
 
     [SerializeField]
+    private ELC_Timer timerScript;
+    private float time;
+
+    [SerializeField]
     private bool switchSceneDoor;
     [SerializeField]
     private bool teleportDoor;
+    [SerializeField]
+    private bool finalScoreDoor;
 
     [SerializeField]
     private string nextSceneName;
@@ -29,16 +35,25 @@ public class ELC_EndLevelSave : MonoBehaviour
     void Start()
     {
         GlobalScoreValues.bestScore = PlayerPrefs.GetFloat("BestScore");
+        timerScript = timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<ELC_Timer>();
+        GlobalScoreValues.bestTime = PlayerPrefs.GetFloat("BestTime");
     }
 
     // Update is called once per frame
     void Update()
     {
         positionToTP = objectsPositionToTeleport.GetComponent<Transform>().position;
+        time = timerScript.totalTimeInSeconds;
 
-        if (playerIsAtTheEnd == true && switchSceneDoor == true)
+        if (playerIsAtTheEnd == true && switchSceneDoor == true && finalScoreDoor == false)
         {
             GlobalScoreValues.actualTotalScore += GlobalScoreValues.timerScore;
+
+            PlayerPrefs.SetFloat("LastTime", time);
+            if(time < PlayerPrefs.GetFloat("BestTime"))
+            {
+                PlayerPrefs.SetFloat("BestTime", time);
+            }
 
             for(int i = 0; i < GlobalScoreValues.playerDeaths; i++)
             {

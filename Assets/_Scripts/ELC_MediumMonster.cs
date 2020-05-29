@@ -42,7 +42,7 @@ public class ELC_MediumMonster : MonoBehaviour
 
     private void Start()
     {
-        triggerMonsterScript = gameObject.GetComponentInChildren<ELC_TriggerMonster>();
+        triggerMonsterScript = this.gameObject.GetComponentInChildren<ELC_TriggerMonster>();
     }
 
     // Update is called once per frame
@@ -50,10 +50,12 @@ public class ELC_MediumMonster : MonoBehaviour
     {
         faceDetector();
 
+        playerIsInTheRadius = triggerMonsterScript.playerIsInside;
+
         if (playerIsInTheRadius == true)
         {
             playerObject = triggerMonsterScript.playerGameObject;
-            playerDistance = playerObject.transform.localPosition.x - this.transform.localPosition.x;
+            playerDistance = playerObject.transform.position.x - this.transform.position.x;
 
             if(playerDistance < 0)
             {

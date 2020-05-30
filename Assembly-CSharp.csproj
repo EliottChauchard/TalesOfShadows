@@ -114,8 +114,6 @@
     <Compile Include="Assets\_Scripts\Scores\ELC_AffichageTotalClés.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_ScoreScript.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_Timer.cs" />
-    <Compile Include="Assets\_Shader\SpriteUVToShader.cs" />
-    <None Include="Assets\_Shader\spritePixelated.shader" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
       <HintPath>D:/Users/Lucrezia/OneDrive/Images/RUBIKA/TalesOfShadows/TalesOfShadows/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>

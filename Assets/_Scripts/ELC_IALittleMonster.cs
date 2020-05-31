@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ELC_IALittleMonster : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
+
     [SerializeField]
     private bool monsterCollideWall;
     [SerializeField]
@@ -30,6 +32,10 @@ public class ELC_IALittleMonster : MonoBehaviour
     [SerializeField]
     private float turnMonsterFace = -1;
 
+    private void Start()
+    {
+        spriteRenderer = this.GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
         EnemyFaceDetector();
@@ -39,6 +45,7 @@ public class ELC_IALittleMonster : MonoBehaviour
             turnMonsterFace = 1;
             monsterFaceRight = true;
             monsterFaceLeft = false;
+            spriteRenderer.flipX = true;
         }
 
         else if(monsterCollideWall == true && monsterFaceRight == true)
@@ -46,6 +53,7 @@ public class ELC_IALittleMonster : MonoBehaviour
             turnMonsterFace = -1;
             monsterFaceLeft = true;
             monsterFaceRight = false;
+            spriteRenderer.flipX = false;
         }
 
         movesX = Speed * turnMonsterFace;

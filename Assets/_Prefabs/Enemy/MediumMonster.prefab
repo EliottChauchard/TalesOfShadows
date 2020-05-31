@@ -361,7 +361,7 @@ MonoBehaviour:
   wallDetected: 0
   turnMonster: 1
   patrolSpeed: 0.8
-  followSpeed: 1
+  followSpeed: 0.8
   playerDistance: 0
   horizontalSpeed: 0
   faceRayPositionX: 0.25

@@ -6,6 +6,7 @@ public class ELC_MediumMonster : MonoBehaviour
 {
     private ELC_TriggerMonster triggerMonsterScript;
     private GameObject playerObject;
+    private SpriteRenderer spriteRenderer;
 
     private RaycastHit2D faceMonsterHit;
     [SerializeField]
@@ -43,6 +44,7 @@ public class ELC_MediumMonster : MonoBehaviour
     private void Start()
     {
         triggerMonsterScript = this.gameObject.GetComponentInChildren<ELC_TriggerMonster>();
+        spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -89,6 +91,7 @@ public class ELC_MediumMonster : MonoBehaviour
             monsterGoLeft = true;
             monsterGoRight = false;
             monsterDontMove = false;
+            spriteRenderer.flipX = false;
         }
         else if (horizontalSpeed == 0f)
         {
@@ -101,6 +104,7 @@ public class ELC_MediumMonster : MonoBehaviour
             monsterGoLeft = false;
             monsterGoRight = true;
             monsterDontMove = false;
+            spriteRenderer.flipX = true;
         }
 
         monsterMoves = new Vector2(horizontalSpeed, 0f) * Time.deltaTime;

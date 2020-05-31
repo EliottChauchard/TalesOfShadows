@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8713541292191940629}
   - component: {fileID: 8713541292191940628}
   - component: {fileID: 5336167824491637520}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: LittleMonster
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -103,10 +103,11 @@ MonoBehaviour:
   monsterCollideWall: 0
   monsterFaceLeft: 1
   monsterFaceRight: 0
+  isStun: 0
   collisionMask:
     serializedVersion: 2
     m_Bits: 33024
-  Speed: 0.7
+  speedLittleMonster: 0.7
   faceRayPositionY: 0.14
   faceRayPositionX: 0.23
   faceRayLenght: 0.27

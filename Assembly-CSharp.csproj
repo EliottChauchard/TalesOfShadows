@@ -78,7 +78,6 @@
     <Compile Include="Assets\_Scripts\AutoMoveAndRotate.cs" />
     <Compile Include="Assets\_Scripts\Buttons\ELC_PlayButton.cs" />
     <Compile Include="Assets\_Scripts\Buttons\ELC_SceneLoader.cs" />
-    <Compile Include="Assets\_Scripts\ELC_Audio.cs" />
     <Compile Include="Assets\_Scripts\ELC_BossMonster.cs" />
     <Compile Include="Assets\_Scripts\ELC_Button.cs" />
     <Compile Include="Assets\_Scripts\ELC_Collectibles.cs" />
@@ -118,8 +117,15 @@
     <Compile Include="Assets\_Scripts\Scores\ELC_AffichageTotalClés.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_ScoreScript.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_Timer.cs" />
+    <Compile Include="Assets\_Scripts\Sounds\ELC_Audio.cs" />
+    <Compile Include="Assets\_Scripts\Sounds\ELC_AudioManager.cs" />
+    <Compile Include="Assets\_Scripts\Sounds\ELC_Sounds.cs" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+<<<<<<< Updated upstream
       <HintPath>C:/Users/Keanu Faynot/Desktop/_ToS_Platformer/TalesOfShadows/TalesOfShadows/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+=======
+      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Keanu Faynot/Desktop/_ToS_Platformer/TalesOfShadows/TalesOfShadows/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -194,7 +200,11 @@
       <HintPath>C:/Users/Keanu Faynot/Desktop/_ToS_Platformer/TalesOfShadows/TalesOfShadows/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
+<<<<<<< Updated upstream
       <HintPath>C:/Users/Keanu Faynot/Desktop/_ToS_Platformer/TalesOfShadows/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
+      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

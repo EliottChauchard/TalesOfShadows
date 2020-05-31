@@ -12,6 +12,8 @@ public class ELC_IALittleMonster : MonoBehaviour
     private bool monsterFaceLeft = true;
     [SerializeField]
     private bool monsterFaceRight;
+    [SerializeField]
+    public bool isStun;
 
     private Vector2 littleMonsterMoves;
 
@@ -21,7 +23,7 @@ public class ELC_IALittleMonster : MonoBehaviour
     private RaycastHit2D faceMonsterHit;
 
     [SerializeField]
-    private float Speed;
+    public float speedLittleMonster;
     private float movesX;
     [SerializeField]
     private float faceRayPositionY = 0.14f;
@@ -56,10 +58,22 @@ public class ELC_IALittleMonster : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        movesX = Speed * turnMonsterFace;
+        //if(isStun == false)
+        //{
+            movesX = speedLittleMonster * turnMonsterFace;
+        //}
+        //else
+        //{
+        //    movesX = 0f;
+        //}
+        
 
         littleMonsterMoves = new Vector2(movesX, 0f) * Time.deltaTime;
-        transform.Translate(littleMonsterMoves);
+        if(isStun == false)
+        {
+            transform.Translate(littleMonsterMoves);
+        }
+        
     }
 
     void EnemyFaceDetector()

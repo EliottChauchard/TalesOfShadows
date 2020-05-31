@@ -101,6 +101,7 @@ public class ELC_SteamJump : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && endLoad == true && isSteamJumping == false))
         {
+            
             canMove = true;
             StartCoroutine("Transition");
             animator.SetBool("JumpIsCharging", false);

@@ -11,5 +11,6 @@ public class ELC_SoundVolume : MonoBehaviour
     void Update()
     {
         soundVolume = this.gameObject.GetComponent<Slider>().value;
+        PlayerPrefs.SetFloat("GlobalVolume", soundVolume);
     }
 }

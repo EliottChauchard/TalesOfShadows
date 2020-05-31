@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 7255f049ae36eca4189b288bb0daf7d6
+guid: b7e360222b7f0dd4091142447bc23c76
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -3996843597465363807
-    second: Background_Robots_0
-  - first:
-      213: -244881753669467388
-    second: Background_Robots_1
-  - first:
-      213: 2736830444795069086
-    second: Background_Robots_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -93,70 +84,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Background_Robots_0
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 309
-        width: 452
-        height: 313
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1aa584e9ceb5888c0800000000000000
-      internalID: -3996843597465363807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_Robots_1
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 338
-        width: 285
-        height: 261
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4038e8ca7510a9cf0800000000000000
-      internalID: -244881753669467388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_Robots_2
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 22
-        width: 664
-        height: 269
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e920c780acc2bf520800000000000000
-      internalID: 2736830444795069086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

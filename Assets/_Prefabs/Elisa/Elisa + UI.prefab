@@ -119,6 +119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 3330030231813314240, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6297049089633517206, guid: 54cc42f9ae2400048a226718bd92455e,
         type: 3}
       propertyPath: m_LocalPosition.x

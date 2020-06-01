@@ -55,7 +55,11 @@ public class ELC_PlayerMoves : MonoBehaviour
     private bool canJump;
     [SerializeField]
     private bool canSteamJump;
+
+    //booléens pour les sons
     private bool isPlayingWalk;
+    private bool isplayingSteamFall;
+
 
     [SerializeField]
     private float steamJumpForceMultiplier;
@@ -314,11 +318,23 @@ public class ELC_PlayerMoves : MonoBehaviour
             else if (steamFallEnable == true)
             {
                 verticalSpeed = 0 - steamGravityForceFall * Time.deltaTime;
+
+                if(isplayingSteamFall == false)
+                {
+                    FindObjectOfType<ELC_AudioManager>().Play("SteamFall", true);
+                    isplayingSteamFall = true;
+                }
+                
             }
+            
+        }
+        if (steamFallEnable == false)
+        {
+            FindObjectOfType<ELC_AudioManager>().Stop("SteamFall");
+            isplayingSteamFall = false;
         }
 
 
-        
         //actualisation des mouvements en tps réel
         playerMoves = new Vector2(horizontalSpeed, verticalSpeed) * Time.deltaTime;
 

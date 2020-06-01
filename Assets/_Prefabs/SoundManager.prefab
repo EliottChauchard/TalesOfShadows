@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: SteamJump
-    clip: {fileID: 8300000, guid: 5a05de47bebc83843a47848fb0233e0b, type: 3}
+    clip: {fileID: 8300000, guid: d5ec521d14106854d8787a3f1097cc3b, type: 3}
     volume: 0.524
     pitch: 1
     loop: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: SteamFall
-    clip: {fileID: 8300000, guid: ae916a97e7ae0464d8042e1427cce30d, type: 3}
+    clip: {fileID: 8300000, guid: 66a35c831d3602f439d4141e9187ee82, type: 3}
     volume: 0.219
     pitch: 1
     loop: 0

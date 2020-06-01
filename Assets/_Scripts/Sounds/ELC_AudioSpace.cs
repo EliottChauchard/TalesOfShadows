@@ -49,19 +49,19 @@ public class ELC_AudioSpace : MonoBehaviour
         {
             if (distanceBtwThem.x > 0 && distanceBtwThem.y > 0)
             {
-                audioSource.volume = 1 - ((distanceBtwThem.x + distanceBtwThem.y) / 2 / distanceMax);
+                audioSource.volume = 1 - ((distanceBtwThem.x + distanceBtwThem.y) / distanceMax);
             }
             else if (distanceBtwThem.x < 0 && distanceBtwThem.y > 0)
             {
-                audioSource.volume = 1 + ((distanceBtwThem.x - distanceBtwThem.y) / 2 / distanceMax);
+                audioSource.volume = 1 + ((distanceBtwThem.x - distanceBtwThem.y) / distanceMax);
             }
             else if (distanceBtwThem.x > 0 && distanceBtwThem.y < 0)
             {
-                audioSource.volume = 1 - ((distanceBtwThem.x - distanceBtwThem.y) / 2 / distanceMax);
+                audioSource.volume = 1 - ((distanceBtwThem.x - distanceBtwThem.y)  / distanceMax);
             }
             else if (distanceBtwThem.x < 0 && distanceBtwThem.y < 0)
             {
-                audioSource.volume = 1 + ((distanceBtwThem.x + distanceBtwThem.y) / 2 / distanceMax);
+                audioSource.volume = 1 + ((distanceBtwThem.x + distanceBtwThem.y) / distanceMax);
             }
         }
     }

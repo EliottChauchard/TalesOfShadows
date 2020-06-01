@@ -47,6 +47,7 @@ public class ELC_Interract : MonoBehaviour
             {
                 Debug.Log("Levier activé");
                 LevierScript.isActivated = !LevierScript.isActivated;
+                FindObjectOfType<ELC_AudioManager>().Play("ActivateLever", false);
             }
         }
     }

@@ -17,6 +17,10 @@ public class ELC_SteamPush : MonoBehaviour
 
     [SerializeField]
     private LayerMask collisionMask;
+    [SerializeField]
+    private bool canSteamPush;
+    [SerializeField]
+    private float reloadTime;
     
 
     [SerializeField]
@@ -47,9 +51,10 @@ public class ELC_SteamPush : MonoBehaviour
         startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         ZoneAction();
 
-        if(Input.GetKey(KeyCode.JoystickButton2) || Input.GetKey(KeyCode.C))
+        if((Input.GetKey(KeyCode.JoystickButton2) || Input.GetKey(KeyCode.C)) && canSteamPush == true)
         {
             animator.SetBool("SteamPush", true);
+            FindObjectOfType<ELC_AudioManager>().Play("SteamPush", false);
 
             if (detection1.collider != null)
             {
@@ -58,6 +63,7 @@ public class ELC_SteamPush : MonoBehaviour
                     littleMonsterScript = detection1.collider.GetComponent<ELC_IALittleMonster>();
                     StartCoroutine("StunMonster");
                     detection1.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+                    
                 }
                 else if (detection1.collider.CompareTag("SensibleObject"))
                 {
@@ -117,6 +123,7 @@ public class ELC_SteamPush : MonoBehaviour
                     detection5.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
                 }
             }
+            StartCoroutine("ReloadSteamPush");
         }
         if (Input.GetKeyUp(KeyCode.JoystickButton2) || Input.GetKeyUp(KeyCode.C))
         {
@@ -148,5 +155,12 @@ public class ELC_SteamPush : MonoBehaviour
         littleMonsterScript.isStun = true;
         yield return new WaitForSeconds(stunDelay);
         littleMonsterScript.isStun = false;
+    }
+
+    IEnumerator ReloadSteamPush()
+    {
+        canSteamPush = false;
+        yield return new WaitForSeconds(reloadTime);
+        canSteamPush = true;
     }
 }

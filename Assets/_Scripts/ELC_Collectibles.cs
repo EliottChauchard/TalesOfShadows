@@ -35,6 +35,7 @@ public class ELC_Collectibles : MonoBehaviour
             GlobalScoreValues.keysCollected += 1;
             PlayerPrefs.SetFloat("TotalKeysCollected", totalKeysCollected + 1);
             gameObjectTouched = collision.gameObject;
+            FindObjectOfType<ELC_AudioManager>().Play("Collectibles", false);
             Destroy(gameObjectTouched);
         }
         else if(tagOfTheObject == "Journal")
@@ -42,6 +43,7 @@ public class ELC_Collectibles : MonoBehaviour
             journalNumber = collision.GetComponent<ELC_Journal>().refNumber;
             PlayerPrefs.SetInt("Collectible" + journalNumber, 1);
             PlayerPrefs.SetInt("NumberOfCollectibles", totalJournaux + 1);
+            FindObjectOfType<ELC_AudioManager>().Play("Collectibles", false);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

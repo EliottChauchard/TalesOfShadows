@@ -107,6 +107,7 @@ public class ELC_SteamJump : MonoBehaviour
             animator.SetBool("JumpIsCharging", false);
             endLoad = false;
             Debug.Log("Launch SteamJump");
+            FindObjectOfType<ELC_AudioManager>().Play("SteamJump");
         }
         
         

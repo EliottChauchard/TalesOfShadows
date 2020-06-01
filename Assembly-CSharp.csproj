@@ -119,6 +119,7 @@
     <Compile Include="Assets\_Scripts\Scores\ELC_Timer.cs" />
     <Compile Include="Assets\_Scripts\Sounds\ELC_Audio.cs" />
     <Compile Include="Assets\_Scripts\Sounds\ELC_AudioManager.cs" />
+    <Compile Include="Assets\_Scripts\Sounds\ELC_AudioSpace.cs" />
     <Compile Include="Assets\_Scripts\Sounds\ELC_Sounds.cs" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
       <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>

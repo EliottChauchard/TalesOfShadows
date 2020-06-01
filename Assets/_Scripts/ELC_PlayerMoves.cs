@@ -253,12 +253,12 @@ public class ELC_PlayerMoves : MonoBehaviour
                 if (steamJumpVector.y <= 0)
                 {
                     verticalSpeed = 1f * steamJumpCharge * steamJumpForceMultiplier;
-                    FindObjectOfType<ELC_AudioManager>().Play("SteamJump");
+                    
                 }
                 else
                 {
                     verticalSpeed = steamJumpVector.y * steamJumpCharge * steamJumpForceMultiplier;
-                    FindObjectOfType<ELC_AudioManager>().Play("SteamJump");
+                    
                 }
                 canSteamJump = false;
             }

@@ -55,6 +55,7 @@ public class ELC_PlayerMoves : MonoBehaviour
     private bool canJump;
     [SerializeField]
     private bool canSteamJump;
+    private bool isPlayingWalk;
 
     [SerializeField]
     private float steamJumpForceMultiplier;
@@ -161,6 +162,16 @@ public class ELC_PlayerMoves : MonoBehaviour
             horizontalSpeed = 0f;
         }
 
+        if((playerGoLeft || playerGoRight) && playerIsOnGround && isPlayingWalk == false)
+        {
+            FindObjectOfType<ELC_AudioManager>().Play("Walk", true);
+            isPlayingWalk = true;
+        }
+        else if ((playerGoLeft == false && playerGoRight == false) || playerIsOnGround == false)
+        {
+            FindObjectOfType<ELC_AudioManager>().Stop("Walk");
+            isPlayingWalk = false;
+        }
 
         if (horizontalInput < 0)
         {
@@ -171,6 +182,7 @@ public class ELC_PlayerMoves : MonoBehaviour
             playerImmobile = false;
             spriteRenderer.flipX = true;
             animator.SetBool("IsWalking", true);
+            
         }
         else if (horizontalInput == 0)
         {

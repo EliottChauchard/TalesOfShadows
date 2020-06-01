@@ -16,12 +16,19 @@ public class ELC_AudioManager : MonoBehaviour
 
             SoundsScript.source.volume = SoundsScript.volume;
             SoundsScript.source.pitch = SoundsScript.pitch;
+            SoundsScript.source.loop = SoundsScript.loop;
         }
     }
 
-    public void Play(string name)
+    public void Play(string name, bool loop)
     {
         ELC_Sounds s = Array.Find(sounds, ELC_Sounds => ELC_Sounds.name == name);
+        s.source.loop = loop;
         s.source.Play();
+    }
+    public void Stop(string name)
+    {
+        ELC_Sounds s = Array.Find(sounds, ELC_Sounds => ELC_Sounds.name == name);
+        s.source.Stop();
     }
 }

@@ -12,6 +12,7 @@ public class ELC_Sounds
     public float volume;
     [Range(.1f, 3f)]
     public float pitch;
+    public bool loop;
 
     [HideInInspector]
     public AudioSource source;

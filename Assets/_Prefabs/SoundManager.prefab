@@ -44,8 +44,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: SteamPush
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0.1
+  - name: SteamJump
+    clip: {fileID: 8300000, guid: 5a05de47bebc83843a47848fb0233e0b, type: 3}
+    volume: 0.524
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Walk
+    clip: {fileID: 8300000, guid: 271b54dc463cc4749a94bdc637199d94, type: 3}
+    volume: 0.572
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CollideGround
+    clip: {fileID: 8300000, guid: 5c317d45a6eca744bbd775e064117a18, type: 3}
+    volume: 0.591
+    pitch: 1
+    loop: 0
     source: {fileID: 0}

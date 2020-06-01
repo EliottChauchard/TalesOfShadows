@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: PlayerSteamPush
+  - name: SteamPush
     clip: {fileID: 0}
     volume: 0
     pitch: 0.1
+    source: {fileID: 0}

@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: c7138c94d9e97f94e9bcab325e717dd4
+guid: 1d00b3256080d5141967ab07d465cf23
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -658050660557624626
-    second: Skeletons_0
+      213: -987158244320924088
+    second: Bags_0
   - first:
-      213: -8505490852599618969
-    second: Skeletons_1
+      213: 3210891934524188394
+    second: Bags_1
   - first:
-      213: -442416000133443860
-    second: Skeletons_2
+      213: -8017243650767312742
+    second: Bags_2
   - first:
-      213: -5776284472871825495
-    second: Skeletons_3
+      213: 8415789345555523739
+    second: Bags_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeletons_0
+      name: Bags_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 41
-        width: 22
-        height: 18
+        x: 1
+        y: 0
+        width: 19
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eca604529622ed6f0800000000000000
-      internalID: -658050660557624626
+      spriteID: 84e27269ec8ec42f0800000000000000
+      internalID: -987158244320924088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeletons_1
+      name: Bags_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5
-        width: 13
-        height: 29
+        x: 27
+        y: 0
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7622772322d66f980800000000000000
-      internalID: -8505490852599618969
+      spriteID: ae62b71d3316f8c20800000000000000
+      internalID: 3210891934524188394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeletons_2
+      name: Bags_2
       rect:
         serializedVersion: 2
-        x: 23
-        y: 22
-        width: 20
-        height: 12
+        x: 45
+        y: 0
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ceec81dedf83cd9f0800000000000000
-      internalID: -442416000133443860
+      spriteID: a98224670670db090800000000000000
+      internalID: -8017243650767312742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeletons_3
+      name: Bags_3
       rect:
         serializedVersion: 2
-        x: 28
-        y: 8
-        width: 21
-        height: 4
+        x: 60
+        y: 0
+        width: 12
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9afced040e386dfa0800000000000000
-      internalID: -5776284472871825495
+      spriteID: b98aa5e22d3eac470800000000000000
+      internalID: 8415789345555523739
       vertices: []
       indices: 
       edges: []

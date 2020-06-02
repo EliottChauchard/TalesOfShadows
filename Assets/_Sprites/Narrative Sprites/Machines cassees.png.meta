@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: c7138c94d9e97f94e9bcab325e717dd4
+guid: 3917e0272f766f94ba8524c80ffaa19e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -658050660557624626
-    second: Skeletons_0
+      213: -7579617921623872597
+    second: Machines cassees_0
   - first:
-      213: -8505490852599618969
-    second: Skeletons_1
-  - first:
-      213: -442416000133443860
-    second: Skeletons_2
-  - first:
-      213: -5776284472871825495
-    second: Skeletons_3
+      213: 65898248080010711
+    second: Machines cassees_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -98,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeletons_0
+      name: Machines cassees_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 41
-        width: 22
-        height: 18
+        x: 1
+        y: 0
+        width: 81
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +106,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eca604529622ed6f0800000000000000
-      internalID: -658050660557624626
+      spriteID: babac68a8a9cfc690800000000000000
+      internalID: -7579617921623872597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeletons_1
+      name: Machines cassees_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5
-        width: 13
-        height: 29
+        x: 83
+        y: 0
+        width: 87
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,50 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7622772322d66f980800000000000000
-      internalID: -8505490852599618969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeletons_2
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 22
-        width: 20
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ceec81dedf83cd9f0800000000000000
-      internalID: -442416000133443860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skeletons_3
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 8
-        width: 21
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9afced040e386dfa0800000000000000
-      internalID: -5776284472871825495
+      spriteID: 7dd21248b1e1ae000800000000000000
+      internalID: 65898248080010711
       vertices: []
       indices: 
       edges: []

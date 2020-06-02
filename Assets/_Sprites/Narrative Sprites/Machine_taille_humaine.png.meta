@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: c7138c94d9e97f94e9bcab325e717dd4
+guid: e667943f91f0222469bc581ed7dcf8eb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -658050660557624626
-    second: Skeletons_0
+      213: -5252482968870785583
+    second: Machine_taille_humaine_0
   - first:
-      213: -8505490852599618969
-    second: Skeletons_1
+      213: 7557405710671406265
+    second: Machine_taille_humaine_1
   - first:
-      213: -442416000133443860
-    second: Skeletons_2
+      213: 4565768158195131922
+    second: Machine_taille_humaine_2
   - first:
-      213: -5776284472871825495
-    second: Skeletons_3
+      213: -3623735042213075202
+    second: Machine_taille_humaine_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeletons_0
+      name: Machine_taille_humaine_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 41
-        width: 22
-        height: 18
+        x: 2
+        y: 17
+        width: 35
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eca604529622ed6f0800000000000000
-      internalID: -658050660557624626
+      spriteID: 1ddeaa3919e6b17b0800000000000000
+      internalID: -5252482968870785583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeletons_1
+      name: Machine_taille_humaine_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5
-        width: 13
-        height: 29
+        x: 41
+        y: 17
+        width: 32
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7622772322d66f980800000000000000
-      internalID: -8505490852599618969
+      spriteID: 9b4e318f37c41e860800000000000000
+      internalID: 7557405710671406265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeletons_2
+      name: Machine_taille_humaine_2
       rect:
         serializedVersion: 2
-        x: 23
-        y: 22
-        width: 20
-        height: 12
+        x: 78
+        y: 17
+        width: 61
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ceec81dedf83cd9f0800000000000000
-      internalID: -442416000133443860
+      spriteID: 216a20c03fddc5f30800000000000000
+      internalID: 4565768158195131922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeletons_3
+      name: Machine_taille_humaine_3
       rect:
         serializedVersion: 2
-        x: 28
-        y: 8
-        width: 21
-        height: 4
+        x: 148
+        y: 17
+        width: 45
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9afced040e386dfa0800000000000000
-      internalID: -5776284472871825495
+      spriteID: ef621c0bd28e5bdc0800000000000000
+      internalID: -3623735042213075202
       vertices: []
       indices: 
       edges: []

@@ -405,6 +405,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallSpikes (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2885644516172103961, guid: f7dd93efbfc0c7b4fb03fe63c7f16cef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2885644516172103962, guid: f7dd93efbfc0c7b4fb03fe63c7f16cef,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x

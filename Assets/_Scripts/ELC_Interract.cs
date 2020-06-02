@@ -51,6 +51,16 @@ public class ELC_Interract : MonoBehaviour
                 FindObjectOfType<ELC_AudioManager>().Play("ActivateLever", false);
             }
         }
+        else if(tagOfCollidedObject == "SpecialInterruptor")
+        {
+            Debug.Log("Interruptor Detected");
+            if (gameObjectDetected.GetComponent<ELC_SpecialInterruptor>().isActivated == false && CollectiblesScript.numberOfSpecialKeys > 0f && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton1)))
+            {
+                gameObjectDetected.GetComponent<ELC_SpecialInterruptor>().isActivated = true;
+                CollectiblesScript.numberOfSpecialKeys -= 1f;
+                FindObjectOfType<ELC_AudioManager>().Play("DoorInterruptor", false);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collide)

@@ -21,6 +21,8 @@ TagManager:
   - Journal
   - InterractTrigger
   - MainTrigger
+  - SpecialKey
+  - SpecialInterruptor
   layers:
   - Default
   - TransparentFX

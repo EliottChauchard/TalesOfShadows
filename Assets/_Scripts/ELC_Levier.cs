@@ -9,6 +9,8 @@ public class ELC_Levier : MonoBehaviour
     [SerializeField]
     private GameObject objectToDesactivate;
     [SerializeField]
+    private GameObject objectToDesactivate2;
+    [SerializeField]
     private GameObject objectWithAnimationToTrigger;
     [SerializeField]
     private GameObject objectWithAnimationToTrigger2;
@@ -117,7 +119,12 @@ public class ELC_Levier : MonoBehaviour
         if(objectToDesactivate != null)
         {
             objectToDesactivate.SetActive(isActivated);
+            if(objectToDesactivate2 != null)
+            {
+                objectToDesactivate2.SetActive(isActivated);
+            }
         }
+        
     }
     void ActivateAnimator(bool enable)
     {

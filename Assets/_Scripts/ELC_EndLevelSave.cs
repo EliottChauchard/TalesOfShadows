@@ -73,6 +73,10 @@ public class ELC_EndLevelSave : MonoBehaviour
             }
             playerIsAtTheEnd = false;
         }
+        else if(playerIsAtTheEnd == true && switchSceneDoor == true && finalScoreDoor == true)
+        {
+            StartCoroutine("NextLevel");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

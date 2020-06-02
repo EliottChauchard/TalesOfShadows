@@ -36,6 +36,9 @@ public class ELC_Levier : MonoBehaviour
     public bool timerIsOn;
     public bool isActivated;
 
+    [SerializeField]
+    private GameObject cable1;
+
     private void Start()
     {
         if(DoorToTrigger != null)
@@ -64,6 +67,8 @@ public class ELC_Levier : MonoBehaviour
 
             ActivateAnimator(true);
 
+            ActivateCableGlow(true);
+
             if (hasAlreadyBeenActivated == false)
             {
                 GlobalScoreValues.activateBasicLever += 1;
@@ -79,6 +84,8 @@ public class ELC_Levier : MonoBehaviour
 
             DesactivateGameObject(true);
 
+            ActivateCableGlow(false);
+
             ActivateAnimator(false);
         }
         else if (isActivated == true && isTimed == true && timerIsOn == false)
@@ -92,6 +99,8 @@ public class ELC_Levier : MonoBehaviour
 
             DesactivateGameObject(false);
 
+            ActivateCableGlow(true);
+
             ActivateAnimator(true);
         }
         else if (isActivated == false && isTimed == true)
@@ -99,6 +108,8 @@ public class ELC_Levier : MonoBehaviour
             animator.SetBool("SwitchTimedOff", true);
 
             SummonGameObject(false);
+
+            ActivateCableGlow(false);
 
             DesactivateGameObject(true);
 
@@ -132,10 +143,26 @@ public class ELC_Levier : MonoBehaviour
         {
             objectAnimator = objectWithAnimationToTrigger.GetComponent<Animator>();
             objectAnimator.SetBool(animationName, enable);
-            objectAnimator = objectWithAnimationToTrigger2.GetComponent<Animator>();
-            objectAnimator.SetBool(animationName, enable);
-            objectAnimator = objectWithAnimationToTrigger3.GetComponent<Animator>();
-            objectAnimator.SetBool(animationName, enable);
+
+            if(objectWithAnimationToTrigger2 != null)
+            {
+                objectAnimator = objectWithAnimationToTrigger2.GetComponent<Animator>();
+                objectAnimator.SetBool(animationName, enable);
+            }
+
+            if(objectWithAnimationToTrigger3 != null)
+            {
+                objectAnimator = objectWithAnimationToTrigger3.GetComponent<Animator>();
+                objectAnimator.SetBool(animationName, enable);
+            }
+        }
+    }
+
+    void ActivateCableGlow(bool enable)
+    {
+        if(cable1 != null)
+        {
+            cable1.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
         }
     }
 

@@ -19,6 +19,8 @@ TagManager:
   - VerticalMovingPlatform
   - Timer
   - Journal
+  - InterractTrigger
+  - MainTrigger
   layers:
   - Default
   - TransparentFX

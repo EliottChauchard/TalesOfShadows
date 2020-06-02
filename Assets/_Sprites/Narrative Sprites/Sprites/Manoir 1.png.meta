@@ -1,0 +1,454 @@
+fileFormatVersion: 2
+guid: 90f0caafbd478704b873ce8d4491f096
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6704671496129896296
+    second: Manoir_Open
+  - first:
+      213: 2106943444070676583
+    second: Manoir_Props
+  - first:
+      213: 9088109958199235873
+    second: Manoir_Open
+  - first:
+      213: -1902600420333348430
+    second: Manoir_Props_Foreground
+  - first:
+      213: 5830491853883372503
+    second: Manoir_Closed
+  - first:
+      213: -1369135540776835056
+    second: Manoir 1_0
+  - first:
+      213: 1958013540511451777
+    second: Manoir 1_1
+  - first:
+      213: -2589534039021546534
+    second: Manoir 1_2
+  - first:
+      213: -1234936622728584905
+    second: Manoir 1_3
+  - first:
+      213: -1150472275472679641
+    second: Manoir 1_4
+  - first:
+      213: 744370997036220006
+    second: Manoir 1_5
+  - first:
+      213: 1261333286866797670
+    second: Manoir 1_6
+  - first:
+      213: -829335346467073790
+    second: Manoir 1_7
+  - first:
+      213: 5950301780044427138
+    second: Manoir 1_8
+  - first:
+      213: -7906681206544733113
+    second: Manoir 1_9
+  - first:
+      213: -4743709264575307356
+    second: Manoir 1_10
+  - first:
+      213: 300950184662715973
+    second: Manoir 1_11
+  - first:
+      213: 2399511172825655079
+    second: Manoir 1_12
+  - first:
+      213: 5428057701812856638
+    second: Manoir 1_13
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Manoir 1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 255
+        width: 210
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01862aaca7adffce0800000000000000
+      internalID: -1369135540776835056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 427
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a079be0f24c2b10800000000000000
+      internalID: 1958013540511451777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_2
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 433
+        width: 5
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3965ee280201cd0800000000000000
+      internalID: -2589534039021546534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_3
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 422
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73164224faf9cdee0800000000000000
+      internalID: -1234936622728584905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_4
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 457
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72df3889f83b800f0800000000000000
+      internalID: -1150472275472679641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 359
+        width: 38
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e727b5a79845a00800000000000000
+      internalID: 744370997036220006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 360
+        width: 17
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664421b01f7218110800000000000000
+      internalID: 1261333286866797670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_7
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 325
+        width: 33
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201972a75eb9d74f0800000000000000
+      internalID: -829335346467073790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_8
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 306
+        width: 134
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f2ce161f7b39250800000000000000
+      internalID: 5950301780044427138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_9
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 339
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ce4a38553d54290800000000000000
+      internalID: -7906681206544733113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_10
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 262
+        width: 34
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1624f9e85fa2eb0800000000000000
+      internalID: -4743709264575307356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_11
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 262
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ec8e339903d2400800000000000000
+      internalID: 300950184662715973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_12
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 261
+        width: 91
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727aad2d2b6cc4120800000000000000
+      internalID: 2399511172825655079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manoir 1_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 210
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37e0e088b5545b40800000000000000
+      internalID: 5428057701812856638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

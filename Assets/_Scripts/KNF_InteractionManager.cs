@@ -8,7 +8,7 @@ public class KNF_InteractionManager : MonoBehaviour
 {
     public Text dialogueText;
     //public KNF_InteractableTrigger iT;
-    
+
     private Queue<string> sentences;
     [SerializeField]
     private float waittime = 0;
@@ -22,7 +22,7 @@ public class KNF_InteractionManager : MonoBehaviour
 
     }
 
-    public void StartInteract (KNF_Dialogue dialogue)
+    public void StartInteract(KNF_Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
 
@@ -49,7 +49,7 @@ public class KNF_InteractionManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
     }
 
-    IEnumerator TypeSentence (string sentence)
+    IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
@@ -65,12 +65,5 @@ public class KNF_InteractionManager : MonoBehaviour
         //iT.lastPressed = 0;
         KNF_DialogueReset.lastpressed = 0;
     }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-        
-    }
 }
+

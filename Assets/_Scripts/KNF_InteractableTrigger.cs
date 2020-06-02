@@ -12,6 +12,9 @@ public class KNF_InteractableTrigger : MonoBehaviour
     public GameObject interactionIcon;
     public UnityEvent interactAction;
     public UnityEvent interactContinue;
+    //public GameObject thingToDistroy;
+
+    List<GameObject> triggers = new List<GameObject>();
 
 
     public void TriggerInteract()
@@ -21,6 +24,16 @@ public class KNF_InteractableTrigger : MonoBehaviour
     private void Start()
     {
         interactionIcon.SetActive(false);
+
+        foreach (GameObject go in GameObject.FindGameObjectsWithTag("InterractTrigger"))
+        {
+            if (go.Equals(this.gameObject))
+            {
+                continue;
+                
+            }               
+            triggers.Add(go);
+        }
     }
 
     private void Update()
@@ -41,7 +54,7 @@ public class KNF_InteractableTrigger : MonoBehaviour
         }
         else
         {
-            KNF_DialogueReset.lastpressed = 0;
+            KNF_DialogueReset.lastpressed = 0;            
             animator.SetBool("IsOpen", false);
         }
     }
@@ -52,6 +65,12 @@ public class KNF_InteractableTrigger : MonoBehaviour
         {
             isInRange = true;
             interactionIcon.SetActive(true);
+            foreach (GameObject go in triggers)
+            {
+                go.SetActive(false);
+            }        
+            //transform.gameObject.tag = "MainTrigger";
+            //thingToDistroy.SetActive(false);
             //Debug.Log("Player can interact");
         }
     }
@@ -62,7 +81,14 @@ public class KNF_InteractableTrigger : MonoBehaviour
         {
             isInRange = false;
             interactionIcon.SetActive(false);
+            foreach (GameObject other in triggers)
+            {
+                other.SetActive(true);
+            }
+            //transform.gameObject.tag = "InterractTrigger";
+            //thingToDistroy.SetActive(true);
             //Debug.Log("ByeBye");
         }
     }
 }
+

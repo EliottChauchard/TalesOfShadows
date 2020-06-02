@@ -44,4 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 0}
-  waittime: 0.02
+  waittime: 0
+  animator: {fileID: 0}

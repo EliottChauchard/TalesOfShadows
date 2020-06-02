@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 8606256038029699459}
   - component: {fileID: 3998260197065804643}
   - component: {fileID: 7581324373828394112}
+  - component: {fileID: 2080516999789509487}
   - component: {fileID: 7491754999345884099}
   m_Layer: 0
   m_Name: ElisaPerso
@@ -300,8 +301,12 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 512
+  canSteamPush: 1
+  reloadTime: 0
   rayLenght: 1
   ejectForce: 20
+  stunDelay: 0
+  ejectMonsterForce: 0
 --- !u!114 &2792491413843219641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,6 +424,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDying: 0
   waitTime: 0.5
+--- !u!114 &2080516999789509487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792491413843219587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b907ae7ffb7074a9240859696b7c8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &7491754999345884099
 BoxCollider2D:
   m_ObjectHideFlags: 0

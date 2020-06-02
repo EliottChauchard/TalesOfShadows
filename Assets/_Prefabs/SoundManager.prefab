@@ -68,3 +68,27 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: SteamFall
+    clip: {fileID: 8300000, guid: 66a35c831d3602f439d4141e9187ee82, type: 3}
+    volume: 0.219
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SteamFall
+    clip: {fileID: 8300000, guid: 66a35c831d3602f439d4141e9187ee82, type: 3}
+    volume: 0.219
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SteamFall
+    clip: {fileID: 8300000, guid: 66a35c831d3602f439d4141e9187ee82, type: 3}
+    volume: 0.219
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DoorInterruptor
+    clip: {fileID: 8300000, guid: 61d49b3e371ae2a4fafeed60545b1249, type: 3}
+    volume: 0.543
+    pitch: 1.26
+    loop: 0
+    source: {fileID: 0}

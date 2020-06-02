@@ -18,7 +18,7 @@ public class ELC_SteamPush : MonoBehaviour
     [SerializeField]
     private LayerMask collisionMask;
     [SerializeField]
-    private bool canSteamPush;
+    private bool canSteamPush = true;
     [SerializeField]
     private float reloadTime;
     

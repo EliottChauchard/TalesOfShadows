@@ -17,6 +17,13 @@ public class ELC_Death : MonoBehaviour
         LastCheckpointScript = gameObject.GetComponent<ELC_LastChekpoint>();
         animator = GetComponent<Animator>();
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            StartCoroutine("Death");
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

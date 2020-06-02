@@ -300,13 +300,13 @@ MonoBehaviour:
   SteamPush: 0
   collisionMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 131584
   canSteamPush: 1
   reloadTime: 0
   rayLenght: 1
-  ejectForce: 20
-  stunDelay: 0
-  ejectMonsterForce: 0
+  ejectForce: 50
+  stunDelay: 1.5
+  ejectMonsterForce: 5
 --- !u!114 &2792491413843219641
 MonoBehaviour:
   m_ObjectHideFlags: 0

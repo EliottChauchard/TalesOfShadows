@@ -263,6 +263,7 @@ public class ELC_PlayerMoves : MonoBehaviour
             if (steamJumpPhase == false)
             {
                 verticalSpeed = jumpForce;
+                FindObjectOfType<ELC_AudioManager>().Play("Jump", false);
             }
             else
             {

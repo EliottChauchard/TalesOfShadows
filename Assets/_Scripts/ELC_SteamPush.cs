@@ -55,74 +55,10 @@ public class ELC_SteamPush : MonoBehaviour
         {
             animator.SetBool("SteamPush", true);
             FindObjectOfType<ELC_AudioManager>().Play("SteamPush", false);
+            
 
-            if (detection1.collider != null)
-            {
-                if (detection1.collider.CompareTag("Monster"))
-                {
-                    littleMonsterScript = detection1.collider.GetComponent<ELC_IALittleMonster>();
-                    StartCoroutine("StunMonster");
-                    detection1.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
-                    
-                }
-                else if (detection1.collider.CompareTag("SensibleObject"))
-                {
-                    detection1.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
-                }
-            }
-            else if (detection2.collider != null)
-            {
-                if (detection2.collider.CompareTag("Monster"))
-                {
-                    littleMonsterScript = detection2.collider.GetComponent<ELC_IALittleMonster>();
-                    StartCoroutine("StunMonster");
-                    detection2.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
-                }
-                else if (detection2.collider.CompareTag("SensibleObject"))
-                {
-                    detection2.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
-                }
-            }
-            else if (detection3.collider != null )
-            {
-                if (detection3.collider.CompareTag("Monster"))
-                {
-                    littleMonsterScript = detection3.collider.GetComponent<ELC_IALittleMonster>();
-                    StartCoroutine("StunMonster");
-                    detection3.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
-                }
-                else if (detection3.collider.CompareTag("SensibleObject"))
-                {
-                    detection3.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
-                }
-            }
-            else if (detection4.collider != null)
-            {
-                if (detection4.collider.CompareTag("Monster"))
-                {
-                    littleMonsterScript = detection4.collider.GetComponent<ELC_IALittleMonster>();
-                    StartCoroutine("StunMonster");
-                    detection4.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
-                }
-                else if (detection4.collider.CompareTag("SensibleObject"))
-                {
-                    detection4.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
-                }
-            }
-            else if (detection5.collider != null)
-            {
+            StartCoroutine("WaitForPush", 0.15f);
 
-                if(detection5.collider.CompareTag("Monster"))
-                {
-                    littleMonsterScript = detection5.collider.GetComponent<ELC_IALittleMonster>();
-                    StartCoroutine("StunMonster");
-                    detection5.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
-                }
-                else if(detection5.collider.CompareTag("SensibleObject"))
-                {
-                    detection5.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
-                }
-            }
             StartCoroutine("ReloadSteamPush");
         }
         if (Input.GetKeyUp(KeyCode.JoystickButton2) || Input.GetKeyUp(KeyCode.C))
@@ -162,5 +98,83 @@ public class ELC_SteamPush : MonoBehaviour
         canSteamPush = false;
         yield return new WaitForSeconds(reloadTime);
         canSteamPush = true;
+    }
+
+    IEnumerator WaitForPush(float timeToWait)
+    {
+        yield return new WaitForSeconds(timeToWait);
+
+        if (FindObjectOfType<ELC_ScreenShake>().isScreenShaking == false)
+        {
+            FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.4f, 0.03f);
+        }
+
+        if (detection1.collider != null)
+        {
+            if (detection1.collider.CompareTag("Monster"))
+            {
+                littleMonsterScript = detection1.collider.GetComponent<ELC_IALittleMonster>();
+                StartCoroutine("StunMonster");
+                detection1.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+
+            }
+            else if (detection1.collider.CompareTag("SensibleObject"))
+            {
+                detection1.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+        }
+        else if (detection2.collider != null)
+        {
+            if (detection2.collider.CompareTag("Monster"))
+            {
+                littleMonsterScript = detection2.collider.GetComponent<ELC_IALittleMonster>();
+                StartCoroutine("StunMonster");
+                detection2.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+            }
+            else if (detection2.collider.CompareTag("SensibleObject"))
+            {
+                detection2.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+        }
+        else if (detection3.collider != null)
+        {
+            if (detection3.collider.CompareTag("Monster"))
+            {
+                littleMonsterScript = detection3.collider.GetComponent<ELC_IALittleMonster>();
+                StartCoroutine("StunMonster");
+                detection3.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+            }
+            else if (detection3.collider.CompareTag("SensibleObject"))
+            {
+                detection3.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+        }
+        else if (detection4.collider != null)
+        {
+            if (detection4.collider.CompareTag("Monster"))
+            {
+                littleMonsterScript = detection4.collider.GetComponent<ELC_IALittleMonster>();
+                StartCoroutine("StunMonster");
+                detection4.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+            }
+            else if (detection4.collider.CompareTag("SensibleObject"))
+            {
+                detection4.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+        }
+        else if (detection5.collider != null)
+        {
+
+            if (detection5.collider.CompareTag("Monster"))
+            {
+                littleMonsterScript = detection5.collider.GetComponent<ELC_IALittleMonster>();
+                StartCoroutine("StunMonster");
+                detection5.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+            }
+            else if (detection5.collider.CompareTag("SensibleObject"))
+            {
+                detection5.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+        }
     }
 }

@@ -20,7 +20,7 @@ public class ELC_ScreenShake : MonoBehaviour
     [SerializeField]
     public bool launchScreenShake;
     [SerializeField]
-    private bool isScreenShaking;
+    public bool isScreenShaking;
 
     private float variationValueX;
     private float variationValueY;
@@ -58,7 +58,12 @@ public class ELC_ScreenShake : MonoBehaviour
             cameraCinemachineTransform.m_Offset = initialPosition;
             isScreenShaking = false;
         }
+    }
 
-
+    public void ScreenShake(float time, float scale)
+    {
+        duration = time;
+        variationScale = scale;
+        launchScreenShake = true;
     }
 }

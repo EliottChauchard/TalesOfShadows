@@ -38,6 +38,8 @@ public class ELC_SteamJump : MonoBehaviour
     [SerializeField]
     private float testValues;
 
+    private bool isLoading;
+
     private Vector3 LoadingBar;
     private Vector2 jumpForce;
     private Vector2 movesPlayer;
@@ -91,7 +93,8 @@ public class ELC_SteamJump : MonoBehaviour
         if ((Input.GetKey(KeyCode.Space) || (Input.GetAxis("SteamJump") > 0 && Input.GetKey(KeyCode.Space) == false)) && isChargingSteamJump == true && isFullCharged == false)
         {
             SteamJump();
-            if(Input.GetKey(KeyCode.Space) == false)
+            
+            if (Input.GetKey(KeyCode.Space) == false)
             {
                 endLoad = true;
             }
@@ -105,11 +108,29 @@ public class ELC_SteamJump : MonoBehaviour
             canMove = true;
             StartCoroutine("Transition");
             animator.SetBool("JumpIsCharging", false);
+            isLoading = false;
             endLoad = false;
             Debug.Log("Launch SteamJump");
             FindObjectOfType<ELC_AudioManager>().Play("SteamJump", false);
+            FindObjectOfType<ELC_AudioManager>().Stop("SteamJumpChargeBegin");
+
         }
         
+        if(isChargingSteamJump == true && isSteamJumping == false)
+        {
+            if (FindObjectOfType<ELC_ScreenShake>().isScreenShaking == false)
+            {
+                if(charge < maxCharge)
+                {
+                    FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.02f, 0.001f);
+                }
+                else
+                {
+                    FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.02f, 0.010f);
+                }
+                
+            }
+        }
         
         if (isOnGround == true && isChargingSteamJump == false)
         {
@@ -127,11 +148,13 @@ public class ELC_SteamJump : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        if(Input.GetKey(KeyCode.Space) || (Input.GetAxis("SteamJump") > 0 && Input.GetKey(KeyCode.Space) == false))
+        if(Input.GetKey(KeyCode.Space) || (Input.GetAxis("SteamJump") > 0 && Input.GetKey(KeyCode.Space) == false) && isLoading == false)
         {
+            FindObjectOfType<ELC_AudioManager>().Play("SteamJumpChargeBegin", false);
             animator.SetBool("JumpIsCharging", true);
             isChargingSteamJump = true;
             canMove = false;
+            isLoading = true;
         }
     }
     IEnumerator Transition()
@@ -145,7 +168,7 @@ public class ELC_SteamJump : MonoBehaviour
     void SteamJump()
     {
         charge = charge + chargeSpeed * Time.deltaTime;
-        
+
         if (charge >= maxCharge)
         {
             isFullCharged = true;

@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ELC_ScreenShake.cs" />
     <Compile Include="Assets\ELC_SpecialInterruptor.cs" />
     <Compile Include="Assets\ELC_SwitchColor.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.5.0\Cinemachine Example Scenes\Scenes\OverTheShoulderAim\ActivateOnKeypress.cs" />
@@ -99,6 +98,7 @@
     <Compile Include="Assets\_Scripts\ELC_OpenDoor.cs" />
     <Compile Include="Assets\_Scripts\ELC_PlateformFall.cs" />
     <Compile Include="Assets\_Scripts\ELC_PlayerMoves.cs" />
+    <Compile Include="Assets\_Scripts\ELC_ScreenShake.cs" />
     <Compile Include="Assets\_Scripts\ELC_SoundVolume.cs" />
     <Compile Include="Assets\_Scripts\ELC_SteamFall.cs" />
     <Compile Include="Assets\_Scripts\ELC_SteamJump.cs" />

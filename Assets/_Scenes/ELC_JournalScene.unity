@@ -1083,8 +1083,8 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 219103449}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1489508035
-GameObject:
+--- !u!1001 &1984307961
+PrefabInstance:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}

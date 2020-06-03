@@ -5,25 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/ELC_MenuScene.unity
     guid: 6e38b15d1ca37ca4cad62a7f3a285a23
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/KNF_SceneLD1.unity
     guid: 423eff32b36b5dd4f9b44352d6509296
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/ELC_FinalScore.unity
     guid: 13794a5d1c11b3249865b8617010c1ec
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/ELC_OptionsScene.unity
     guid: 561c4b314b1adda41916795e9f09e4ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/ELC_ScoreBoardScene.unity
     guid: 65d5cfc3f09b30b4f986751574dbe84e
   - enabled: 1
     path: Assets/_Scenes/ELC_CreditsScene.unity
     guid: c33ba8ab16ad4114a89f5c15050cd75e
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/ELC_JournalScene.unity
     guid: 0411f7895446e514ea09442f023e56cf
   - enabled: 0

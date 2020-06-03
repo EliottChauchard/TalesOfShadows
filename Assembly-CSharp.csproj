@@ -96,6 +96,7 @@
     <Compile Include="Assets\_Scripts\ELC_MediumMonster.cs" />
     <Compile Include="Assets\_Scripts\ELC_MorceauJournal.cs" />
     <Compile Include="Assets\_Scripts\ELC_OpenDoor.cs" />
+    <Compile Include="Assets\_Scripts\ELC_PauseMenu.cs" />
     <Compile Include="Assets\_Scripts\ELC_PlateformFall.cs" />
     <Compile Include="Assets\_Scripts\ELC_PlayerMoves.cs" />
     <Compile Include="Assets\_Scripts\ELC_ScreenShake.cs" />

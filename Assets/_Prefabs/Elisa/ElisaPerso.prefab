@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 3998260197065804643}
   - component: {fileID: 7581324373828394112}
   - component: {fileID: 2080516999789509487}
+  - component: {fileID: 6159881987164069455}
   - component: {fileID: 7491754999345884099}
   m_Layer: 0
   m_Name: ElisaPerso
@@ -380,6 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afd2ba38ee5eed41812124c603701e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfSpecialKeys: 0
   numberOfKeys: 0
   tagOfTheObject: 
   gameObjectTouched: {fileID: 0}
@@ -436,6 +438,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b907ae7ffb7074a9240859696b7c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6159881987164069455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792491413843219587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04522be1c4f94624a80f04d61e0168b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuButton: {fileID: 0}
+  OptionsButton: {fileID: 0}
+  isPaused: 0
 --- !u!61 &7491754999345884099
 BoxCollider2D:
   m_ObjectHideFlags: 0

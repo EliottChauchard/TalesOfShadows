@@ -43,3 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 967db20dffd9ee84bbe9c31b3b4767d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  transitionTime: 3
+  toHide: {fileID: 0}
+  loadingSprite: {fileID: 8414221517702329822, guid: 3db328abc741f35428f6616e67f71489,
+    type: 3}

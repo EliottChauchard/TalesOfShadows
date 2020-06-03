@@ -21,7 +21,7 @@ public class ELC_SceneLoader : MonoBehaviour
 
     public void LoadSceneFuction(int SceneIndex)
     {
-        pM.isPaused = !pM.isPaused;
+        pM.isPaused = false;
         StartCoroutine(LoadSceneAsync(SceneIndex));
     }
 

@@ -253,6 +253,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2792491413843219642, guid: 24d2ee69454e6c54893d4cbf655dc083,
+        type: 3}
+      propertyPath: ejectForce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792491413843219642, guid: 24d2ee69454e6c54893d4cbf655dc083,
+        type: 3}
+      propertyPath: reloadTime
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6159881987164069455, guid: 24d2ee69454e6c54893d4cbf655dc083,
         type: 3}
       propertyPath: MenuButton

@@ -168,7 +168,7 @@ public class ELC_PlayerMoves : MonoBehaviour
 
         
 
-        if(GetComponent<ELC_PauseMenu>().isPaused == false)
+        if(FindObjectOfType<ELC_PauseMenu>().isPaused == false)
         {
             if ((playerGoLeft || playerGoRight) && playerIsOnGround && isPlayingWalk == false)
             {

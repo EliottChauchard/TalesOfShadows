@@ -31,6 +31,13 @@ public class ELC_EndLevelSave : MonoBehaviour
     private string nextSceneName;
     private int entireScore;
 
+    public Animator crossFade;
+    [SerializeField]
+    private float crossFadeTime;
+
+    [SerializeField]
+    private float transitionTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -92,14 +99,21 @@ public class ELC_EndLevelSave : MonoBehaviour
     }
     IEnumerator NextLevel()
     {
-        yield return new WaitForSeconds(1f);
+        //yield return new WaitForSeconds(1f);
         if(switchSceneDoor == true)
         {
+            crossFade.SetTrigger("Start");
+            yield return new WaitForSeconds(transitionTime);
             SceneManager.LoadScene(nextSceneName);
         }
-        else if(teleportDoor == true)
+        else if(teleportDoor == true) 
         {
+            crossFade.SetTrigger("Start");
+            yield return new WaitForSeconds(crossFadeTime);
             playerGameObject.GetComponent<Transform>().position = positionToTP;
+            yield return new WaitForSeconds(0.5f);
+            crossFade.SetTrigger("Restart");
+
         }
     }
 }

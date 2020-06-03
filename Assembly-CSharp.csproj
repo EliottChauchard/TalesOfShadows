@@ -106,6 +106,7 @@
     <Compile Include="Assets\_Scripts\ELC_TriggerMonster.cs" />
     <Compile Include="Assets\_Scripts\KNF_Dialogue.cs" />
     <Compile Include="Assets\_Scripts\KNF_DialogueReset.cs" />
+    <Compile Include="Assets\_Scripts\KNF_FallEvent.cs" />
     <Compile Include="Assets\_Scripts\KNF_InteractableTrigger.cs" />
     <Compile Include="Assets\_Scripts\KNF_InteractionManager.cs" />
     <Compile Include="Assets\_Scripts\KNF_ParallaxLayer.cs" />

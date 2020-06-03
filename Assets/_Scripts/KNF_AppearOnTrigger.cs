@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class KNF_AppearOnTrigger : MonoBehaviour
 {
-    public GameObject toHide;
     public KNF_ParallaxLayer pL;
+    public KNF_ParallaxLayer pL2;
+    public KNF_ParallaxLayer pL3;
+    public KNF_ParallaxLayer pL4;
+    public KNF_ParallaxLayer pL5;
     private Transform cameraTransform;
 
     // Start is called before the first frame update
@@ -14,9 +17,13 @@ public class KNF_AppearOnTrigger : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
+        cameraTransform = Camera.main.transform;
         pL.startCameraPos = cameraTransform.position;
-        //toHide.GetComponent<KNF_ParallaxLayer>().enabled = true;
+        pL2.startCameraPos = cameraTransform.position;
+        pL3.startCameraPos = cameraTransform.position;
+        pL4.startCameraPos = cameraTransform.position;
+        pL5.startCameraPos = cameraTransform.position;
     }
 }

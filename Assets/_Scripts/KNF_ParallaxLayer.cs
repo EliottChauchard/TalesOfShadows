@@ -18,11 +18,6 @@ public class KNF_ParallaxLayer : MonoBehaviour
         startPos = transform.position;
     }
 
-    private void Update()
-    {
-        Debug.Log(startCameraPos);
-    }
-
 
     private void LateUpdate()
     {

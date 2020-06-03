@@ -109,7 +109,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 7d4c9d13408d7f54db2e027d4162880c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -176,6 +176,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsPositionToTeleport: {fileID: 4843348128309172225}
+  playerGameObject: {fileID: 0}
+  playerPosition: {x: 0, y: 0, z: 0}
+  positionToTP: {x: 0, y: 0, z: 0}
+  timerScript: {fileID: 0}
   switchSceneDoor: 0
   teleportDoor: 0
+  finalScoreDoor: 0
   nextSceneName: 
+  crossFade: {fileID: 0}
+  crossFadeTime: 0
+  transitionTime: 0

@@ -33,6 +33,7 @@ public class ELC_PlateformFall : MonoBehaviour
 
     IEnumerator PlateformFall()
     {
+        this.GetComponent<BoxCollider2D>().enabled = false;
         yield return new WaitForSeconds(timeBeforeFall);
         plateformSpriteRenderer.drawMode = SpriteDrawMode.Simple;
         plateformCollider.autoTiling = false;

@@ -57,7 +57,7 @@ public class ELC_EndLevelSave : MonoBehaviour
             GlobalScoreValues.actualTotalScore += GlobalScoreValues.timerScore;
 
             PlayerPrefs.SetFloat("LastTime", time);
-            if(time < PlayerPrefs.GetFloat("BestTime"))
+            if(time < PlayerPrefs.GetFloat("BestTime") || PlayerPrefs.GetFloat("BestTime") == 0)
             {
                 PlayerPrefs.SetFloat("BestTime", time);
             }

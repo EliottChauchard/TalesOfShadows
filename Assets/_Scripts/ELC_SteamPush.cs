@@ -57,7 +57,7 @@ public class ELC_SteamPush : MonoBehaviour
             FindObjectOfType<ELC_AudioManager>().Play("SteamPush", false);
             
 
-            StartCoroutine("WaitForPush", 0.15f);
+            StartCoroutine("WaitForPush", 0.05f);
 
             StartCoroutine("ReloadSteamPush");
         }
@@ -106,6 +106,7 @@ public class ELC_SteamPush : MonoBehaviour
 
         if (FindObjectOfType<ELC_ScreenShake>().isScreenShaking == false)
         {
+            yield return new WaitForSeconds(0.1f);
             FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.4f, 0.03f);
         }
 

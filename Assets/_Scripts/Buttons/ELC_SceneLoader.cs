@@ -61,4 +61,9 @@ public class ELC_SceneLoader : MonoBehaviour
             }
         }
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

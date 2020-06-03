@@ -170,7 +170,7 @@ public class ELC_PlayerMoves : MonoBehaviour
 
         if(FindObjectOfType<ELC_PauseMenu>().isPaused == false)
         {
-            if ((playerGoLeft || playerGoRight) && playerIsOnGround && isPlayingWalk == false)
+            if ((playerGoLeft || playerGoRight) && playerIsOnGround && isPlayingWalk == false && steamJumpIsCharging == false)
             {
                 FindObjectOfType<ELC_AudioManager>().Play("Walk", true);
                 isPlayingWalk = true;

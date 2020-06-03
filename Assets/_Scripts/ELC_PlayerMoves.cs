@@ -166,45 +166,51 @@ public class ELC_PlayerMoves : MonoBehaviour
             horizontalSpeed = 0f;
         }
 
-        if((playerGoLeft || playerGoRight) && playerIsOnGround && isPlayingWalk == false)
-        {
-            FindObjectOfType<ELC_AudioManager>().Play("Walk", true);
-            isPlayingWalk = true;
-        }
-        else if ((playerGoLeft == false && playerGoRight == false) || playerIsOnGround == false)
-        {
-            FindObjectOfType<ELC_AudioManager>().Stop("Walk");
-            isPlayingWalk = false;
-        }
+        
 
-        if (horizontalInput < 0)
+        if(GetComponent<ELC_PauseMenu>().isPaused == false)
         {
-            playerGoLeft = true;
-            //playerFaceLeft = true;
-            playerGoRight = false;
-            //playerFaceRight = false;
-            playerImmobile = false;
-            spriteRenderer.flipX = true;
-            animator.SetBool("IsWalking", true);
-            
+            if ((playerGoLeft || playerGoRight) && playerIsOnGround && isPlayingWalk == false)
+            {
+                FindObjectOfType<ELC_AudioManager>().Play("Walk", true);
+                isPlayingWalk = true;
+            }
+            else if ((playerGoLeft == false && playerGoRight == false) || playerIsOnGround == false)
+            {
+                FindObjectOfType<ELC_AudioManager>().Stop("Walk");
+                isPlayingWalk = false;
+            }
+
+            if (horizontalInput < 0)
+            {
+                playerGoLeft = true;
+                //playerFaceLeft = true;
+                playerGoRight = false;
+                //playerFaceRight = false;
+                playerImmobile = false;
+                spriteRenderer.flipX = true;
+                animator.SetBool("IsWalking", true);
+
+            }
+            else if (horizontalInput == 0)
+            {
+                playerImmobile = true;
+                playerGoRight = false;
+                playerGoLeft = false;
+                animator.SetBool("IsWalking", false);
+            }
+            else if (horizontalInput > 0)
+            {
+                playerGoRight = true;
+                //playerFaceRight = true;
+                playerGoLeft = false;
+                //playerFaceLeft = false;
+                playerImmobile = false;
+                spriteRenderer.flipX = false;
+                animator.SetBool("IsWalking", true);
+            }
         }
-        else if (horizontalInput == 0)
-        {
-            playerImmobile = true;
-            playerGoRight = false;
-            playerGoLeft = false;
-            animator.SetBool("IsWalking", false);
-        }
-        else if (horizontalInput > 0)
-        {
-            playerGoRight = true;
-            //playerFaceRight = true;
-            playerGoLeft = false;
-            //playerFaceLeft = false;
-            playerImmobile = false;
-            spriteRenderer.flipX = false;
-            animator.SetBool("IsWalking", true);
-        }
+        
 
         //Si le joueur est au sol
         GroundDetector();

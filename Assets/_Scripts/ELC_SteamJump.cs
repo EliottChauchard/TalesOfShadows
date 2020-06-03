@@ -102,7 +102,7 @@ public class ELC_SteamJump : MonoBehaviour
             Debug.Log("chargingSJ");
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && endLoad == true) && isSteamJumping == false && isChargingSteamJump == true)
+        if ((Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && endLoad == true)) && isSteamJumping == false && isChargingSteamJump == true)
         {
             
             canMove = true;
@@ -111,7 +111,10 @@ public class ELC_SteamJump : MonoBehaviour
             isLoading = false;
             endLoad = false;
             Debug.Log("Launch SteamJump");
+            
             FindObjectOfType<ELC_AudioManager>().Play("SteamJump", false);
+            
+            
             FindObjectOfType<ELC_AudioManager>().Stop("SteamJumpChargeBegin");
 
         }

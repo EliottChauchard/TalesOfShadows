@@ -26,7 +26,7 @@ public class ELC_PauseMenu : MonoBehaviour
             Time.timeScale = 0f;
             MenuButton.SetActive(true);
             OptionsButton.SetActive(true);
-            AudioListener.volume = 0.4f;
+            AudioListener.volume = 0.4f * PlayerPrefs.GetFloat("GlobalVolume");
         }
         else
         {

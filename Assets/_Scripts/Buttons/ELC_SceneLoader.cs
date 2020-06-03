@@ -11,6 +11,7 @@ public class ELC_SceneLoader : MonoBehaviour
     private GameObject toHide;
     [SerializeField]
     private GameObject loadingSprite;
+    public bool isPause;
 
     public void Start()
     {
@@ -22,32 +23,50 @@ public class ELC_SceneLoader : MonoBehaviour
         StartCoroutine(LoadSceneAsync(SceneIndex));
     }
 
+
     IEnumerator LoadSceneAsync(int sceneIndex)
     {
-        if (sceneIndex == 1)
+        if (isPause == false)
         {
-            FindObjectOfType<ELC_AudioManager>().Play("ClickButton", false);
-            animator.SetTrigger("MenuStart");
-            toHide.SetActive(false);
-            yield return new WaitForSeconds(0.2f);
-            loadingSprite.SetActive(true);
-            yield return new WaitForSeconds(transitionTime);
-            AsyncOperation operationPercentage = SceneManager.LoadSceneAsync(sceneIndex);
-
-
-            while (!operationPercentage.isDone)
+            if (sceneIndex == 1)
             {
-                progress = operationPercentage.progress / 0.9f;
-                Debug.Log(progress);
-                yield return null;
+                FindObjectOfType<ELC_AudioManager>().Play("ClickButton", false);
+                animator.SetTrigger("MenuStart");
+                toHide.SetActive(false);
+                yield return new WaitForSeconds(0.2f);
+                loadingSprite.SetActive(true);
+                yield return new WaitForSeconds(transitionTime);
+                AsyncOperation operationPercentage = SceneManager.LoadSceneAsync(sceneIndex);
+
+
+                while (!operationPercentage.isDone)
+                {
+                    progress = operationPercentage.progress / 0.9f;
+                    Debug.Log(progress);
+                    yield return null;
+                }
+            }
+            else
+            {
+                FindObjectOfType<ELC_AudioManager>().Play("ClickButton", false);
+                animator.SetTrigger("MenuStart");
+                toHide.SetActive(false);
+                AsyncOperation operationPercentage = SceneManager.LoadSceneAsync(sceneIndex);
+
+                while (!operationPercentage.isDone)
+                {
+                    progress = operationPercentage.progress / 0.9f;
+                    Debug.Log(progress);
+                    yield return null;
+                }
             }
         }
         else
         {
             FindObjectOfType<ELC_AudioManager>().Play("ClickButton", false);
-            animator.SetTrigger("MenuStart");
-            toHide.SetActive(false);
+            animator.SetTrigger("Start");
             AsyncOperation operationPercentage = SceneManager.LoadSceneAsync(sceneIndex);
+            Debug.Log(sceneIndex);
 
             while (!operationPercentage.isDone)
             {
@@ -56,5 +75,6 @@ public class ELC_SceneLoader : MonoBehaviour
                 yield return null;
             }
         }
+            
     }
 }

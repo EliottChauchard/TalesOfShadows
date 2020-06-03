@@ -8,14 +8,19 @@ public class KNF_ParallaxLayer : MonoBehaviour
 
     private Transform cameraTransform;
 
-    private Vector3 startCameraPos;
-    private Vector3 startPos;
+    public Vector3 startCameraPos;
+    public Vector3 startPos;
 
     void Start()
     {
         cameraTransform = Camera.main.transform;
         startCameraPos = cameraTransform.position;
         startPos = transform.position;
+    }
+
+    private void Update()
+    {
+        Debug.Log(startCameraPos);
     }
 
 

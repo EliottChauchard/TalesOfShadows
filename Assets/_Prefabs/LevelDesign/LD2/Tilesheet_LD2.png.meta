@@ -362,6 +362,9 @@ TextureImporter:
   - first:
       213: -6510850572480346568
     second: Clock_Aiguilles_Small
+  - first:
+      213: -2766750635255743060
+    second: Tilesheet_LD2_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1499,13 +1502,13 @@ TextureImporter:
       name: Clouds
       rect:
         serializedVersion: 2
-        x: 5
+        x: 7
         y: 525
         width: 1420
         height: 253
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 54, z: 0, w: 0}
+      border: {x: 0, y: 40, z: 6, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1589,7 +1592,7 @@ TextureImporter:
         height: 325
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 8, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1806,6 +1809,69 @@ TextureImporter:
       bones: []
       spriteID: 83609a976efc4a5a0800000000000000
       internalID: -6510850572480346568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD2_1
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 14
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadbe73c4f68a99d0800000000000000
+      internalID: -2766750635255743060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD2_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 526
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ec046ac87f1f720800000000000000
+      internalID: 2878353820323204733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD2_3
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 460
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa18c383fefc0d90800000000000000
+      internalID: -7130043788192900364
       vertices: []
       indices: 
       edges: []

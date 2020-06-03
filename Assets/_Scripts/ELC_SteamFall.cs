@@ -18,6 +18,8 @@ public class ELC_SteamFall : MonoBehaviour
     [SerializeField]
     private bool steamFuelIsEmpty;
 
+    [SerializeField]
+    private bool shiftPushed;
 
     private float verticalSpeed;
 
@@ -55,8 +57,18 @@ public class ELC_SteamFall : MonoBehaviour
         {
             steamFallEnable = true;
             animator.SetBool("SteamFallEnable", true);
+            if(Input.GetKey(KeyCode.LeftShift))
+            {
+                shiftPushed = true;
+            }
+            
         }
-        if ((Input.GetKeyUp(KeyCode.LeftShift) || Input.GetAxis("SteamFall") == 0) || playerIsOnGround == true || steamFuelIsEmpty == true)
+        if (Input.GetKey(KeyCode.LeftShift) == false)
+        {
+            shiftPushed = false;
+        }
+
+        if ((Input.GetKeyUp(KeyCode.LeftShift) || (Input.GetAxis("SteamFall") == 0 && shiftPushed == false)) || playerIsOnGround == true || steamFuelIsEmpty == true)
         {
             steamFallEnable = false;
             animator.SetBool("SteamFallEnable", false);

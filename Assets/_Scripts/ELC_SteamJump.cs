@@ -102,7 +102,7 @@ public class ELC_SteamJump : MonoBehaviour
             Debug.Log("chargingSJ");
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && endLoad == true && isSteamJumping == false))
+        if (Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && endLoad == true) && isSteamJumping == false && isChargingSteamJump == true)
         {
             
             canMove = true;

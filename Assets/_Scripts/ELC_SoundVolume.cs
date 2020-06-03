@@ -7,6 +7,10 @@ public class ELC_SoundVolume : MonoBehaviour
 {
     static public float soundVolume;
 
+    private void Start()
+    {
+        this.gameObject.GetComponent<Slider>().value = PlayerPrefs.GetFloat("GlobalVolume");
+    }
     // Update is called once per frame
     void Update()
     {

@@ -51,7 +51,7 @@ public class ELC_SteamPush : MonoBehaviour
         startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         ZoneAction();
 
-        if((Input.GetKey(KeyCode.JoystickButton2) || Input.GetKey(KeyCode.C)) && canSteamPush == true)
+        if((Input.GetKey(KeyCode.JoystickButton2) || Input.GetKey(KeyCode.Z)) && canSteamPush == true)
         {
             animator.SetBool("SteamPush", true);
             FindObjectOfType<ELC_AudioManager>().Play("SteamPush", false);

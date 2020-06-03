@@ -63,8 +63,9 @@ public class ELC_SceneLoader : MonoBehaviour
         }
         else
         {
-            FindObjectOfType<ELC_AudioManager>().Play("ClickButton", false);
-            animator.SetTrigger("Start");
+            //FindObjectOfType<ELC_AudioManager>().Play("ClickButton", false);
+            animator.SetTrigger("MenuStart");
+            toHide.SetActive(false);
             AsyncOperation operationPercentage = SceneManager.LoadSceneAsync(sceneIndex);
             Debug.Log(sceneIndex);
 

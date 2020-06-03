@@ -8,6 +8,7 @@ public class ELC_PlateformFall : MonoBehaviour
     private GameObject plateform;
     private BoxCollider2D plateformCollider;
     private SpriteRenderer plateformSpriteRenderer;
+    private Animator plateformAnimator;
     [SerializeField]
     private float timeBeforeFall;
 
@@ -16,6 +17,7 @@ public class ELC_PlateformFall : MonoBehaviour
     {
         plateformCollider = plateform.GetComponent<BoxCollider2D>();
         plateformSpriteRenderer = plateform.GetComponent<SpriteRenderer>();
+        plateformAnimator = plateform.GetComponent<Animator>();
     }
     
 
@@ -29,6 +31,7 @@ public class ELC_PlateformFall : MonoBehaviour
 
     IEnumerator PlateformFall()
     {
+        plateformAnimator.SetBool("plateformFall", true);
         yield return new WaitForSeconds(timeBeforeFall);
         plateformCollider.enabled = false;
         plateformSpriteRenderer.enabled = false;

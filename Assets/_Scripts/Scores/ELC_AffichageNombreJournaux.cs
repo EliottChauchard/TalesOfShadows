@@ -16,6 +16,6 @@ public class ELC_AffichageNombreJournaux : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textToDisplay.text = "Total papers Collected : " + PlayerPrefs.GetFloat("NumberOfCollectibles");
+        textToDisplay.text = "Total papers Collected : " + PlayerPrefs.GetInt("NumberOfCollectibles");
     }
 }

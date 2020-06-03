@@ -53,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 54440069f07394440a9818a0232757ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,12 +147,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSummon: {fileID: 0}
   objectToDesactivate: {fileID: 0}
+  objectToDesactivate2: {fileID: 0}
   objectWithAnimationToTrigger: {fileID: 0}
+  objectWithAnimationToTrigger2: {fileID: 0}
+  objectWithAnimationToTrigger3: {fileID: 0}
   DoorToTrigger: {fileID: 0}
+  animationName: 
+  hasAlreadyBeenActivated: 0
   isTimed: 1
   timeBeforeTurnOff: 5
   timerIsOn: 0
   isActivated: 0
+  cable1: {fileID: 0}
+  cable2: {fileID: 0}
+  cable3: {fileID: 0}
+  cable4: {fileID: 0}
+  cable5: {fileID: 0}
+  cable6: {fileID: 0}
+  cable7: {fileID: 0}
+  cable8: {fileID: 0}
+  cable9: {fileID: 0}
 --- !u!95 &7389578837359160863
 Animator:
   serializedVersion: 3

@@ -75,7 +75,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d89a8f15da828864a8aea8802153226c, type: 2}
+  m_Motion: {fileID: 7400000, guid: ab24baa3ee2fc184d932f2261794a1a9, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -164,7 +164,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9f7f99312713305439635f10727ba66c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 18d01f586a737a54194c8f74c9c29d61, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -213,7 +213,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1d4b10a39e80c3244906d29da97675a4, type: 2}
+  m_Motion: {fileID: 7400000, guid: 19d4a88bd264d414485ff65b2d7e151e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -240,7 +240,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7caa7177b729611419c42044c6882527, type: 2}
+  m_Motion: {fileID: 7400000, guid: 1a2516e1c8add3c478c9925aeab2ea28, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -252,7 +252,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Levier
+  m_Name: LevierLD2
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: SwitchBasicOn
@@ -319,7 +319,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f13ec41c8486a1141b3ec0632809691c, type: 2}
+  m_Motion: {fileID: 7400000, guid: a94bb5676d37ba04c91af0dc6cd1d784, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

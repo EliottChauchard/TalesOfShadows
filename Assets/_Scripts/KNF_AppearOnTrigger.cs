@@ -9,6 +9,8 @@ public class KNF_AppearOnTrigger : MonoBehaviour
     public KNF_ParallaxLayer pL3;
     public KNF_ParallaxLayer pL4;
     public KNF_ParallaxLayer pL5;
+    public KNF_ParallaxLayer pL6;
+    public KNF_ParallaxLayer pL7;
     private Transform cameraTransform;
     public GameObject destroyIt;
 
@@ -26,7 +28,8 @@ public class KNF_AppearOnTrigger : MonoBehaviour
         pL3.startCameraPos = cameraTransform.position;
         pL4.startCameraPos = cameraTransform.position;
         pL5.startCameraPos = cameraTransform.position;
-
+        pL6.startCameraPos = cameraTransform.position;
+        pL7.startCameraPos = cameraTransform.position;
         destroyIt.SetActive(false);
     }
 }

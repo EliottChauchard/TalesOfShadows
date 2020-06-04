@@ -21,17 +21,17 @@ public class KNF_ZoomEvent : MonoBehaviour
             levi.isActivated = true;
             levi2.isActivated = true;
             levi3.isActivated = true;
-            StartCoroutine(ZoomEvent());
+            //StartCoroutine(ZoomEvent());
         }
     }
 
-    IEnumerator ZoomEvent()
-    {
-        yield return new WaitForSeconds(timeBetween);
-        levi.isActivated = false;
-        levi2.isActivated = false;
-        levi3.isActivated = false;
-    }
+    //IEnumerator ZoomEvent()
+    //{
+    //    yield return new WaitForSeconds(timeBetween);
+    //    levi.isActivated = false;
+    //    levi2.isActivated = false;
+    //    levi3.isActivated = false;
+    //}
 
     private void OnTriggerExit2D(Collider2D collision)
     {

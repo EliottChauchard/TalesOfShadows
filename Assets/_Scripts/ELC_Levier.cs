@@ -33,7 +33,11 @@ public class ELC_Levier : MonoBehaviour
     [SerializeField]
     private float timeBeforeTurnOff;
     [SerializeField]
+    private float timeBeforeTurnOffCinematic;
+    [SerializeField]
     public bool timerIsOn;
+    [SerializeField]
+    public bool isCinematicLever;
     public bool isActivated;
 
     [SerializeField]
@@ -219,8 +223,15 @@ public class ELC_Levier : MonoBehaviour
     {
         timerIsOn = true;
         animator.SetBool("TimeIsLooping", true);
-        
-        yield return new WaitForSeconds(timeBeforeTurnOff);
+        if(isCinematicLever == true)
+        {
+            yield return new WaitForSeconds(timeBeforeTurnOffCinematic);
+            isCinematicLever = false;
+        }
+        else if(isCinematicLever == false)
+        {
+            yield return new WaitForSeconds(timeBeforeTurnOff);
+        }
         animator.SetBool("SwitchTimedOn", false);
         animator.SetBool("TimeIsLooping", false);
         animator.SetBool("SwitchTimedOff", true);

@@ -16,14 +16,20 @@ public class ELC_PauseMenu : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.JoystickButton7) || Input.GetKeyDown(KeyCode.N))
         {
-            isPaused = !isPaused;
+            Pause();
         }
 
-        if(isPaused)
+        
+    }
+    public void Pause()
+    {
+        isPaused = !isPaused;
+        if (isPaused)
         {
             Time.timeScale = 0f;
             MenuButton.SetActive(true);
             OptionsButton.SetActive(true);
+            ResumeButton.SetActive(true);
             AudioListener.volume = 0.4f * PlayerPrefs.GetFloat("GlobalVolume");
         }
         else
@@ -31,6 +37,7 @@ public class ELC_PauseMenu : MonoBehaviour
             Time.timeScale = 1f;
             MenuButton.SetActive(false);
             OptionsButton.SetActive(false);
+            ResumeButton.SetActive(false);
             AudioListener.volume = PlayerPrefs.GetFloat("GlobalVolume");
         }
     }

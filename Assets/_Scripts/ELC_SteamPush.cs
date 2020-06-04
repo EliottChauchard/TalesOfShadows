@@ -128,7 +128,7 @@ public class ELC_SteamPush : MonoBehaviour
         if (FindObjectOfType<ELC_ScreenShake>().isScreenShaking == false)
         {
             yield return new WaitForSeconds(0.1f);
-            FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.4f, 0.03f);
+            FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.4f, 0.5f);
         }
 
         if (detection1.collider != null)

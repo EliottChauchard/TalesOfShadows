@@ -22,7 +22,9 @@ public class ELC_ScreenShake : MonoBehaviour
     [SerializeField]
     public bool isScreenShaking;
 
+    [SerializeField]
     private float variationValueX;
+    [SerializeField]
     private float variationValueY;
 
     // Start is called before the first frame update
@@ -48,7 +50,7 @@ public class ELC_ScreenShake : MonoBehaviour
             variationValueX = Random.Range(-variationScale, variationScale);
             variationValueY = Random.Range(-variationScale, variationScale);
 
-            cameraCinemachineTransform.m_Offset = new Vector3 (initialPosition.x + variationValueX, initialPosition.y + variationValueY, - 400) ;
+            cameraCinemachineTransform.m_Offset.Set(initialPosition.x + variationValueX, initialPosition.y + variationValueY, -400);
 
             timeRemaining = timeRemaining - durationDecreaseSpeed * Time.deltaTime;
         }

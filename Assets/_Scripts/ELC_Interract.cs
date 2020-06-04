@@ -33,6 +33,7 @@ public class ELC_Interract : MonoBehaviour
                 gameObjectDetected.GetComponent<BoxCollider2D>().enabled = false;
                 CollectiblesScript.numberOfKeys = CollectiblesScript.numberOfKeys - DoorInterruptorScript.numberOfKeyNeeded;
                 FindObjectOfType<ELC_AudioManager>().Play("DoorInterruptor", false);
+                FindObjectOfType<ELC_ScreenShake>().ScreenShake(1f, 0.04f);
             }
         }
         else if (tagOfCollidedObject == "Checkpoint")

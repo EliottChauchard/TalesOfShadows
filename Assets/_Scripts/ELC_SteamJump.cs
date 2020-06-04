@@ -126,11 +126,11 @@ public class ELC_SteamJump : MonoBehaviour
             {
                 if(charge < maxCharge)
                 {
-                    FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.02f, 0.001f);
+                    FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.02f, 0.005f);
                 }
                 else
                 {
-                    FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.02f, 0.010f);
+                    FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.02f, 0.030f);
                 }
                 
             }

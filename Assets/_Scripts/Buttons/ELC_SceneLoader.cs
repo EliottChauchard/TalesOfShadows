@@ -18,10 +18,16 @@ public class ELC_SceneLoader : MonoBehaviour
         loadingSprite.SetActive(false);
         animator.GetComponent<CanvasGroup>().alpha = 0f;
     }
+    
 
     public void LoadSceneFuction(int SceneIndex)
     {
-        pM.isPaused = false;
+        if(pM != null)
+        {
+            pM.isPaused = false;
+        }
+        
+        Time.timeScale = 1f;
         StartCoroutine(LoadSceneAsync(SceneIndex));
     }
 

@@ -38,6 +38,10 @@ public class ELC_Journal : MonoBehaviour
     void Update()
     {
         numberSaved = PlayerPrefs.GetInt("Collectible" + refNumber);
+        if(PlayerPrefs.GetInt("Collectible" + refNumber) == 1)
+        {
+            Destroy(this.gameObject);
+        }
 
         if (isTaken == true)
         {

@@ -260,7 +260,7 @@ public class ELC_PlayerMoves : MonoBehaviour
 
 
         //saut
-        if ((Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && steamJumpPhase == true && canSteamJump == true && Input.GetKey(KeyCode.Space) == false) && (playerIsOnGround == true|| canJump == true)))
+        if ((Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && steamJumpPhase == true && Input.GetKey(KeyCode.Space) == false)) && canSteamJump == true  && (playerIsOnGround == true || canJump == true))
         {
             playerIsJumping = true;
             
@@ -425,9 +425,16 @@ public class ELC_PlayerMoves : MonoBehaviour
     
     IEnumerator GhostJump()
     {
-        Debug.Log("ghostJump start");
-        yield return new WaitForSeconds(ghostJumpDelay);
-        Debug.Log("GhostJump Finish");
-        canJump = false;
+        if(playerIsJumping == false)
+        {
+            Debug.Log("ghostJump start");
+            yield return new WaitForSeconds(ghostJumpDelay);
+            Debug.Log("GhostJump Finish");
+            canJump = false;
+        }
+        else
+        {
+            canJump = false;
+        }
     }
 }

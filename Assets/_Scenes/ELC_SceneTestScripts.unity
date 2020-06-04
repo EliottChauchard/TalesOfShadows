@@ -1648,6 +1648,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4506934799577759861, guid: 9bbe17cce097f1242a5ec3a433438518,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4544180842825222205, guid: 9bbe17cce097f1242a5ec3a433438518,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3278,6 +3283,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3545969769770186512, guid: b3fe7b1383e08ea438e2581b7d3b0fb2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.059999466
+      objectReference: {fileID: 0}
+    - target: {fileID: 3545969769770186512, guid: b3fe7b1383e08ea438e2581b7d3b0fb2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.292
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882039347675961298, guid: b3fe7b1383e08ea438e2581b7d3b0fb2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7113509154913401180, guid: b3fe7b1383e08ea438e2581b7d3b0fb2,
         type: 3}
       propertyPath: m_Name

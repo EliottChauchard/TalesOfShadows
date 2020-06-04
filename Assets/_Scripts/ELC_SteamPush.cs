@@ -9,6 +9,9 @@ public class ELC_SteamPush : MonoBehaviour
     private Animator animator;
     public bool SteamPush;
 
+    [SerializeField]
+    private GameObject steamParticles;
+
     RaycastHit2D detection1;
     RaycastHit2D detection2;
     RaycastHit2D detection3;
@@ -21,6 +24,9 @@ public class ELC_SteamPush : MonoBehaviour
     private bool canSteamPush = true;
     [SerializeField]
     private float reloadTime;
+
+    private bool hasTurnedLeft;
+    private bool hasTurnedRight;
     
 
     [SerializeField]
@@ -42,6 +48,7 @@ public class ELC_SteamPush : MonoBehaviour
     {
         PlayerMovesScript = GetComponent<ELC_PlayerMoves>();
         animator = gameObject.GetComponent<Animator>();
+        hasTurnedLeft = true;
     }
     
     void Update()
@@ -64,6 +71,19 @@ public class ELC_SteamPush : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.JoystickButton2) || Input.GetKeyUp(KeyCode.Z))
         {
             animator.SetBool("SteamPush", false);
+        }
+
+        if(turnFace == -1 && hasTurnedLeft == false)
+        {
+            steamParticles.GetComponent<Transform>().Rotate(new Vector3(180f, 0f, 0f) );
+            hasTurnedLeft = true;
+            hasTurnedRight = false;
+        }
+        else if(turnFace == 1 && hasTurnedRight == false)
+        {
+            steamParticles.GetComponent<Transform>().Rotate(new Vector3(180f, 0f, 0f));;
+            hasTurnedLeft = false;
+            hasTurnedRight = true;
         }
 
     }

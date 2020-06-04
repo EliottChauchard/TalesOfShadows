@@ -547,12 +547,42 @@ PrefabInstance:
     - target: {fileID: 7643528655371242316, guid: 54cc42f9ae2400048a226718bd92455e,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 35
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7643528655371242316, guid: 54cc42f9ae2400048a226718bd92455e,
         type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7643528655371242316, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7643528655371242316, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7643528655371242316, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7643528655371242316, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7643528655371242316, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_FontData.m_RichText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7643528655371242316, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.4745098
       objectReference: {fileID: 0}
     - target: {fileID: 8079471113579068114, guid: 54cc42f9ae2400048a226718bd92455e,
         type: 3}
@@ -583,6 +613,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311064410636939598, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311064410636939598, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311064410636939598, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311064410636939598, guid: 54cc42f9ae2400048a226718bd92455e,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.43137255
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54cc42f9ae2400048a226718bd92455e, type: 3}

@@ -10,6 +10,7 @@ public class KNF_AppearOnTrigger : MonoBehaviour
     public KNF_ParallaxLayer pL4;
     public KNF_ParallaxLayer pL5;
     private Transform cameraTransform;
+    public GameObject destroyIt;
 
     // Start is called before the first frame update
     void Start()
@@ -25,5 +26,7 @@ public class KNF_AppearOnTrigger : MonoBehaviour
         pL3.startCameraPos = cameraTransform.position;
         pL4.startCameraPos = cameraTransform.position;
         pL5.startCameraPos = cameraTransform.position;
+
+        destroyIt.SetActive(false);
     }
 }

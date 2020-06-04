@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 54440069f07394440a9818a0232757ff, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,6 +147,7 @@ MonoBehaviour:
   numberOfKeyNeeded: 1
   playerHaveEnoughKey: 0
   hasAlreadyBeenActivated: 0
+  activatedMaterial: {fileID: 2100000, guid: 54440069f07394440a9818a0232757ff, type: 2}
   ControledDoor: {fileID: 0}
   cable1: {fileID: 0}
   cable2: {fileID: 0}

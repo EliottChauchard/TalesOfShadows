@@ -15,6 +15,7 @@ public class ELC_EndLevelSave : MonoBehaviour
     [SerializeField]
     private Vector3 positionToTP;
     private bool playerIsAtTheEnd;
+    private bool hasBeenTriggered;
 
     [SerializeField]
     private ELC_Timer timerScript;
@@ -91,11 +92,16 @@ public class ELC_EndLevelSave : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            playerGameObject = collision.gameObject;
-            playerPosition = playerGameObject.GetComponent<Transform>().localPosition;
-            playerIsAtTheEnd = true;
-            StartCoroutine("NextLevel");
-            Debug.Log("PlayerRegister");
+            if(hasBeenTriggered == false)
+            {
+                playerGameObject = collision.gameObject;
+                playerPosition = playerGameObject.GetComponent<Transform>().localPosition;
+                playerIsAtTheEnd = true;
+                StartCoroutine("NextLevel");
+                Debug.Log("PlayerRegister");
+            }
+
+            hasBeenTriggered = true;
         }
     }
     IEnumerator NextLevel()

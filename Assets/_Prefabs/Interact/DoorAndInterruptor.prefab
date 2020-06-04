@@ -49,11 +49,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorInterruptor
       objectReference: {fileID: 0}
-    - target: {fileID: 5853403950720192772, guid: b7e7149572232c4449323238d21809b9,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 54440069f07394440a9818a0232757ff, type: 2}
     - target: {fileID: 8282316519786716862, guid: b7e7149572232c4449323238d21809b9,
         type: 3}
       propertyPath: m_LocalPosition.x

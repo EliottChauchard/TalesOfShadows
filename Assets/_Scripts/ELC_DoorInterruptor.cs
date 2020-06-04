@@ -12,6 +12,8 @@ public class ELC_DoorInterruptor : MonoBehaviour
     public bool playerHaveEnoughKey;
     [SerializeField]
     private bool hasAlreadyBeenActivated;
+    [SerializeField]
+    private Material activatedMaterial;
 
 
     [SerializeField]
@@ -40,7 +42,6 @@ public class ELC_DoorInterruptor : MonoBehaviour
     {
         playerHaveEnoughKey = false;
         DoorScript = ControledDoor.GetComponent<ELC_OpenDoor>();
-        EnableLight(Color.black);
     }
 
 
@@ -54,7 +55,7 @@ public class ELC_DoorInterruptor : MonoBehaviour
             statutOfTheDoor = true;
             if(hasAlreadyBeenActivated == false)
             {
-                EnableLight(Color.yellow);
+                EnableLight();
                 if (numberOfKeyNeeded == 1)
                 {
                     GlobalScoreValues.activateOneKeyMachine += 1;
@@ -118,8 +119,8 @@ public class ELC_DoorInterruptor : MonoBehaviour
         }
     }
 
-    void EnableLight(Color color)
+    void EnableLight()
     {
-        this.GetComponent<Renderer>().material.SetColor("Color_39D6A3EA", color);
+        this.GetComponent<Renderer>().material = activatedMaterial;
     }
 }

@@ -223,14 +223,17 @@ public class ELC_Levier : MonoBehaviour
     {
         timerIsOn = true;
         animator.SetBool("TimeIsLooping", true);
+        this.GetComponent<AudioSource>().Play();
         if(isCinematicLever == true)
         {
             yield return new WaitForSeconds(timeBeforeTurnOffCinematic);
             isCinematicLever = false;
+            this.GetComponent<AudioSource>().Stop();
         }
         else if(isCinematicLever == false)
         {
             yield return new WaitForSeconds(timeBeforeTurnOff);
+            this.GetComponent<AudioSource>().Stop();
         }
         animator.SetBool("SwitchTimedOn", false);
         animator.SetBool("TimeIsLooping", false);

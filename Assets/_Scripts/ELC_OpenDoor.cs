@@ -11,6 +11,7 @@ public class ELC_OpenDoor : MonoBehaviour
     private bool horizontalDoor;
     [SerializeField]
     private bool verticalDoor;
+    private bool hasAlreadyBeenOpen;
 
     public bool doorIsOpen = false;
 
@@ -27,12 +28,15 @@ public class ELC_OpenDoor : MonoBehaviour
     {
         BoxCollider = this.GetComponent<BoxCollider2D>();
 
-        if (doorIsOpen == true)
+        if (doorIsOpen == true && hasAlreadyBeenOpen == false)
         {
             BoxCollider.enabled = false;
             spriteRenderer.enabled = false;
+            hasAlreadyBeenOpen = true;
+            this.GetComponent<AudioSource>().Play();
+
         }
-        else
+        else if(doorIsOpen == false)
         {
             BoxCollider.enabled = true;
             spriteRenderer.enabled = true;

@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class ELC_Collectibles : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject firstKey;
+    [SerializeField]
+    private GameObject secondKey;
+    [SerializeField]
+    private GameObject thirdKey;
 
     CircleCollider2D Collider;
 
@@ -24,6 +30,29 @@ public class ELC_Collectibles : MonoBehaviour
     {
         totalKeysCollected = PlayerPrefs.GetFloat("TotalKeysCollected");
         totalJournaux = PlayerPrefs.GetInt("NumberOfCollectibles");
+
+        if(numberOfKeys == 3)
+        {
+            thirdKey.SetActive(true);
+        }
+        else if(numberOfKeys >= 2)
+        {
+            secondKey.SetActive(true);
+            thirdKey.SetActive(false);
+        }
+        else if(numberOfKeys >= 1)
+        {
+            firstKey.SetActive(true);
+            secondKey.SetActive(false);
+            thirdKey.SetActive(false);
+        }
+        else if(numberOfKeys == 0)
+        {
+            firstKey.SetActive(false);
+            secondKey.SetActive(false);
+            thirdKey.SetActive(false);
+        }
+
     }
     
     private void OnTriggerEnter2D(Collider2D collision)

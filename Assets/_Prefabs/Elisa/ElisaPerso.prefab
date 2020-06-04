@@ -281,7 +281,7 @@ MonoBehaviour:
   underRayPositionX: 0.07
   topRayLenght: 0.14
   topRayPositionY: 0.16
-  topRayPositionX: 0.1
+  topRayPositionX: 0.06
   faceRayLenght: 0.23
   faceRayPositionX: 0.1
   faceRayPositionY: 0.12
@@ -299,6 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SteamPush: 0
+  steamParticles: {fileID: 0}
   collisionMask:
     serializedVersion: 2
     m_Bits: 131584
@@ -345,10 +346,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4c9d0ac1df0d74ea4897b6e41653d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jauge: {fileID: 0}
+  contourJauge: {fileID: 0}
   steamFallEnable: 0
   steamFuelIsFull: 0
   steamFuelIsHalfFull: 0
   steamFuelIsEmpty: 0
+  shiftPushed: 0
   steamFuel: 0
   steamFallGravityForce: 50
   maxFuelCharge: 10
@@ -381,6 +385,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afd2ba38ee5eed41812124c603701e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstKey: {fileID: 0}
+  secondKey: {fileID: 0}
+  thirdKey: {fileID: 0}
   numberOfSpecialKeys: 0
   numberOfKeys: 0
   tagOfTheObject: 

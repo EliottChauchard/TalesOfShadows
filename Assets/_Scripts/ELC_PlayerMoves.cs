@@ -181,7 +181,7 @@ public class ELC_PlayerMoves : MonoBehaviour
                 isPlayingWalk = false;
             }
 
-            if (horizontalInput < 0)
+            if (horizontalInput < 0 && FindObjectOfType<ELC_SteamPush>().SteamPush == false)
             {
                 playerGoLeft = true;
                 //playerFaceLeft = true;
@@ -192,14 +192,14 @@ public class ELC_PlayerMoves : MonoBehaviour
                 animator.SetBool("IsWalking", true);
 
             }
-            else if (horizontalInput == 0)
+            else if (horizontalInput == 0 && FindObjectOfType<ELC_SteamPush>().SteamPush == false)
             {
                 playerImmobile = true;
                 playerGoRight = false;
                 playerGoLeft = false;
                 animator.SetBool("IsWalking", false);
             }
-            else if (horizontalInput > 0)
+            else if (horizontalInput > 0 && FindObjectOfType<ELC_SteamPush>().SteamPush == false)
             {
                 playerGoRight = true;
                 //playerFaceRight = true;
@@ -248,11 +248,11 @@ public class ELC_PlayerMoves : MonoBehaviour
         }
 
         //faire en sorte que le joueur se tourne
-        if (playerGoLeft == true)
+        if (playerGoLeft == true && FindObjectOfType<ELC_SteamPush>().SteamPush == false)
         {
             turnPlayerFace = -1;
         }
-        else if (playerGoRight == true)
+        else if (playerGoRight == true && FindObjectOfType<ELC_SteamPush>().SteamPush == false)
         {
             turnPlayerFace = 1;
         }

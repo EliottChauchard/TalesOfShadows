@@ -122,6 +122,7 @@ public class ELC_SteamPush : MonoBehaviour
 
     IEnumerator WaitForPush(float timeToWait)
     {
+        SteamPush = true;
         yield return new WaitForSeconds(timeToWait);
 
         if (FindObjectOfType<ELC_ScreenShake>().isScreenShaking == false)
@@ -197,5 +198,7 @@ public class ELC_SteamPush : MonoBehaviour
                 detection5.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
             }
         }
+        yield return new WaitForSeconds(1f);
+        SteamPush = false;
     }
 }

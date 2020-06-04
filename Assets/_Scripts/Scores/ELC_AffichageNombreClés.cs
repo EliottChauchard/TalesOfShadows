@@ -20,6 +20,6 @@ public class ELC_AffichageNombreClés : MonoBehaviour
     {
         playerNumberOfKeys = CollectiblesScript.numberOfKeys;
 
-        textToDisplay.text = "Key : " + playerNumberOfKeys;
+        textToDisplay.text = "" + playerNumberOfKeys;
     }
 }

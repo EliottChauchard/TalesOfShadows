@@ -67,7 +67,9 @@ public class ELC_SteamPush : MonoBehaviour
             StartCoroutine("WaitForPush", 0.05f);
 
             StartCoroutine("ReloadSteamPush");
+            
         }
+
         if (Input.GetKeyUp(KeyCode.JoystickButton2) || Input.GetKeyUp(KeyCode.Z))
         {
             animator.SetBool("SteamPush", false);
@@ -108,6 +110,8 @@ public class ELC_SteamPush : MonoBehaviour
 
     IEnumerator StunMonster()
     {
+        
+
         littleMonsterScript.isStun = true;
         yield return new WaitForSeconds(stunDelay);
         littleMonsterScript.isStun = false;
@@ -130,6 +134,7 @@ public class ELC_SteamPush : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.4f, 0.04f);
         }
+        animator.SetBool("SteamPush", false);
 
         if (detection1.collider != null)
         {
@@ -199,6 +204,7 @@ public class ELC_SteamPush : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(1f);
+        
         SteamPush = false;
     }
 }

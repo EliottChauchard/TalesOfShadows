@@ -40,6 +40,7 @@ public class ELC_OpenDoor : MonoBehaviour
         {
             BoxCollider.enabled = true;
             spriteRenderer.enabled = true;
+            hasAlreadyBeenOpen = false;
         }
     }
 }

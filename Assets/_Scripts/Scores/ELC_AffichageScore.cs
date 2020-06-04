@@ -11,6 +11,16 @@ public class ELC_AffichageScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GlobalScoreValues.playerDeaths = 0f;
+        GlobalScoreValues.activateBasicLever = 0f;
+        GlobalScoreValues.activateOneKeyMachine = 0f;
+        GlobalScoreValues.activateThreeKeyMachine = 0f;
+        GlobalScoreValues.activateTwoKeyMachine = 0f;
+        GlobalScoreValues.keysCollected = 0f;
+        GlobalScoreValues.littleEnemyKilled = 0f;
+        GlobalScoreValues.mediumEnemyKilled = 0f;
+        GlobalScoreValues.playerDeaths = 0f;
+        GlobalScoreValues.actualTotalScore = 0f;
         text = this.GetComponent<Text>();
     }
 

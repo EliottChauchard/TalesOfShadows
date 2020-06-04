@@ -11,6 +11,9 @@ public class ELC_AudioSpace : MonoBehaviour
     private AudioSource audioSource;
 
     [SerializeField]
+    private float maxVolume;
+
+    [SerializeField]
     private Vector2 distanceBtwThem;
     [SerializeField]
     private float distanceMax;
@@ -49,19 +52,23 @@ public class ELC_AudioSpace : MonoBehaviour
         {
             if (distanceBtwThem.x > 0 && distanceBtwThem.y > 0)
             {
-                audioSource.volume = 1 - ((distanceBtwThem.x + distanceBtwThem.y) / distanceMax);
+                audioSource.volume = maxVolume - ((distanceBtwThem.x + distanceBtwThem.y) / distanceMax);
+                audioSource.panStereo = distanceBtwThem.x / distanceMax;
             }
             else if (distanceBtwThem.x < 0 && distanceBtwThem.y > 0)
             {
-                audioSource.volume = 1 + ((distanceBtwThem.x - distanceBtwThem.y) / distanceMax);
+                audioSource.volume = maxVolume + ((distanceBtwThem.x - distanceBtwThem.y) / distanceMax);
+                audioSource.panStereo = distanceBtwThem.x / distanceMax;
             }
             else if (distanceBtwThem.x > 0 && distanceBtwThem.y < 0)
             {
-                audioSource.volume = 1 - ((distanceBtwThem.x - distanceBtwThem.y)  / distanceMax);
+                audioSource.volume = maxVolume - ((distanceBtwThem.x - distanceBtwThem.y)  / distanceMax);
+                audioSource.panStereo = distanceBtwThem.x / distanceMax;
             }
             else if (distanceBtwThem.x < 0 && distanceBtwThem.y < 0)
             {
-                audioSource.volume = 1 + ((distanceBtwThem.x + distanceBtwThem.y) / distanceMax);
+                audioSource.volume = maxVolume + ((distanceBtwThem.x + distanceBtwThem.y) / distanceMax);
+                audioSource.panStereo = distanceBtwThem.x / distanceMax;
             }
         }
     }

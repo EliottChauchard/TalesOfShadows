@@ -21,9 +21,9 @@ public class ELC_CheatsCodes : MonoBehaviour
             PlayerPrefs.DeleteAll();
         }
 
-        else if(Input.GetKeyDown(KeyCode.U))
-        {
-            Time.timeScale = 2f;
-        }
+        //else if(Input.GetKeyDown(KeyCode.U))
+        //{
+        //    Time.timeScale = 2f;
+        //}
     }
 }

@@ -618,6 +618,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SliderVolume
       objectReference: {fileID: 0}
+    - target: {fileID: 6313603464691310844, guid: f7bcd228ee266ba4381f58eb8eb74a78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6313603464843111417, guid: f7bcd228ee266ba4381f58eb8eb74a78,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -976,6 +981,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Menu Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534618106805014761, guid: 7f11bc300b0a320428fa1549d64657a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8534618106805014766, guid: 7f11bc300b0a320428fa1549d64657a6,
         type: 3}

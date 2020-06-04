@@ -67,7 +67,11 @@
       <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
+<<<<<<< Updated upstream
       <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+=======
+      <HintPath>C:/Users/Keanu Faynot/Desktop/_ToS_Platformer/TalesOfShadows/TalesOfShadows/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>

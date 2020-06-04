@@ -111,6 +111,7 @@
     <Compile Include="Assets\_Scripts\KNF_FallEvent.cs" />
     <Compile Include="Assets\_Scripts\KNF_InteractableTrigger.cs" />
     <Compile Include="Assets\_Scripts\KNF_InteractionManager.cs" />
+    <Compile Include="Assets\_Scripts\KNF_MusicChanger.cs" />
     <Compile Include="Assets\_Scripts\KNF_ParallaxLayer.cs" />
     <Compile Include="Assets\_Scripts\KNF_ZoomEvent.cs" />
     <Compile Include="Assets\_Scripts\Scores\ELC_AffichageBestScore.cs" />

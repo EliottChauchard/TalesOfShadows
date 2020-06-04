@@ -40,6 +40,7 @@ public class ELC_PlateformFall : MonoBehaviour
         plateformTransform.localScale = new Vector3(1f, 1f, 1f);
         plateformAnimator.SetBool("plateformFall", true);
         FindObjectOfType<ELC_ScreenShake>().ScreenShake(0.7f, 0.1f);
+        FindObjectOfType<ELC_AudioManager>().Play("Landslide", false);
         yield return new WaitForSeconds(0.1f);
         plateformCollider.enabled = false;
         yield return new WaitForSeconds(1f);

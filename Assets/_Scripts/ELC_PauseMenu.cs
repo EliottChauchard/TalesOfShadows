@@ -14,7 +14,7 @@ public class ELC_PauseMenu : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.JoystickButton7))
+        if(Input.GetKeyDown(KeyCode.JoystickButton7) || Input.GetKeyDown(KeyCode.N))
         {
             isPaused = !isPaused;
         }

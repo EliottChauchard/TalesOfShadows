@@ -40,6 +40,7 @@ public class ELC_DoorInterruptor : MonoBehaviour
     {
         playerHaveEnoughKey = false;
         DoorScript = ControledDoor.GetComponent<ELC_OpenDoor>();
+        EnableLight(Color.black);
     }
 
 
@@ -47,12 +48,14 @@ public class ELC_DoorInterruptor : MonoBehaviour
     void Update()
     {
         DoorScript.doorIsOpen = statutOfTheDoor;
+        
         if (playerHaveEnoughKey == true)
         {
             statutOfTheDoor = true;
             if(hasAlreadyBeenActivated == false)
             {
-                if(numberOfKeyNeeded == 1)
+                EnableLight(Color.yellow);
+                if (numberOfKeyNeeded == 1)
                 {
                     GlobalScoreValues.activateOneKeyMachine += 1;
                     hasAlreadyBeenActivated = true;
@@ -113,5 +116,10 @@ public class ELC_DoorInterruptor : MonoBehaviour
                 cable8.GetComponent<Renderer>().material.SetColor("Color_39D6A3EA", newColor);
             }
         }
+    }
+
+    void EnableLight(Color color)
+    {
+        this.GetComponent<Renderer>().material.SetColor("Color_39D6A3EA", color);
     }
 }

@@ -11,7 +11,7 @@ public class ELC_AudioSpace : MonoBehaviour
     private AudioSource audioSource;
 
     [SerializeField]
-    private float maxVolume;
+    private float maxVolume = 1f;
 
     [SerializeField]
     private Vector2 distanceBtwThem;

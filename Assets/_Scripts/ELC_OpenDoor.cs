@@ -30,26 +30,12 @@ public class ELC_OpenDoor : MonoBehaviour
         if (doorIsOpen == true)
         {
             BoxCollider.enabled = false;
-            if(horizontalDoor == true)
-            {
-                animator.SetBool("HorizontalDoorOpen", true);
-            }
-            else if (verticalDoor == true)
-            {
-                animator.SetBool("VerticalDoorOpen", true);
-            }
+            spriteRenderer.enabled = false;
         }
         else
         {
             BoxCollider.enabled = true;
-            if (horizontalDoor == true)
-            {
-                animator.SetBool("HorizontalDoorOpen", false);
-            }
-            else if (verticalDoor == true)
-            {
-                animator.SetBool("VerticalDoorOpen", false);
-            }
+            spriteRenderer.enabled = true;
         }
     }
 }

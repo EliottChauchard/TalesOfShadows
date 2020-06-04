@@ -72,7 +72,10 @@ public class ELC_Collectibles : MonoBehaviour
         {
             journalNumber = collision.GetComponent<ELC_Journal>().refNumber;
             PlayerPrefs.SetInt("Collectible" + journalNumber, 1);
-            PlayerPrefs.SetInt("NumberOfCollectibles", (totalJournaux + 1));
+            if(PlayerPrefs.GetInt("Collectible" + journalNumber) == 0)
+            {
+                PlayerPrefs.SetInt("NumberOfCollectibles", (totalJournaux + 1));
+            }
             FindObjectOfType<ELC_AudioManager>().Play("Journal", false);
         }
         else if (tagOfTheObject == "SpecialKey")

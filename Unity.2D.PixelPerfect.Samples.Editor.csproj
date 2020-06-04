@@ -63,11 +63,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Samples\2D Pixel Perfect\2.0.4\Sample Scenes and Extras\Scenes\Rule Tiles\Scripts\Editor\RuleTileEditor.cs" />
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Users/eliot/Desktop/Game Dev/TalesOfShadowsGitKraken/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>

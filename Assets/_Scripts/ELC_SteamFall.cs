@@ -108,6 +108,11 @@ public class ELC_SteamFall : MonoBehaviour
             jauge.GetComponent<SpriteRenderer>().enabled = true;
             contourJauge.GetComponentInParent<SpriteRenderer>().enabled = true;
         }
+        else if(isChargingSteamJump == true)
+        {
+            jauge.GetComponent<SpriteRenderer>().enabled = true;
+            contourJauge.GetComponentInParent<SpriteRenderer>().enabled = true;
+        }
         else
         {
             jauge.GetComponent<SpriteRenderer>().enabled = false;

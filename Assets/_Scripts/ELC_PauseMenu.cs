@@ -8,11 +8,9 @@ public class ELC_PauseMenu : MonoBehaviour
     private GameObject MenuButton;
     [SerializeField]
     private GameObject OptionsButton;
+    [SerializeField]
+    private GameObject ResumeButton;
     public bool isPaused;
-    void Start()
-    {
-        
-    }
     
     void Update()
     {

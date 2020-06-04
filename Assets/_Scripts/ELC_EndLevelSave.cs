@@ -82,6 +82,7 @@ public class ELC_EndLevelSave : MonoBehaviour
         }
         else if(playerIsAtTheEnd == true && switchSceneDoor == true && finalScoreDoor == true)
         {
+            GlobalScoreValues.playerDeaths = 0f;
             StartCoroutine("NextLevel");
         }
     }
@@ -104,7 +105,6 @@ public class ELC_EndLevelSave : MonoBehaviour
         {
             crossFade.SetTrigger("Start");
             yield return new WaitForSeconds(transitionTime);
-            GlobalScoreValues.playerDeaths = 0f;
             SceneManager.LoadScene(nextSceneName);
         }
         else if(teleportDoor == true) 

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5883,6 +5883,8 @@ MonoBehaviour:
   initialPosition: {x: 0, y: 0, z: 0}
   launchScreenShake: 0
   isScreenShaking: 0
+  variationValueX: 0
+  variationValueY: 0
 --- !u!114 &1675703373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7510,7 +7512,7 @@ PrefabInstance:
     - target: {fileID: 8534618106805014761, guid: 7f11bc300b0a320428fa1549d64657a6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8534618106805014766, guid: 7f11bc300b0a320428fa1549d64657a6,
         type: 3}
@@ -7542,7 +7544,7 @@ PrefabInstance:
     - target: {fileID: 6313603463674602192, guid: f7bcd228ee266ba4381f58eb8eb74a78,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6313603464142378305, guid: f7bcd228ee266ba4381f58eb8eb74a78,
         type: 3}
@@ -7662,12 +7664,12 @@ PrefabInstance:
     - target: {fileID: 6313603464691310844, guid: f7bcd228ee266ba4381f58eb8eb74a78,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6313603464843111417, guid: f7bcd228ee266ba4381f58eb8eb74a78,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7bcd228ee266ba4381f58eb8eb74a78, type: 3}

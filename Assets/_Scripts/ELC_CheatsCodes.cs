@@ -16,10 +16,10 @@ public class ELC_CheatsCodes : MonoBehaviour
             this.gameObject.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f);
         }
-        else if (Input.GetKeyDown(KeyCode.I))
-        {
-            PlayerPrefs.DeleteAll();
-        }
+        //else if (Input.GetKeyDown(KeyCode.I))
+        //{
+        //    PlayerPrefs.DeleteAll();
+        //}
 
         //else if(Input.GetKeyDown(KeyCode.U))
         //{

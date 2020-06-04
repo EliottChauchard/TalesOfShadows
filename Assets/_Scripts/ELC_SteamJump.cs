@@ -106,7 +106,8 @@ public class ELC_SteamJump : MonoBehaviour
         {
             
             canMove = true;
-            StartCoroutine("Transition");
+            //StartCoroutine("Transition");
+            isSteamJumping = true;
             animator.SetBool("JumpIsCharging", false);
             isLoading = false;
             endLoad = false;
@@ -141,7 +142,11 @@ public class ELC_SteamJump : MonoBehaviour
             charge = 0f;
             launchLoad = true;
         }
-
+        
+        if(isSteamJumping == true && isChargingSteamJump == true)
+        {
+            StartCoroutine("Transition");
+        }
 
         LoadingBar = new Vector3(2f, 0.1f, 1f);
 
@@ -162,7 +167,6 @@ public class ELC_SteamJump : MonoBehaviour
     }
     IEnumerator Transition()
     {
-        isSteamJumping = true;
         yield return new WaitForSeconds(0.5f);
         charge = 0f;
         isChargingSteamJump = false;

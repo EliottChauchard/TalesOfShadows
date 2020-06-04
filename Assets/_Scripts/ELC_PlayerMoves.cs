@@ -260,9 +260,10 @@ public class ELC_PlayerMoves : MonoBehaviour
 
 
         //saut
-        if ((Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && steamJumpPhase == true && canSteamJump == true)) && (playerIsOnGround == true|| canJump == true))
+        if ((Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyUp(KeyCode.Space) || (Input.GetAxis("SteamJump") <= 0 && steamJumpPhase == true && canSteamJump == true && Input.GetKey(KeyCode.Space) == false) && (playerIsOnGround == true|| canJump == true)))
         {
             playerIsJumping = true;
+            
             animator.SetBool("IsJumping", true);
             animator.SetBool("IsWalking", false);
             //verticalSpeed = jumpForce + steamJumpCharge;
@@ -276,12 +277,14 @@ public class ELC_PlayerMoves : MonoBehaviour
                 if (steamJumpVector.y <= 0)
                 {
                     verticalSpeed = 1f * steamJumpCharge * steamJumpForceMultiplier;
-                    
+                    animator.SetBool("JumpIsCharging", false);
+
                 }
                 else
                 {
                     verticalSpeed = steamJumpVector.y * steamJumpCharge * steamJumpForceMultiplier;
-                    
+                    animator.SetBool("JumpIsCharging", false);
+
                 }
                 canSteamJump = false;
             }

@@ -23,6 +23,7 @@ TagManager:
   - MainTrigger
   - SpecialKey
   - SpecialInterruptor
+  - SecretPathHider
   layers:
   - Default
   - TransparentFX
@@ -42,7 +43,7 @@ TagManager:
   - MonsterHit
   - Obstacles
   - Monsters
-  - 
+  - SecretPathHider
   - 
   - 
   - 

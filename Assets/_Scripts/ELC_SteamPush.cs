@@ -149,6 +149,13 @@ public class ELC_SteamPush : MonoBehaviour
             {
                 detection1.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
             }
+
+            //Tests Félix : Secret Path Hider
+            else if (detection1.collider.CompareTag("SecretPathHider"))
+            {
+
+                detection1.collider.gameObject.SetActive(false);
+            }
         }
         else if (detection2.collider != null)
         {

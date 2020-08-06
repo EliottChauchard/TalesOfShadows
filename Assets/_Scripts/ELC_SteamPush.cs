@@ -149,6 +149,12 @@ public class ELC_SteamPush : MonoBehaviour
             {
                 detection1.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
             }
+
+            //Tests Félix : Secret Path Hider
+            else if (detection1.collider.CompareTag("SecretPathHider"))
+            {
+                detection1.collider.gameObject.GetComponent<FLC_PathHiderScript>().discovered = true;
+            }
         }
         else if (detection2.collider != null)
         {
@@ -161,6 +167,12 @@ public class ELC_SteamPush : MonoBehaviour
             else if (detection2.collider.CompareTag("SensibleObject"))
             {
                 detection2.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+
+            //Tests Félix : Secret Path Hider
+            else if (detection2.collider.CompareTag("SecretPathHider"))
+            {
+                detection2.collider.gameObject.GetComponent<FLC_PathHiderScript>().discovered = true;
             }
         }
         else if (detection3.collider != null)
@@ -175,6 +187,12 @@ public class ELC_SteamPush : MonoBehaviour
             {
                 detection3.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
             }
+
+            //Tests Félix : Secret Path Hider
+            else if (detection3.collider.CompareTag("SecretPathHider"))
+            {
+                detection3.collider.gameObject.GetComponent<FLC_PathHiderScript>().discovered = true;
+            }
         }
         else if (detection4.collider != null)
         {
@@ -187,6 +205,12 @@ public class ELC_SteamPush : MonoBehaviour
             else if (detection4.collider.CompareTag("SensibleObject"))
             {
                 detection4.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+
+            //Tests Félix : Secret Path Hider
+            else if (detection4.collider.CompareTag("SecretPathHider"))
+            {
+                detection4.collider.gameObject.GetComponent<FLC_PathHiderScript>().discovered = true;
             }
         }
         else if (detection5.collider != null)
@@ -201,6 +225,12 @@ public class ELC_SteamPush : MonoBehaviour
             else if (detection5.collider.CompareTag("SensibleObject"))
             {
                 detection5.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+
+            //Tests Félix : Secret Path Hider
+            else if (detection5.collider.CompareTag("SecretPathHider"))
+            {
+                detection5.collider.gameObject.GetComponent<FLC_PathHiderScript>().discovered = true;
             }
         }
         yield return new WaitForSeconds(1f);

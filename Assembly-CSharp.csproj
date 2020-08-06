@@ -106,6 +106,7 @@
     <Compile Include="Assets\_Scripts\ELC_SteamJump.cs" />
     <Compile Include="Assets\_Scripts\ELC_SteamPush.cs" />
     <Compile Include="Assets\_Scripts\ELC_TriggerMonster.cs" />
+    <Compile Include="Assets\_Scripts\FLC_Tests\FLC_PathHiderScript.cs" />
     <Compile Include="Assets\_Scripts\KNF_AppearOnTrigger.cs" />
     <Compile Include="Assets\_Scripts\KNF_Dialogue.cs" />
     <Compile Include="Assets\_Scripts\KNF_DialogueReset.cs" />

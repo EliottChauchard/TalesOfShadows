@@ -5,7 +5,6 @@ using UnityEngine;
 public class ELC_SteamJump : MonoBehaviour
 {
     ELC_PlayerMoves playerMovesScript;
-    ELC_LoadingSteamJump loadSteamJump;
 
     private Animator animator;
 
@@ -41,14 +40,13 @@ public class ELC_SteamJump : MonoBehaviour
     private bool isLoading;
 
     private Vector3 LoadingBar;
-    private Vector2 jumpForce;
+    //private Vector2 jumpForce;
     private Vector2 movesPlayer;
-    public Vector2 steamJumpImpulse;
+    //public Vector2 steamJumpImpulse;
 
     void Start()
     {
         playerMovesScript = GetComponent<ELC_PlayerMoves>();
-        loadSteamJump = GetComponent<ELC_LoadingSteamJump>();
         animator = GetComponent<Animator>();
 
         LoadingBar = GameObject.Find("LoadingSteamJump").transform.localScale;
@@ -64,9 +62,10 @@ public class ELC_SteamJump : MonoBehaviour
         playerIsJumping = playerMovesScript.playerIsJumping;
         movesPlayer = playerMovesScript.playerMoves;
         isOnGround = playerMovesScript.playerIsOnGround;
-        jumpForce = loadSteamJump.jumpDirection;
+        //jumpForce = loadSteamJump.jumpDirection;
         gravityForce = playerMovesScript.gravityForceJump;
         steamJumpPhase = playerMovesScript.steamJumpPhase;
+        playerMovesScript.playerCanMove = canMove;
 
         if (charge >= maxCharge)
         {
@@ -78,11 +77,10 @@ public class ELC_SteamJump : MonoBehaviour
         }
 
 
-        steamJumpImpulse = jumpForce * charge;
+        //steamJumpImpulse = jumpForce * charge;
+        //testValues = jumpForce.x * charge * 5;
 
-        testValues = jumpForce.x * charge * 5;
-
-        if (Input.GetKeyDown(KeyCode.Space) || (Input.GetAxis("SteamJump") > 0 && launchLoad ==true))
+        if (Input.GetKeyDown(KeyCode.Space) || (Input.GetAxis("SteamJump") > 0 && launchLoad ==true) && isOnGround == true)
         {
             StartCoroutine("SteamJumpCharge");
             launchLoad = false;

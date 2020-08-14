@@ -92,7 +92,6 @@
     <Compile Include="Assets\_Scripts\ELC_LastChekpoint.cs" />
     <Compile Include="Assets\_Scripts\ELC_Levier.cs" />
     <Compile Include="Assets\_Scripts\ELC_LoadingBar.cs" />
-    <Compile Include="Assets\_Scripts\ELC_LoadingSteamJump.cs" />
     <Compile Include="Assets\_Scripts\ELC_MediumMonster.cs" />
     <Compile Include="Assets\_Scripts\ELC_MorceauJournal.cs" />
     <Compile Include="Assets\_Scripts\ELC_OpenDoor.cs" />

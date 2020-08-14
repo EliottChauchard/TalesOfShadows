@@ -5,7 +5,6 @@ using UnityEngine;
 public class ELC_PlayerMoves : MonoBehaviour
 {
     ELC_SteamJump SteamJumpScript;
-    ELC_LoadingSteamJump loadSteamJumpScript;
 
     private float horizontalInput;
     public float horizontalSpeed;
@@ -50,7 +49,7 @@ public class ELC_PlayerMoves : MonoBehaviour
     [SerializeField]
     public bool steamJumpPhase;
     [SerializeField]
-    private bool playerCanMove;
+    public bool playerCanMove = true;
     [SerializeField]
     private bool canJump;
     [SerializeField]
@@ -79,8 +78,8 @@ public class ELC_PlayerMoves : MonoBehaviour
     private float gravityForceFall = 0.05f;
     [SerializeField]
     private float steamGravityForceFall;
-    [SerializeField]
-    private float limitAngleSteamJumpY;
+    //[SerializeField]
+    //private float limitAngleSteamJumpY;
     [SerializeField]
     private LayerMask collisionMask;
 
@@ -121,26 +120,13 @@ public class ELC_PlayerMoves : MonoBehaviour
     //Moves
     [SerializeField]
     public Vector3 playerMoves;
-    private Vector2 steamJumpVector;
+    //private Vector2 steamJumpVector;
 
 
     private void Start()
     {
         SteamFallScript = GetComponent<ELC_SteamFall>();
         SteamJumpScript = GetComponent<ELC_SteamJump>();
-        loadSteamJumpScript = GetComponent<ELC_LoadingSteamJump>();
-
-        //Mise en place des raycasts du bas
-        
-
-
-        //Mise en place du raycast du haut
-        
-
-
-        //Mise en place du raycast de face
-        
-
     }
 
     // Update is called once per frame
@@ -151,9 +137,9 @@ public class ELC_PlayerMoves : MonoBehaviour
         steamJumpCharge = SteamJumpScript.charge;
         steamJumpIsCharging = SteamJumpScript.isChargingSteamJump;
         steamGravityForceFall = SteamFallScript.steamFallGravityForce;
-        steamJumpVector = SteamJumpScript.steamJumpImpulse;
-        playerCanMove = SteamJumpScript.canMove;
-        limitAngleSteamJumpY = loadSteamJumpScript.limitY;
+        //steamJumpVector = SteamJumpScript.steamJumpImpulse;
+        //playerCanMove = SteamJumpScript.canMove;
+        //limitAngleSteamJumpY = loadSteamJumpScript.limitY;
 
         //statut pour dire que le joueur est en phase de SteamJump
         if (playerIsSteamJumping == true || steamJumpIsCharging == true)
@@ -293,18 +279,18 @@ public class ELC_PlayerMoves : MonoBehaviour
             }
             else
             {
-                if (steamJumpVector.y <= 0)
-                {
+                //if (steamJumpVector.y <= 0)
+                //{
                     verticalSpeed = 1f * steamJumpCharge * steamJumpForceMultiplier;
                     animator.SetBool("JumpIsCharging", false);
 
-                }
-                else
-                {
-                    verticalSpeed = steamJumpVector.y * steamJumpCharge * steamJumpForceMultiplier;
-                    animator.SetBool("JumpIsCharging", false);
+                //}
+                //else
+                //{
+                //    verticalSpeed = steamJumpVector.y * steamJumpCharge * steamJumpForceMultiplier;
+                //    animator.SetBool("JumpIsCharging", false);
 
-                }
+                //}
                 canSteamJump = false;
             }
         }

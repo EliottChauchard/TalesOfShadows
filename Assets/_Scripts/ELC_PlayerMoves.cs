@@ -111,6 +111,13 @@ public class ELC_PlayerMoves : MonoBehaviour
     [SerializeField]
     private float faceRayPositionY = 0.12f;
 
+    private Vector3 startPositionRaycastUnder;
+    private Vector3 startPositionRaycastUponTheGround;
+    private Vector3 startPositionRaycastTop;
+    private Vector3 startPositionRaycastFace;
+
+
+
     //Moves
     [SerializeField]
     public Vector3 playerMoves;
@@ -122,6 +129,18 @@ public class ELC_PlayerMoves : MonoBehaviour
         SteamFallScript = GetComponent<ELC_SteamFall>();
         SteamJumpScript = GetComponent<ELC_SteamJump>();
         loadSteamJumpScript = GetComponent<ELC_LoadingSteamJump>();
+
+        //Mise en place des raycasts du bas
+        
+
+
+        //Mise en place du raycast du haut
+        
+
+
+        //Mise en place du raycast de face
+        
+
     }
 
     // Update is called once per frame
@@ -355,12 +374,12 @@ public class ELC_PlayerMoves : MonoBehaviour
 
     void GroundDetector()
     {
-        Vector3 startPositionRaycastUnder = new Vector3(transform.position.x - underRayPositionX, transform.position.y - underRayPositionY, transform.position.z);
-        Vector3 startPositionRaycastUponTheGround = new Vector3(startPositionRaycastUnder.x, startPositionRaycastUnder.y + UponTheGroundRayPositionY, startPositionRaycastUnder.z);
+        startPositionRaycastUnder = new Vector3(transform.position.x - underRayPositionX, transform.position.y - underRayPositionY, transform.position.z);
+        startPositionRaycastUponTheGround = new Vector3(startPositionRaycastUnder.x, startPositionRaycastUnder.y + UponTheGroundRayPositionY, startPositionRaycastUnder.z);
 
         underPlayerHit = Physics2D.Raycast(startPositionRaycastUnder, transform.TransformDirection(new Vector2(1f, 0f)), underRayLenght, collisionMask);
         uponTheGroundHit = Physics2D.Raycast(startPositionRaycastUponTheGround, transform.TransformDirection(new Vector2(1f, 0f)), underRayLenght, collisionMask); //Détecteur pour voir si le joueur est dans le sol
-        
+
         Debug.DrawRay(startPositionRaycastUnder, transform.TransformDirection(new Vector2(underRayLenght, 0)), Color.green); //pour afficher le rayon de détection
         Debug.DrawRay(startPositionRaycastUponTheGround, transform.TransformDirection(new Vector2(underRayLenght, 0)), Color.green);
 
@@ -390,10 +409,10 @@ public class ELC_PlayerMoves : MonoBehaviour
 
     void RoofDetector()
     {
-        Vector3 startPositionRaycastTop = new Vector3(transform.position.x - topRayPositionX, transform.position.y + topRayPositionY, transform.position.z);
+        startPositionRaycastTop = new Vector3(transform.position.x - topRayPositionX, transform.position.y + topRayPositionY, transform.position.z);
 
         roofPlayerHit = Physics2D.Raycast(startPositionRaycastTop, transform.TransformDirection(new Vector2(1f, 0f)), topRayLenght, collisionMask);
-
+        
         Debug.DrawRay(startPositionRaycastTop, transform.TransformDirection(new Vector2(topRayLenght, 0f)), Color.yellow);          //fait apparaître le raycast du haut
 
         if (roofPlayerHit.collider != null)
@@ -408,11 +427,11 @@ public class ELC_PlayerMoves : MonoBehaviour
 
     void FaceDetector()
     {
-        Vector3 startPositionRaycastFace = new Vector3(transform.position.x + faceRayPositionX * turnPlayerFace, transform.position.y - faceRayPositionY, transform.position.z);
-
+        startPositionRaycastFace = new Vector3(transform.position.x + faceRayPositionX * turnPlayerFace, transform.position.y - faceRayPositionY, transform.position.z);
+       
         facePlayerHit = Physics2D.Raycast(startPositionRaycastFace, transform.TransformDirection(new Vector2(0f, 1f)), faceRayLenght, collisionMask); //rayon face vertical
-        Debug.DrawRay(startPositionRaycastFace, transform.TransformDirection(new Vector2(0f, faceRayLenght)), Color.red);
 
+        Debug.DrawRay(startPositionRaycastFace, transform.TransformDirection(new Vector2(0f, faceRayLenght)), Color.red);
         if (facePlayerHit.collider != null)
         {
             isTouchingFace = true;

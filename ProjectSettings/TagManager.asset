@@ -24,6 +24,7 @@ TagManager:
   - SpecialKey
   - SpecialInterruptor
   - SecretPathHider
+  - MovingPlateform
   layers:
   - Default
   - TransparentFX

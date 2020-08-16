@@ -1,0 +1,1896 @@
+fileFormatVersion: 2
+guid: 55d6a575b99284a479b3b79824202315
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5418870733193461953
+    second: Clock
+  - first:
+      213: 7281000601219632940
+    second: Chain_Big
+  - first:
+      213: -3346742746787041530
+    second: Chain_Small_Dark
+  - first:
+      213: -1094064600564505156
+    second: Chain_Small_Light
+  - first:
+      213: -3661340867985337966
+    second: Machine_Small
+  - first:
+      213: -244704461599809658
+    second: Gear_Giant
+  - first:
+      213: 2938950309762255917
+    second: Lamp_Hanging
+  - first:
+      213: -2470805647371509604
+    second: Lamp_Wall
+  - first:
+      213: -9183504409511403851
+    second: Pillar_Support_Big
+  - first:
+      213: -2295369579847792703
+    second: Pillar_Support_Small
+  - first:
+      213: 3964911790697739770
+    second: Machine_Big
+  - first:
+      213: -6974335215125810597
+    second: Vent
+  - first:
+      213: 3122312426953486097
+    second: Stain_Medium_1
+  - first:
+      213: 50599629088459297
+    second: Stain_Big_1
+  - first:
+      213: -7424608369770999585
+    second: Stain_Big_2
+  - first:
+      213: -8136511143336716298
+    second: Pipe_Small_Angle
+  - first:
+      213: -5946480853579163376
+    second: Gear_Medium_Large
+  - first:
+      213: 1033415478413479127
+    second: Plateform_Hanging
+  - first:
+      213: -3454854959262837136
+    second: Plateform_Angle
+  - first:
+      213: 8683803387622741327
+    second: Pipe_Big_Angle
+  - first:
+      213: 1689597099230844984
+    second: Pipe_Big_Dark
+  - first:
+      213: -8163367734657198064
+    second: Plateform_Big
+  - first:
+      213: -5016619821274691778
+    second: Pillar
+  - first:
+      213: 6672422976782301733
+    second: Button_On
+  - first:
+      213: -5763804742832512261
+    second: Pipe_Big
+  - first:
+      213: -2070914062774739171
+    second: Lever_Off
+  - first:
+      213: 4354848524295977637
+    second: Gear_Medium_Thin
+  - first:
+      213: 2198010777146284187
+    second: Plateform_Medium
+  - first:
+      213: -5006208766409300326
+    second: Window
+  - first:
+      213: -441107472592813266
+    second: Window_Mask
+  - first:
+      213: 7963744232905459612
+    second: Lever_On
+  - first:
+      213: 6696965424214537286
+    second: Gear_Medium
+  - first:
+      213: 7811447272404212104
+    second: Background_Wall
+  - first:
+      213: 7459141339618691715
+    second: Button_Off
+  - first:
+      213: -3853928534012380181
+    second: Gear_Small
+  - first:
+      213: 4536119006767953342
+    second: Plateform_Small
+  - first:
+      213: 8770846706358601368
+    second: Door_EndLevel
+  - first:
+      213: -2240605015798998901
+    second: Plateform_Neutral_Dark
+  - first:
+      213: -971586020977181431
+    second: Plateform_Neutral_Light
+  - first:
+      213: -8133478007606921530
+    second: Door_Side
+  - first:
+      213: 1793360302875354965
+    second: Door_Face
+  - first:
+      213: 6541263039886573531
+    second: Stain_Small
+  - first:
+      213: -5385569924123873876
+    second: Stain_Medium_2
+  - first:
+      213: -8992991503671502954
+    second: Button_On
+  - first:
+      213: -5454177689214055561
+    second: Clock
+  - first:
+      213: -5454177689214055561
+    second: Tilesheet_LD1_0
+  - first:
+      213: 8198677006529610278
+    second: CrossColumn
+  - first:
+      213: 6328918507300908018
+    second: Tilesheet_LD1_2
+  - first:
+      213: -4447118781975405389
+    second: Tilesheet_LD1_3
+  - first:
+      213: -5579758926691008116
+    second: Tilesheet_LD1_4
+  - first:
+      213: 363746413217619448
+    second: Tilesheet_LD1_5
+  - first:
+      213: -3901688911446662970
+    second: Tilesheet_LD1_6
+  - first:
+      213: -2658385892198942586
+    second: Clouds
+  - first:
+      213: -4057775055918628940
+    second: BG_City
+  - first:
+      213: 1604189950065726399
+    second: Sun
+  - first:
+      213: -1245063950719754094
+    second: FG_Pipes
+  - first:
+      213: 4219302473447378427
+    second: BG_Ruins
+  - first:
+      213: 8542553808913630479
+    second: FG_ConstructionBar
+  - first:
+      213: 6265049225611097940
+    second: Stairs_Rails_Top
+  - first:
+      213: -7918655409299364578
+    second: Stairs_Top
+  - first:
+      213: 1205475005716562369
+    second: Stairs_Rails_Middle
+  - first:
+      213: -4220485183770234868
+    second: Stairs_Middle
+  - first:
+      213: -2062525273482479816
+    second: Stairs_Rails_End
+  - first:
+      213: 4140444138401060624
+    second: Stairs_End
+  - first:
+      213: -2071750464819555974
+    second: Tilesheet_LD2_0
+  - first:
+      213: -7080904108798700111
+    second: Tilesheet_LD2_0
+  - first:
+      213: 1367942237580612310
+    second: Clock_Aiguilles_Big
+  - first:
+      213: 2878353820323204733
+    second: Tilesheet_LD2_2
+  - first:
+      213: -7130043788192900364
+    second: Tilesheet_LD2_3
+  - first:
+      213: -686354204313328597
+    second: Tilesheet_LD2_4
+  - first:
+      213: 6721198032663629403
+    second: Tilesheet_LD2_5
+  - first:
+      213: -999509545758158550
+    second: Tilesheet_LD2_6
+  - first:
+      213: -2750520698903194747
+    second: Tilesheet_LD2_7
+  - first:
+      213: -6140066650635894465
+    second: Tilesheet_LD2_8
+  - first:
+      213: -164873527847763213
+    second: Tilesheet_LD2_9
+  - first:
+      213: -3375311348678759647
+    second: Tilesheet_LD2_10
+  - first:
+      213: 8084670355024633070
+    second: Tilesheet_LD2_11
+  - first:
+      213: 1510681682059946956
+    second: Tilesheet_LD2_12
+  - first:
+      213: -2081647078945369198
+    second: Tilesheet_LD2_13
+  - first:
+      213: 3144279375437216986
+    second: Tilesheet_LD2_14
+  - first:
+      213: 1322379761235038834
+    second: Tilesheet_LD2_15
+  - first:
+      213: -2507837893861245488
+    second: Tilesheet_LD2_16
+  - first:
+      213: -1209636297603953520
+    second: Tilesheet_LD2_17
+  - first:
+      213: -8692507208417952039
+    second: Tilesheet_LD2_18
+  - first:
+      213: 5423129086924258007
+    second: Tilesheet_LD2_19
+  - first:
+      213: 801847982171330787
+    second: Tilesheet_LD2_20
+  - first:
+      213: 4170706475561787247
+    second: Tilesheet_LD2_21
+  - first:
+      213: 3322112448766674931
+    second: Tilesheet_LD2_22
+  - first:
+      213: -5622133111674785928
+    second: Tilesheet_LD2_23
+  - first:
+      213: -1594037430914585562
+    second: Tilesheet_LD2_24
+  - first:
+      213: 482518688050347731
+    second: Tilesheet_LD2_25
+  - first:
+      213: 341679828330450219
+    second: Tilesheet_LD2_26
+  - first:
+      213: 3152543751653668416
+    second: Tilesheet_LD2_27
+  - first:
+      213: -7018661483456027930
+    second: Tilesheet_LD2_28
+  - first:
+      213: -5286821189674396241
+    second: Tilesheet_LD2_29
+  - first:
+      213: -6337897184910766068
+    second: Tilesheet_LD2_30
+  - first:
+      213: -1765301765244905025
+    second: Tilesheet_LD2_31
+  - first:
+      213: -2312411310248788452
+    second: Tilesheet_LD2_32
+  - first:
+      213: -1923737883707777532
+    second: Tilesheet_LD2_33
+  - first:
+      213: -1711807409057345248
+    second: Tilesheet_LD2_34
+  - first:
+      213: 927113077406621577
+    second: Tilesheet_LD2_35
+  - first:
+      213: -1985683255381491955
+    second: Tilesheet_LD2_36
+  - first:
+      213: -6487473696093564518
+    second: Tilesheet_LD2_37
+  - first:
+      213: 3309797768267560133
+    second: Tilesheet_LD2_38
+  - first:
+      213: 3179927900850875157
+    second: Tilesheet_LD2_39
+  - first:
+      213: 5725567450822467451
+    second: Tilesheet_LD2_40
+  - first:
+      213: -2256592464249488475
+    second: Tilesheet_LD2_41
+  - first:
+      213: -460496441939584790
+    second: Tilesheet_LD2_42
+  - first:
+      213: -7698532928461926687
+    second: Tilesheet_LD2_43
+  - first:
+      213: -1916943690347621389
+    second: Tilesheet_LD2_44
+  - first:
+      213: 3484419347863615649
+    second: Tilesheet_LD2_45
+  - first:
+      213: 4377056580600153080
+    second: Tilesheet_LD2_46
+  - first:
+      213: -8997898251105831607
+    second: Tilesheet_LD2_47
+  - first:
+      213: 5074980532103914102
+    second: Tilesheet_LD2_48
+  - first:
+      213: 2687185825762450343
+    second: Tilesheet_LD2_49
+  - first:
+      213: 874616328579744261
+    second: Tilesheet_LD2_50
+  - first:
+      213: -1243423630923253061
+    second: Tilesheet_LD2_51
+  - first:
+      213: -2005133066082375913
+    second: Tilesheet_LD2_52
+  - first:
+      213: 1042498035803423397
+    second: Tilesheet_LD2_53
+  - first:
+      213: -6510850572480346568
+    second: Clock_Aiguilles_Small
+  - first:
+      213: -2766750635255743060
+    second: Tilesheet_LD2_1
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Clock
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 353
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f3e3057cd4cc4b0800000000000000
+      internalID: -5418870733193461953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chain_Big
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 384
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f0a1d687f4b0560800000000000000
+      internalID: 7281000601219632940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chain_Small_Dark
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 397
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fa42f143bfd81d0800000000000000
+      internalID: -3346742746787041530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chain_Small_Light
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 397
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5e50ada0a11d0f0800000000000000
+      internalID: -1094064600564505156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine_Small
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 372
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2911d1211ed403dc0800000000000000
+      internalID: -3661340867985337966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gear_Giant
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 330
+        width: 189
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fd363b692aa9cf0800000000000000
+      internalID: -244704461599809658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Hanging
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 294
+        width: 48
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 66, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c47e94cbf39c820800000000000000
+      internalID: 2938950309762255917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Wall
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 330
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c906467ca5fe5bdd0800000000000000
+      internalID: -2470805647371509604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillar_Support_Big
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 234
+        width: 63
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 105}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bed6d55563ad8080800000000000000
+      internalID: -9183504409511403851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillar_Support_Small
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 291
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 40}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c74fec47853520e0800000000000000
+      internalID: -2295369579847792703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machine_Big
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 197
+        width: 117
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5fb424442360730800000000000000
+      internalID: 3964911790697739770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vent
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 294
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52bdedc21f263f90800000000000000
+      internalID: -6974335215125810597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stain_Medium_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 293
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fa95e0c9ea45b20800000000000000
+      internalID: 3122312426953486097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stain_Big_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 281
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a85953814c3b000800000000000000
+      internalID: 50599629088459297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stain_Big_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 263
+        width: 9
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd05863660e76f890800000000000000
+      internalID: -7424608369770999585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Small_Angle
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 294
+        width: 106
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f75866693e451f80800000000000000
+      internalID: -8136511143336716298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gear_Medium_Large
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 262
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01990c26b2bd97da0800000000000000
+      internalID: -5946480853579163376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateform_Hanging
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 259
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 5, z: 21, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcc93007ed675e00800000000000000
+      internalID: 1033415478413479127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateform_Angle
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 258
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 0, z: 21, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07654aa18b3ed00d0800000000000000
+      internalID: -3454854959262837136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Big_Angle
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 234
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45569a1c21138870800000000000000
+      internalID: 8683803387622741327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Big_Dark
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 253
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 25, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8385f212c97a27710800000000000000
+      internalID: 1689597099230844984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateform_Big
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 193
+        width: 164
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 86, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0185fd4fb44e5be80800000000000000
+      internalID: -8163367734657198064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillar
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 191
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e370dbb0ad2616ab0800000000000000
+      internalID: -5016619821274691778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Big
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 197
+        width: 85
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2a1c4df1ad200b0800000000000000
+      internalID: -5763804742832512261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever_Off
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 206
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f53ffc1a2a243e0800000000000000
+      internalID: -2070914062774739171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gear_Medium_Thin
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 206
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aabb4de8a78f6c30800000000000000
+      internalID: 4354848524295977637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateform_Medium
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 127
+        width: 109
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 31, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98d8400827e08e10800000000000000
+      internalID: 2198010777146284187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 39
+        width: 78
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a962ab6a6af568ab0800000000000000
+      internalID: -5006208766409300326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_Mask
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 39
+        width: 78
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23c55c371fd0e9f0800000000000000
+      internalID: -441107472592813266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever_On
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 173
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c974564af27e48e60800000000000000
+      internalID: 7963744232905459612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gear_Medium
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 145
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644716f329660fc50800000000000000
+      internalID: 6696965424214537286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Wall
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 39
+        width: 147
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889d85d48e5d76c60800000000000000
+      internalID: 7811447272404212104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_Off
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 127
+        width: 43
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a47653781348760800000000000000
+      internalID: 7459141339618691715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gear_Small
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 96
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb3374da68148ac0800000000000000
+      internalID: -3853928534012380181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateform_Small
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 91
+        width: 92
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 31, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb53d49043883fe30800000000000000
+      internalID: 4536119006767953342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_EndLevel
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 12
+        width: 53
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896c8e70c9e48b970800000000000000
+      internalID: 8770846706358601368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateform_Neutral_Dark
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 53
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88975ffb95c7e0e0800000000000000
+      internalID: -2240605015798998901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateform_Neutral_Light
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 53
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d7bee59ab3482f0800000000000000
+      internalID: -971586020977181431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Side
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 14
+        width: 12
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 11, z: 0, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6332858d4102f80800000000000000
+      internalID: -8133478007606921530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Face
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 13
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5572c2f91bb43e810800000000000000
+      internalID: 1793360302875354965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stain_Small
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 306
+        width: 2
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfb4d2e31c37ca50800000000000000
+      internalID: 6541263039886573531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stain_Medium_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 293
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cada19f10bc9245b0800000000000000
+      internalID: -5385569924123873876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_On
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 127
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697dd83dfd9723380800000000000000
+      internalID: -8992991503671502954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD1_0
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 179
+        width: 54
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b09840a4ede44b0800000000000000
+      internalID: -5454177689214055561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrossColumn
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 440
+        width: 77
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6224c5a8c4d87c170800000000000000
+      internalID: 8198677006529610278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD1_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 378
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbe010b9d5d4d750800000000000000
+      internalID: 6328918507300908018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD1_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 378
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc53669709a842c0800000000000000
+      internalID: -4447118781975405389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD1_4
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 378
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81844aa1d6b092b0800000000000000
+      internalID: -5579758926691008116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD1_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 378
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd98248f694c0500800000000000000
+      internalID: 363746413217619448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD1_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 394
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c024296b9a6ad9c0800000000000000
+      internalID: -3901688911446662970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clouds
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 525
+        width: 1420
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 40, z: 6, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6887293ad148b1bd0800000000000000
+      internalID: -2658385892198942586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_City
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 454
+        width: 840
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf778de513efa7c0800000000000000
+      internalID: -4057775055918628940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 446
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb35bed924a334610800000000000000
+      internalID: 1604189950065726399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_Pipes
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 344
+        width: 27
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29064b6fee4a8bee0800000000000000
+      internalID: -1245063950719754094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Ruins
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 6
+        width: 787
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd02c9ae39fd8a30800000000000000
+      internalID: 4219302473447378427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FG_ConstructionBar
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 94
+        width: 298
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0505f6cd6f3d8670800000000000000
+      internalID: 8542553808913630479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Rails_Top
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 104
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457b2e8b31de1f650800000000000000
+      internalID: 6265049225611097940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Top
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 104
+        width: 59
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e156cfd2cd84b1290800000000000000
+      internalID: -7918655409299364578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Rails_Middle
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 86
+        width: 33
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1095d7125bab010800000000000000
+      internalID: 1205475005716562369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Middle
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 86
+        width: 74
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0073912613dd65c0800000000000000
+      internalID: -4220485183770234868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_Rails_End
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 59
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837bfc501307063e0800000000000000
+      internalID: -2062525273482479816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_End
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 53
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0175eb1c100d57930800000000000000
+      internalID: 4140444138401060624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD2_0
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 191
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a711e29cde9af33e0800000000000000
+      internalID: -2071750464819555974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock_Aiguilles_Big
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 427
+        width: 9
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2de38a738ebf210800000000000000
+      internalID: 1367942237580612310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock_Aiguilles_Small
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 427
+        width: 44
+        height: 9
+      alignment: 9
+      pivot: {x: 0.10368624, y: 0.49731785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83609a976efc4a5a0800000000000000
+      internalID: -6510850572480346568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD2_1
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 14
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadbe73c4f68a99d0800000000000000
+      internalID: -2766750635255743060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD2_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 526
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ec046ac87f1f720800000000000000
+      internalID: 2878353820323204733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilesheet_LD2_3
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 460
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa18c383fefc0d90800000000000000
+      internalID: -7130043788192900364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 25216f6b82fa5654da93ed8672a4e2ad, type: 3}
+      name: _Glow
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

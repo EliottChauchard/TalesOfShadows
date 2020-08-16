@@ -27,8 +27,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.5, y: 2, z: 250}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6522513951541147963}
+  m_Children: []
   m_Father: {fileID: 650050662319653100}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -202,122 +201,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &650050663131928542
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 650050661910757744}
-    m_Modifications:
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728616020059575948, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728616020059575948, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_BlendStyleIndex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728616020059575948, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728616020059575948, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_ShadowIntensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728616020059575948, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[1]
-      value: 673999049
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728616020059575948, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6728616020059575948, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_LightCookieSprite
-      value: 
-      objectReference: {fileID: -441107472592813266, guid: d8bc512994831fd4da732e16d15a1127,
-        type: 3}
-    - target: {fileID: 7894008425174275816, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_Name
-      value: Window_Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 7894008425174275816, guid: e2a01e4235813b745b2ddc60440bebb2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2a01e4235813b745b2ddc60440bebb2, type: 3}
---- !u!4 &6522513951541147963 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6017352552329244389, guid: e2a01e4235813b745b2ddc60440bebb2,
-    type: 3}
-  m_PrefabInstance: {fileID: 650050663131928542}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1160057752628040928
 PrefabInstance:
   m_ObjectHideFlags: 0

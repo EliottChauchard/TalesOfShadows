@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 62a50a0a30d88344791b562452f9d8bd
+guid: bff68ab9cc3cfb94c81061734882a332
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3249501754228151742
-    second: StreetLights_0
-  - first:
-      213: -6971784509422792307
-    second: StreetLights_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,9 +34,9 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -90,49 +84,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: StreetLights_0
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 6
-        width: 60
-        height: 122
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb517cdf0ac881d20800000000000000
-      internalID: 3249501754228151742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StreetLights_1
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 6
-        width: 39
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8198414dee3f3f90800000000000000
-      internalID: -6971784509422792307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -142,9 +94,7 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 24cd5385e730a7f4db6e870e9f22778b, type: 3}
-      name: _Glow
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

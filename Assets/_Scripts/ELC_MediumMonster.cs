@@ -7,6 +7,8 @@ public class ELC_MediumMonster : MonoBehaviour
     private ELC_TriggerMonster triggerMonsterScript;
     private GameObject playerObject;
     private SpriteRenderer spriteRenderer;
+    [SerializeField]
+    private GameObject monsterNest;
 
     private RaycastHit2D faceMonsterHit;
     [SerializeField]
@@ -23,7 +25,15 @@ public class ELC_MediumMonster : MonoBehaviour
     private bool monsterGoLeft;
     private bool monsterGoRight;
     private bool monsterDontMove;
+    [SerializeField]
+    private bool isFollowingPlayer;
+    [SerializeField]
+    private bool isReturningToNest;
+    [SerializeField]
+    private bool isPatrolling;
 
+    [SerializeField]
+    private Vector2 nestDistance;
     [SerializeField]
     private float turnMonster = 1;
     [SerializeField]
@@ -54,8 +64,12 @@ public class ELC_MediumMonster : MonoBehaviour
 
         playerIsInTheRadius = triggerMonsterScript.playerIsInside;
 
+        nestDistance = new Vector2(monsterNest.transform.localPosition.x - this.transform.localPosition.x, monsterNest.transform.localPosition.y - this.transform.localPosition.y);
+
         if (playerIsInTheRadius == true)
         {
+            StopCoroutine("ReturnToTheNest");
+            isFollowingPlayer = true;
             playerObject = triggerMonsterScript.playerGameObject;
             playerDistance = playerObject.transform.position.x - this.transform.position.x;
 
@@ -73,18 +87,18 @@ public class ELC_MediumMonster : MonoBehaviour
             }
             horizontalSpeed = followSpeed * turnMonster;
         }
-        else
+        else if (playerIsInTheRadius == false && isFollowingPlayer == true)
         {
-            if(monsterGoLeft == true && wallDetected == true)
-            {
-                turnMonster = 1;
-            }
-            else if(monsterGoRight == true && wallDetected == true)
-            {
-                turnMonster = -1;
-            }
-            horizontalSpeed = patrolSpeed * turnMonster;
+            isFollowingPlayer = false;
+            StartCoroutine("ReturnToTheNest");
         }
+        else if(isPatrolling == true && isFollowingPlayer == false)
+        {
+            horizontalSpeed = 0;
+        }
+
+        
+
 
         if(horizontalSpeed < 0)
         {
@@ -124,6 +138,10 @@ public class ELC_MediumMonster : MonoBehaviour
                 GlobalScoreValues.mediumEnemyKilled += 1;
                 Destroy(this.gameObject);
             }
+            else if(faceMonsterHit.collider.CompareTag("MonsterNest") && isFollowingPlayer == false)
+            {
+                isPatrolling = true;
+            }
             else
             {
                 wallDetected = true;
@@ -132,6 +150,23 @@ public class ELC_MediumMonster : MonoBehaviour
         else
         {
             wallDetected = false;
+            isPatrolling = false;
         }
+    }
+
+    IEnumerator ReturnToTheNest()
+    {
+        yield return new WaitForSeconds(1f);
+        horizontalSpeed = 0f;
+        yield return new WaitForSeconds(2f);
+        if (nestDistance.x < 0)
+        {
+            horizontalSpeed = patrolSpeed * (-1);
+        }
+        else if (nestDistance.x > 0)
+        {
+            horizontalSpeed = patrolSpeed * 1;
+        }
+
     }
 }

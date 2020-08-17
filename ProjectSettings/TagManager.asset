@@ -25,6 +25,7 @@ TagManager:
   - SpecialInterruptor
   - SecretPathHider
   - MovingPlateform
+  - MonsterNest
   layers:
   - Default
   - TransparentFX

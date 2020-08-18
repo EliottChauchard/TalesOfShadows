@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 3985885175164611238}
   - component: {fileID: 1992947170641387716}
   - component: {fileID: 5694601495578645087}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: MediumMonster
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -517,6 +517,10 @@ MonoBehaviour:
     m_Bits: 33536
   playerIsInTheRadius: 0
   wallDetected: 0
+  isFollowingPlayer: 0
+  isReturningToNest: 0
+  isPatrolling: 0
+  nestDistance: {x: 0, y: 0}
   turnMonster: 1
   patrolSpeed: 0.8
   followSpeed: 0.8

@@ -58,14 +58,9 @@ public class ELC_IALittleMonster : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        //if(isStun == false)
-        //{
-            movesX = speedLittleMonster * turnMonsterFace;
-        //}
-        //else
-        //{
-        //    movesX = 0f;
-        //}
+
+        movesX = speedLittleMonster * turnMonsterFace;
+
         
 
         littleMonsterMoves = new Vector2(movesX, 0f) * Time.deltaTime;

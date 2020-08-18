@@ -5,6 +5,7 @@ using UnityEngine;
 public class ELC_SteamPush : MonoBehaviour
 {
     private ELC_IALittleMonster littleMonsterScript;
+    private GameObject littleMonsterDetected;
     ELC_PlayerMoves PlayerMovesScript;
     private Animator animator;
     public bool SteamPush;
@@ -110,9 +111,8 @@ public class ELC_SteamPush : MonoBehaviour
 
     IEnumerator StunMonster()
     {
-        
-
         littleMonsterScript.isStun = true;
+        littleMonsterDetected.GetComponent<Rigidbody2D>().AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
         yield return new WaitForSeconds(stunDelay);
         littleMonsterScript.isStun = false;
     }
@@ -141,9 +141,10 @@ public class ELC_SteamPush : MonoBehaviour
             if (detection1.collider.CompareTag("Monster"))
             {
                 littleMonsterScript = detection1.collider.GetComponent<ELC_IALittleMonster>();
+                littleMonsterDetected = detection1.collider.gameObject;
                 StartCoroutine("StunMonster");
-                detection1.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
-
+                //detection1.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+                
             }
             else if (detection1.collider.CompareTag("SensibleObject"))
             {
@@ -161,8 +162,10 @@ public class ELC_SteamPush : MonoBehaviour
             if (detection2.collider.CompareTag("Monster"))
             {
                 littleMonsterScript = detection2.collider.GetComponent<ELC_IALittleMonster>();
+                littleMonsterDetected = detection2.collider.gameObject;
                 StartCoroutine("StunMonster");
-                detection2.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+                //detection2.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+                
             }
             else if (detection2.collider.CompareTag("SensibleObject"))
             {
@@ -180,8 +183,10 @@ public class ELC_SteamPush : MonoBehaviour
             if (detection3.collider.CompareTag("Monster"))
             {
                 littleMonsterScript = detection3.collider.GetComponent<ELC_IALittleMonster>();
+                littleMonsterDetected = detection3.collider.gameObject;
                 StartCoroutine("StunMonster");
-                detection3.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+                //detection3.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+
             }
             else if (detection3.collider.CompareTag("SensibleObject"))
             {
@@ -199,8 +204,10 @@ public class ELC_SteamPush : MonoBehaviour
             if (detection4.collider.CompareTag("Monster"))
             {
                 littleMonsterScript = detection4.collider.GetComponent<ELC_IALittleMonster>();
+                littleMonsterDetected = detection4.collider.gameObject;
                 StartCoroutine("StunMonster");
-                detection4.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+                //detection4.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+              
             }
             else if (detection4.collider.CompareTag("SensibleObject"))
             {
@@ -219,8 +226,10 @@ public class ELC_SteamPush : MonoBehaviour
             if (detection5.collider.CompareTag("Monster"))
             {
                 littleMonsterScript = detection5.collider.GetComponent<ELC_IALittleMonster>();
+                littleMonsterDetected = detection5.collider.gameObject;
                 StartCoroutine("StunMonster");
-                detection5.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+                //detection5.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
+
             }
             else if (detection5.collider.CompareTag("SensibleObject"))
             {

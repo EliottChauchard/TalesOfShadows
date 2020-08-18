@@ -306,7 +306,7 @@ MonoBehaviour:
   rayLenght: 1
   ejectForce: 50
   stunDelay: 1.5
-  ejectMonsterForce: 5
+  ejectMonsterForce: 100
 --- !u!114 &2792491413843219641
 MonoBehaviour:
   m_ObjectHideFlags: 0

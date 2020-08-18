@@ -234,7 +234,7 @@ public class ELC_PlayerMoves : MonoBehaviour
         RoofDetector();
         if (isTouchingTop == true && playerIsOnGround == false)
         {
-            verticalSpeed = -0.5f;
+            verticalSpeed = -0.05f;
         }
 
         //Si le joueur a un mur face à lui

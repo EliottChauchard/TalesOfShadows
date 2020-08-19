@@ -10,13 +10,15 @@ public class HDO_Hub_Options : MonoBehaviour
     [SerializeField]
     ContactFilter2D eliza;
 
+    HDO_HubObjectAppearance ob;
+
     public int whatScene;
     int touched;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ob = GameObject.Find("Manager").GetComponent<HDO_HubObjectAppearance>();
         box = GetComponent<BoxCollider2D>();
     }
 
@@ -27,7 +29,14 @@ public class HDO_Hub_Options : MonoBehaviour
 
         if(touched >= 1 && Input.GetKeyDown(KeyCode.JoystickButton1))
         {
-            SceneManager.LoadScene(whatScene);
+            ob.number = whatScene;
+            
         }
+        if(whatScene == 1 && ob.number == 1)
+        {
+            SceneManager.LoadScene(1);
+        }
+
+       
     }
 }

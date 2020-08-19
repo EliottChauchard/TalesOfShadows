@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3064041122070896213}
   - component: {fileID: 3064041122070896214}
+  - component: {fileID: 5908998653259173855}
   m_Layer: 0
   m_Name: FG_Tree
   m_TagString: Untagged
@@ -82,3 +83,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5908998653259173855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3064041122070896212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4c09084dbad844e828647aaa897249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  multiplier_x: -0.63
+  multiplier_y: 0
+  horizontalOnly: 1
+  startCameraPos: {x: 0, y: 0, z: 0}
+  startPos: {x: 0, y: 0, z: 0}

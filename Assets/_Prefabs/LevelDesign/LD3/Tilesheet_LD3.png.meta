@@ -163,7 +163,7 @@ TextureImporter:
     second: Clouds
   - first:
       213: -4057775055918628940
-    second: BG_Trees_Light
+    second: BG_Trees_Light_1
   - first:
       213: 1604189950065726399
     second: Sun
@@ -374,6 +374,12 @@ TextureImporter:
   - first:
       213: -5760903954418489356
     second: BG_Cave
+  - first:
+      213: -6027537616128882261
+    second: BG_Trees_Light_3
+  - first:
+      213: 6545328327966850907
+    second: BG_Trees_Light_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -983,16 +989,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BG_Trees_Light
+      name: BG_Trees_Light_1
       rect:
         serializedVersion: 2
         x: 1528
-        y: 302
+        y: 316
         width: 685
-        height: 425
+        height: 398
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 185, z: 0, w: 122}
+      border: {x: 0, y: 160, z: 0, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1049,13 +1055,13 @@ TextureImporter:
       name: BG_Trees_Dark
       rect:
         serializedVersion: 2
-        x: 843
-        y: 105
-        width: 658
-        height: 378
+        x: 839
+        y: 110
+        width: 662
+        height: 407
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 159, z: 0, w: 109}
+      border: {x: 0, y: 148, z: 0, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1117,7 +1123,7 @@ TextureImporter:
         width: 169
         height: 234
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 24, y: 28, z: 37, w: 88}
       outline: []
       physicsShape: []
@@ -1125,6 +1131,48 @@ TextureImporter:
       bones: []
       spriteID: 4f72eb340682d00b0800000000000000
       internalID: -5760903954418489356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Trees_Light_3
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 400
+        width: 472
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 39, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba945503972e95ca0800000000000000
+      internalID: -6027537616128882261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Trees_Light_2
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 48
+        width: 467
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 45, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ff3c68f6da5da50800000000000000
+      internalID: 6545328327966850907
       vertices: []
       indices: 
       edges: []

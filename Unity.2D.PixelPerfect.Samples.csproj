@@ -264,11 +264,11 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>W:/Lozichiel/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>W:/Bat_File/Work/RUBIAK LECOL 2 CREATION DE LE NUMERIK/TalesOfShadow/TOS/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>W:/Bat_File/Work/RUBIAK LECOL 2 CREATION DE LE NUMERIK/TalesOfShadow/TOS/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>W:/Lozichiel/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

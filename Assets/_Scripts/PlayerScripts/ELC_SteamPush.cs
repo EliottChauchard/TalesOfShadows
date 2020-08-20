@@ -150,6 +150,11 @@ public class ELC_SteamPush : MonoBehaviour
             {
                 detection1.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
             }
+            else if (detection1.collider.CompareTag("Tourniquet"))
+            {
+                detection1.collider.GetComponent<ELC_Tourniquets>().StartCoroutine("Activate");
+                Debug.Log("Tourniquet detected");
+            }
 
             //Tests Félix : Secret Path Hider
             else if (detection1.collider.CompareTag("SecretPathHider"))
@@ -171,7 +176,11 @@ public class ELC_SteamPush : MonoBehaviour
             {
                 detection2.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
             }
-
+            else if (detection2.collider.CompareTag("Tourniquet"))
+            {
+                detection2.collider.GetComponent<ELC_Tourniquets>().StartCoroutine("Activate");
+                Debug.Log("Tourniquet detected");
+            }
             //Tests Félix : Secret Path Hider
             else if (detection2.collider.CompareTag("SecretPathHider"))
             {
@@ -191,6 +200,11 @@ public class ELC_SteamPush : MonoBehaviour
             else if (detection3.collider.CompareTag("SensibleObject"))
             {
                 detection3.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+            else if(detection3.collider.CompareTag("Tourniquet"))
+            {
+                detection3.collider.GetComponent<ELC_Tourniquets>().StartCoroutine("Activate");
+                Debug.Log("Tourniquet detected");
             }
 
             //Tests Félix : Secret Path Hider
@@ -213,6 +227,11 @@ public class ELC_SteamPush : MonoBehaviour
             {
                 detection4.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
             }
+            else if (detection4.collider.CompareTag("Tourniquet"))
+            {
+                detection4.collider.GetComponent<ELC_Tourniquets>().StartCoroutine("Activate");
+                Debug.Log("Tourniquet detected");
+            }
 
             //Tests Félix : Secret Path Hider
             else if (detection4.collider.CompareTag("SecretPathHider"))
@@ -234,6 +253,11 @@ public class ELC_SteamPush : MonoBehaviour
             else if (detection5.collider.CompareTag("SensibleObject"))
             {
                 detection5.rigidbody.AddForce(new Vector2(ejectForce * turnFace, 0f));
+            }
+            else if (detection5.collider.CompareTag("Tourniquet"))
+            {
+                detection5.collider.GetComponent<ELC_Tourniquets>().StartCoroutine("Activate");
+                Debug.Log("Tourniquet detected");
             }
 
             //Tests Félix : Secret Path Hider

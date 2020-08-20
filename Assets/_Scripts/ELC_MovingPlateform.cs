@@ -15,7 +15,9 @@ public class ELC_MovingPlateform : MonoBehaviour
     public Vector2 movingDirection;
 
     [SerializeField]
-    private bool activatePlateform;
+    private bool isReturningToStartPosition;
+    [SerializeField]
+    public bool activatePlateform;
 
     [SerializeField]
     private float speed;
@@ -38,7 +40,7 @@ public class ELC_MovingPlateform : MonoBehaviour
         }
     }
 
-    void startMoving()
+    public void startMoving()
     {
         activatePlateform = true;
     }
@@ -59,6 +61,22 @@ public class ELC_MovingPlateform : MonoBehaviour
         else if(collision.gameObject == startingPoint)
         {
             movingDirection = Vector2.ClampMagnitude(targetPosition - startingPosition, speed);
+            if (isReturningToStartPosition == true)
+            {
+                stopMoving();
+                isReturningToStartPosition = false;
+            }
         }
+    }
+
+    public void Return()
+    {
+        movingDirection = Vector2.ClampMagnitude(startingPosition - targetPosition, speed);
+        isReturningToStartPosition = true;
+    }
+
+    public void GoToPoint()
+    {
+        movingDirection = Vector2.ClampMagnitude(targetPosition - startingPosition, speed);
     }
 }

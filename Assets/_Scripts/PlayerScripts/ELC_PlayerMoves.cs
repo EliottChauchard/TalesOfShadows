@@ -54,6 +54,8 @@ public class ELC_PlayerMoves : MonoBehaviour
     private bool canJump;
     [SerializeField]
     private bool canSteamJump;
+    [SerializeField]
+    private bool playerIsOnBalancedPlatform;
 
     //booléens pour les sons
     private bool isPlayingWalk;
@@ -114,7 +116,8 @@ public class ELC_PlayerMoves : MonoBehaviour
     private Vector3 startPositionRaycastUponTheGround;
     private Vector3 startPositionRaycastTop;
     private Vector3 startPositionRaycastFace;
-    
+
+    private ELC_BalancedPlateforms balancedPlatformsScript;
 
     //Moves
     [SerializeField]
@@ -373,6 +376,19 @@ public class ELC_PlayerMoves : MonoBehaviour
             playerIsOnGround = true;
             canJump = true;
             animator.SetBool("IsColliding", true);
+
+            if(underPlayerHit.collider.CompareTag("BalancedPlateform"))
+            {
+                balancedPlatformsScript = underPlayerHit.collider.GetComponent<ELC_BalancedPlateforms>();
+                balancedPlatformsScript.playerIsOnThePlatform = true;
+                playerIsOnBalancedPlatform = true;
+            }
+            else if (playerIsOnBalancedPlatform)
+            {
+                balancedPlatformsScript.playerIsOnThePlatform = false;
+                playerIsOnBalancedPlatform = false;
+            }
+
             if(underPlayerHit.collider.CompareTag("MovingPlateform"))
             {
                 this.transform.SetParent(underPlayerHit.collider.transform);

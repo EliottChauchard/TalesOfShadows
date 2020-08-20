@@ -26,6 +26,8 @@ TagManager:
   - SecretPathHider
   - MovingPlateform
   - MonsterNest
+  - Tourniquet
+  - BalancedPlateform
   layers:
   - Default
   - TransparentFX
@@ -46,7 +48,7 @@ TagManager:
   - Obstacles
   - Monsters
   - SecretPathHider
-  - 
+  - SteamPushSensible
   - 
   - 
   - 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1360609197349579686}
   - component: {fileID: 4623893180906399470}
   m_Layer: 8
-  m_Name: Plateform_Big
+  m_Name: Plateform_Big_Dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8163367734657198064, guid: ed534538b0dddb2498caf0e506b36de8,
+  m_Sprite: {fileID: 7053025224755226019, guid: ed534538b0dddb2498caf0e506b36de8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,16 +96,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008030891, y: 0.027078629}
+  m_Offset: {x: -0.004740715, y: 0.03822136}
   m_SpriteTilingProperty:
-    border: {x: 0.04, y: 0.08, z: 0.77, w: 0.099999994}
+    border: {x: 0.03, y: 0.11, z: 0.71999997, w: 0.03}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.72, y: 0.86}
+    oldSize: {x: 2.66, y: 0.87}
     newSize: {x: 2.72, y: 0.76}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 2.6589642, y: 0.7690315}
+  m_Size: {x: 2.6523838, y: 0.7903786}
   m_EdgeRadius: 0

@@ -1,0 +1,672 @@
+fileFormatVersion: 2
+guid: 20acdbe0f33559a4bb8b4ac5fc56992b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7860163449789957705
+    second: Levier_Timer_LD1_0
+  - first:
+      213: 4261945752008305956
+    second: Levier_Timer_LD1_1
+  - first:
+      213: 1885473502775942357
+    second: Levier_Timer_LD1_2
+  - first:
+      213: 7320311830679001895
+    second: Levier_Timer_LD1_3
+  - first:
+      213: -1948833874778239827
+    second: Levier_Timer_LD1_4
+  - first:
+      213: 8838057264026501515
+    second: Levier_Timer_LD1_5
+  - first:
+      213: 8664676981213810935
+    second: Levier_Timer_LD1_6
+  - first:
+      213: -7628452042808515659
+    second: Levier_Timer_LD1_7
+  - first:
+      213: -2337533143001950146
+    second: Levier_Timer_LD1_8
+  - first:
+      213: 7034386850161232238
+    second: Levier_Timer_LD1_9
+  - first:
+      213: -1218741258552103124
+    second: Levier_Timer_LD1_10
+  - first:
+      213: 6785505246083567864
+    second: Levier_Timer_LD1_11
+  - first:
+      213: -8989851121366043979
+    second: Levier_Timer_LD1_12
+  - first:
+      213: 5481682694918020828
+    second: Levier_Timer_LD1_13
+  - first:
+      213: 2784926882006536658
+    second: Levier_Timer_LD1_14
+  - first:
+      213: 3034703887253130633
+    second: Levier_Timer_LD1_15
+  - first:
+      213: -3466397791745349389
+    second: Levier_Timer_LD1_16
+  - first:
+      213: 8403981400701861610
+    second: Levier_Timer_LD1_17
+  - first:
+      213: -1650094628450956686
+    second: Levier_Timer_LD1_18
+  - first:
+      213: 4760669624905316164
+    second: Levier_Timer_LD1_19
+  - first:
+      213: 5483587663814139677
+    second: Levier_Timer_LD1_20
+  - first:
+      213: -4978027520430519890
+    second: Levier_Timer_LD1_0
+  - first:
+      213: 1160508611492224556
+    second: Levier_Timer_LD1_1
+  - first:
+      213: -1147141162754318133
+    second: Levier_Timer_LD1_2
+  - first:
+      213: 5757258996358832069
+    second: Levier_Timer_LD1_3
+  - first:
+      213: 9126311946586587680
+    second: Levier_Timer_LD1_4
+  - first:
+      213: -8357287863946452498
+    second: Levier_Timer_LD1_5
+  - first:
+      213: 5023762754719208531
+    second: Levier_Timer_LD1_6
+  - first:
+      213: 647410625498055786
+    second: Levier_Timer_LD1_7
+  - first:
+      213: -7640415097987720381
+    second: Levier_Timer_LD1_8
+  - first:
+      213: 7235499006059505823
+    second: Levier_Timer_LD1_9
+  - first:
+      213: 2758845610148792289
+    second: Levier_Timer_LD1_10
+  - first:
+      213: 7163784406279094043
+    second: Levier_Timer_LD1_11
+  - first:
+      213: 4591701179535161505
+    second: Levier_Timer_LD1_12
+  - first:
+      213: 9142566353984722042
+    second: Levier_Timer_LD1_13
+  - first:
+      213: -2003508393758699597
+    second: Levier_Timer_LD1_14
+  - first:
+      213: -1160527134921098396
+    second: Levier_Timer_LD1_15
+  - first:
+      213: -1287276382287554535
+    second: Levier_Timer_LD1_16
+  - first:
+      213: -4454126552929521719
+    second: Levier_Timer_LD1_17
+  - first:
+      213: 4654986155478976115
+    second: Levier_Timer_LD1_18
+  - first:
+      213: 8478783665004317879
+    second: Levier_Timer_LD1_19
+  - first:
+      213: -4616096624252190633
+    second: Levier_Timer_LD1_20
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9ce9a485e7aeab0800000000000000
+      internalID: -4978027520430519890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e96cafe64fa1010800000000000000
+      internalID: 1160508611492224556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0ecc6b0398410f0800000000000000
+      internalID: -1147141162754318133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfd3edcd84e5ef40800000000000000
+      internalID: 5757258996358832069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02282b5bc5c27ae70800000000000000
+      internalID: 9126311946586587680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1e9cf67f2f40c80800000000000000
+      internalID: -8357287863946452498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35450eebb9df7b540800000000000000
+      internalID: 5023762754719208531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_7
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6400a4a8801cf800800000000000000
+      internalID: 647410625498055786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b19e3f2fac7f590800000000000000
+      internalID: -7640415097987720381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_9
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f986edcb208a96460800000000000000
+      internalID: 7235499006059505823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_10
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e780172773694620800000000000000
+      internalID: 2758845610148792289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_11
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f7fbf46ffda6360800000000000000
+      internalID: 7163784406279094043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_12
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a87fe815eff8bf30800000000000000
+      internalID: 4591701179535161505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_13
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7492b8d8abe0ee70800000000000000
+      internalID: 9142566353984722042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_14
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfcf7d1bbb1234e0800000000000000
+      internalID: -2003508393758699597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_15
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b73d238baf4efe0800000000000000
+      internalID: -1160527134921098396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_16
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918100a53fca22ee0800000000000000
+      internalID: -1287276382287554535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_17
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf2004cf73cf22c0800000000000000
+      internalID: -4454126552929521719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_18
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3768fa7ce35d99040800000000000000
+      internalID: 4654986155478976115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_19
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc87ff12d0baa570800000000000000
+      internalID: 8478783665004317879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Levier_Timer_LD1_20
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 42
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750819ec39450ffb0800000000000000
+      internalID: -4616096624252190633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: c9f9a7484a333f84d8b7d03bbcbc5b70, type: 3}
+      name: _Glow
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

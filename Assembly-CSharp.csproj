@@ -100,7 +100,10 @@
     <Compile Include="Assets\_Scripts\ELC_Tourniquets.cs" />
     <Compile Include="Assets\_Scripts\ELC_TriggerMonster.cs" />
     <Compile Include="Assets\_Scripts\FLC_Tests\FLC_PathHiderScript.cs" />
+    <Compile Include="Assets\_Scripts\HDO_Tests\HDO_DestroyVolume.cs" />
+    <Compile Include="Assets\_Scripts\HDO_Tests\HDO_HubObjectAppearance.cs" />
     <Compile Include="Assets\_Scripts\HDO_Tests\HDO_Hub_Options.cs" />
+    <Compile Include="Assets\_Scripts\HDO_Tests\HDO_Kettle.cs" />
     <Compile Include="Assets\_Scripts\KNF_AppearOnTrigger.cs" />
     <Compile Include="Assets\_Scripts\KNF_Dialogue.cs" />
     <Compile Include="Assets\_Scripts\KNF_DialogueReset.cs" />

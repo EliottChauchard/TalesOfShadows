@@ -90,6 +90,7 @@ public class ELC_PlayerMoves : MonoBehaviour
     RaycastHit2D roofPlayerHit;
     RaycastHit2D facePlayerHit;
     RaycastHit2D uponTheGroundHit;  //Détecteur pour voir si le joueur est dans le sol
+    RaycastHit2D plateformDetectorHit;
     
     [SerializeField]
     private float UponTheGroundRayPositionY = 0.02f;
@@ -111,11 +112,16 @@ public class ELC_PlayerMoves : MonoBehaviour
     private float faceRayPositionX = 0.1f;
     [SerializeField]
     private float faceRayPositionY = 0.12f;
+    [SerializeField]
+    private float plateformDetectorPositionY = 0.16f;
+    [SerializeField]
+    private float plateformDetectorLenght = 0.2f;
 
     private Vector3 startPositionRaycastUnder;
     private Vector3 startPositionRaycastUponTheGround;
     private Vector3 startPositionRaycastTop;
     private Vector3 startPositionRaycastFace;
+    private Vector3 startPositionRaycastMovingPlateformDetector;
 
     private ELC_BalancedPlateforms balancedPlatformsScript;
 
@@ -217,8 +223,8 @@ public class ELC_PlayerMoves : MonoBehaviour
                 animator.SetBool("IsWalking", true);
             }
         }
-        
 
+        MovingPlateformDetector();
         //Si le joueur est au sol
         GroundDetector();
         if (playerIsOnGround)
@@ -377,26 +383,22 @@ public class ELC_PlayerMoves : MonoBehaviour
             canJump = true;
             animator.SetBool("IsColliding", true);
 
-            if(underPlayerHit.collider.CompareTag("BalancedPlateform"))
-            {
-                balancedPlatformsScript = underPlayerHit.collider.GetComponent<ELC_BalancedPlateforms>();
-                balancedPlatformsScript.playerIsOnThePlatform = true;
-                playerIsOnBalancedPlatform = true;
-            }
-            else if (playerIsOnBalancedPlatform)
-            {
-                balancedPlatformsScript.playerIsOnThePlatform = false;
-                playerIsOnBalancedPlatform = false;
-            }
-
-            if(underPlayerHit.collider.CompareTag("MovingPlateform"))
-            {
-                this.transform.SetParent(underPlayerHit.collider.transform);
-            }
-            else
-            {
-                this.transform.SetParent(null);
-            }
+            //if(underPlayerHit.collider.CompareTag("BalancedPlateform"))
+            //{
+            //    balancedPlatformsScript = underPlayerHit.collider.GetComponent<ELC_BalancedPlateforms>();
+            //    this.transform.SetParent(underPlayerHit.collider.transform);
+            //    balancedPlatformsScript.playerIsOnThePlatform = true;
+            //    playerIsOnBalancedPlatform = true;
+            //}
+            
+            //if(underPlayerHit.collider.CompareTag("MovingPlateform"))
+            //{
+            //    this.transform.SetParent(underPlayerHit.collider.transform);
+            //}
+            //else if(underPlayerHit.collider.CompareTag("MovingPlateform") == false && playerIsOnBalancedPlatform == false)
+            //{
+            //    this.transform.SetParent(null);
+            //}
         }
         else if(playerIsOnGround == true)
         {
@@ -404,6 +406,7 @@ public class ELC_PlayerMoves : MonoBehaviour
             playerIsOnGround = false;
             animator.SetBool("IsColliding", false);
         }
+        
 
         if (uponTheGroundHit.collider != null)
         {
@@ -414,6 +417,42 @@ public class ELC_PlayerMoves : MonoBehaviour
             playerIsInGround = false;
         }
 
+    }
+
+    void MovingPlateformDetector()
+    {
+        startPositionRaycastMovingPlateformDetector = new Vector3(transform.position.x, transform.position.y - plateformDetectorPositionY, transform.position.z);
+        plateformDetectorHit = Physics2D.Raycast(startPositionRaycastMovingPlateformDetector, transform.TransformDirection(new Vector2(0f, 1f)), plateformDetectorLenght, collisionMask);
+        Debug.DrawRay(startPositionRaycastMovingPlateformDetector, transform.TransformDirection(new Vector2(0f, plateformDetectorLenght)), Color.blue);
+
+        if (plateformDetectorHit.collider != null)
+        {
+            if (plateformDetectorHit.collider.CompareTag("BalancedPlateform"))
+            {
+                balancedPlatformsScript = plateformDetectorHit.collider.GetComponent<ELC_BalancedPlateforms>();
+                this.transform.SetParent(plateformDetectorHit.collider.transform);
+                balancedPlatformsScript.playerIsOnThePlatform = true;
+                playerIsOnBalancedPlatform = true;
+            }
+            else if (plateformDetectorHit.collider.CompareTag("MovingPlateform"))
+            {
+                this.transform.SetParent(plateformDetectorHit.collider.transform);
+            }
+            else
+            {
+                this.transform.SetParent(null);
+            }
+        }
+        else
+        {
+            if (playerIsOnBalancedPlatform == true)
+            {
+                playerIsOnBalancedPlatform = false;
+                balancedPlatformsScript.playerIsOnThePlatform = false;
+            }
+
+            this.transform.SetParent(null);
+        }
     }
 
     void RoofDetector()

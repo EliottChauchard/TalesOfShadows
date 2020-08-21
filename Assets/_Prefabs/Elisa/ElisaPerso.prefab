@@ -261,6 +261,7 @@ MonoBehaviour:
   playerCanMove: 0
   canJump: 0
   canSteamJump: 0
+  playerIsOnBalancedPlatform: 0
   steamJumpForceMultiplier: 3.5
   minimalSteamJumpForce: 4
   ghostJumpDelay: 0.2
@@ -283,6 +284,8 @@ MonoBehaviour:
   faceRayLenght: 0.23
   faceRayPositionX: 0.1
   faceRayPositionY: 0.12
+  plateformDetectorPositionY: 0.19
+  plateformDetectorLenght: 0.1
   playerMoves: {x: 0, y: 0, z: 0}
 --- !u!114 &2792491413843219642
 MonoBehaviour:

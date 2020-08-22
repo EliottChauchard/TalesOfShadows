@@ -113,6 +113,8 @@
     <Compile Include="Assets\_Scripts\KNF_MusicChanger.cs" />
     <Compile Include="Assets\_Scripts\KNF_ParallaxLayer.cs" />
     <Compile Include="Assets\_Scripts\KNF_ZoomEvent.cs" />
+    <Compile Include="Assets\_Scripts\PipePush\ELC_EntryPush.cs" />
+    <Compile Include="Assets\_Scripts\PipePush\ELC_ExitPush.cs" />
     <Compile Include="Assets\_Scripts\PlayerScripts\ELC_CheatsCodes.cs" />
     <Compile Include="Assets\_Scripts\PlayerScripts\ELC_Collectibles.cs" />
     <Compile Include="Assets\_Scripts\PlayerScripts\ELC_Death.cs" />

@@ -28,6 +28,7 @@ TagManager:
   - MonsterNest
   - Tourniquet
   - BalancedPlateform
+  - PipePushEntry
   layers:
   - Default
   - TransparentFX

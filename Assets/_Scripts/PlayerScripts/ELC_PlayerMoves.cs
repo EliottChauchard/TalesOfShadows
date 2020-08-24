@@ -241,9 +241,9 @@ public class ELC_PlayerMoves : MonoBehaviour
 
         //Si le joueur se prend une plateforme sur la tête
         RoofDetector();
-        if (isTouchingTop == true && playerIsOnGround == false)
+        if (isTouchingTop == true && playerIsOnGround == false && playerIsFalling == false)
         {
-            verticalSpeed = -0.05f;
+            verticalSpeed = -0.2f;
         }
 
         //Si le joueur a un mur face à lui

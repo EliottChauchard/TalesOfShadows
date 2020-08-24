@@ -760,13 +760,13 @@
       <Project>{31DF12DB-DCF7-269D-B775-430567E30040}</Project>
       <Name>Unity.2D.PixelPerfect.Samples.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.PixelPerfect.Samples.csproj">
-      <Project>{A54A0726-C45E-6D74-8CB0-2E65FE91A537}</Project>
-      <Name>Unity.2D.PixelPerfect.Samples</Name>
-    </ProjectReference>
     <ProjectReference Include="PathCreator.csproj">
       <Project>{8DC1562A-AAF5-DC9A-049C-BB7C8BBEB9EC}</Project>
       <Name>PathCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.PixelPerfect.Samples.csproj">
+      <Project>{A54A0726-C45E-6D74-8CB0-2E65FE91A537}</Project>
+      <Name>Unity.2D.PixelPerfect.Samples</Name>
     </ProjectReference>
     <ProjectReference Include="PathCreatorEditor.csproj">
       <Project>{18E6D4C7-892C-2847-3A23-DE4C7FBC3EF6}</Project>

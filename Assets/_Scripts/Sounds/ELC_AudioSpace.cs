@@ -18,7 +18,7 @@ public class ELC_AudioSpace : MonoBehaviour
     [SerializeField]
     private float distanceMax;
     [SerializeField]
-    private bool isPlayingSound;
+    private bool isPlayingSound = false;
 
     // Start is called before the first frame update
     void Start()

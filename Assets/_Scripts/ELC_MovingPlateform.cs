@@ -14,6 +14,7 @@ public class ELC_MovingPlateform : MonoBehaviour
     [SerializeField]
     public Vector2 movingDirection;
 
+    public bool isAtStartPoint;
     [SerializeField]
     private bool isReturningToStartPosition;
     [SerializeField]
@@ -63,6 +64,7 @@ public class ELC_MovingPlateform : MonoBehaviour
             movingDirection = Vector2.ClampMagnitude(targetPosition - startingPosition, speed);
             if (isReturningToStartPosition == true)
             {
+                isAtStartPoint = true;
                 stopMoving();
                 isReturningToStartPosition = false;
             }
@@ -78,5 +80,6 @@ public class ELC_MovingPlateform : MonoBehaviour
     public void GoToPoint()
     {
         movingDirection = Vector2.ClampMagnitude(targetPosition - startingPosition, speed);
+        isAtStartPoint = false;
     }
 }

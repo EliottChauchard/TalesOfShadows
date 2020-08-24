@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVolume: 1
   distanceBtwThem: {x: 0, y: 0}
-  distanceMax: 0
+  distanceMax: 5
   isPlayingSound: 0
 --- !u!60 &7662697432549745680
 PolygonCollider2D:
@@ -212,7 +212,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a4565aff3f4982d4c864751f4bdd10c4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

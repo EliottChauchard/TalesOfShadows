@@ -5,6 +5,8 @@ using UnityEngine;
 public class ELC_Levier : MonoBehaviour
 {
     [SerializeField]
+    private GameObject movingPlateform;
+    [SerializeField]
     private GameObject objectToSummon;
     [SerializeField]
     private GameObject objectToDesactivate;
@@ -82,13 +84,26 @@ public class ELC_Levier : MonoBehaviour
             animator.SetBool("SwitchBasicOn", true);
             animator.SetBool("SwitchBasicOff", false);
 
-            SummonGameObject(true);
-
-            changeGlowColor(Color.white);
-
-            DesactivateGameObject(false);
-
-            ActivateAnimator(true);
+            if (movingPlateform != null)
+            {
+                ActivateMovingPlateform();
+            }
+            if (objectToSummon != null)
+            {
+                SummonGameObject(true);
+            }
+            if (cable1 != null)
+            {
+                changeGlowColor(Color.white);
+            }
+            if (objectToDesactivate != null)
+            {
+                DesactivateGameObject(false);
+            }
+            if (objectWithAnimationToTrigger != null)
+            {
+                ActivateAnimator(true);
+            }
 
             if (hasAlreadyBeenActivated == false)
             {
@@ -101,40 +116,80 @@ public class ELC_Levier : MonoBehaviour
             animator.SetBool("SwitchBasicOff", true);
             animator.SetBool("SwitchBasicOn", false);
 
-            SummonGameObject(false);
-
-            changeGlowColor(Color.black);
-
-            DesactivateGameObject(true);
-
-            ActivateAnimator(false);
+            if (movingPlateform != null)
+            {
+                DesactivateMovingPlateform();
+            }
+            if(objectToSummon != null)
+            {
+                SummonGameObject(false);
+            }
+            if(cable1 != null)
+            {
+                changeGlowColor(Color.black);
+            }
+            if(objectToDesactivate != null)
+            {
+                DesactivateGameObject(true);
+            }
+            if(objectWithAnimationToTrigger != null)
+            {
+                ActivateAnimator(false);
+            }
         }
         else if (isActivated == true && isTimed == true && timerIsOn == false)
         {
+            
             animator.SetBool("SwitchTimedOn", true);
             animator.SetBool("SwitchTimedOff", false);
 
             StartCoroutine("ActivationTime");
 
-            SummonGameObject(true);
-
-            changeGlowColor(Color.white);
-
-            DesactivateGameObject(false);
-
-            ActivateAnimator(true);
+            if(movingPlateform != null)
+            {
+                ActivateMovingPlateform();
+            }
+            if(objectToSummon != null)
+            {
+                SummonGameObject(true);
+            }
+            if(cable1 != null)
+            {
+                changeGlowColor(Color.white);
+            }
+            if(objectToDesactivate != null)
+            {
+                DesactivateGameObject(false);
+            }
+            if(objectWithAnimationToTrigger != null)
+            {
+                ActivateAnimator(true);
+            }
         }
         else if (isActivated == false && isTimed == true)
         {
             animator.SetBool("SwitchTimedOff", true);
 
-            SummonGameObject(false);
-
-            changeGlowColor(Color.black);
-
-            DesactivateGameObject(true);
-
-            ActivateAnimator(false);
+            if (movingPlateform != null)
+            {
+                DesactivateMovingPlateform();
+            }
+            if (objectToSummon != null)
+            {
+                SummonGameObject(false);
+            }
+            if (cable1 != null)
+            {
+                changeGlowColor(Color.black);
+            }
+            if (objectToDesactivate != null)
+            {
+                DesactivateGameObject(true);
+            }
+            if (objectWithAnimationToTrigger != null)
+            {
+                ActivateAnimator(false);
+            }
         }
     }
 
@@ -216,6 +271,24 @@ public class ELC_Levier : MonoBehaviour
         if (cable9 != null)
         {
             cable9.GetComponent<Renderer>().material.SetColor("Color_39D6A3EA", newColor);
+        }
+    }
+
+    void ActivateMovingPlateform()
+    {
+        if(movingPlateform.GetComponent<ELC_MovingPlateform>().activatePlateform == false)
+        {
+            movingPlateform.GetComponent<ELC_MovingPlateform>().activatePlateform = true;
+            movingPlateform.GetComponent<ELC_MovingPlateform>().startMoving();
+            movingPlateform.GetComponent<ELC_MovingPlateform>().GoToPoint();
+
+        }
+    }
+    void DesactivateMovingPlateform()
+    {
+        if (movingPlateform.GetComponent<ELC_MovingPlateform>().activatePlateform == true)
+        {
+            movingPlateform.GetComponent<ELC_MovingPlateform>().Return();
         }
     }
 

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ELC_AffichageFinalScore : MonoBehaviour
 {
+    [SerializeField]
+    private float levelNumber;
     private Text textToDisplay;
     // Start is called before the first frame update
     void Start()
@@ -15,6 +17,6 @@ public class ELC_AffichageFinalScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textToDisplay.text = "Score : " + PlayerPrefs.GetFloat("LastScore");
+        textToDisplay.text = "Score : " + PlayerPrefs.GetFloat("LastScoreAtLevel" + levelNumber);
     }
 }

@@ -245,8 +245,7 @@ MonoBehaviour:
   SecondPlateform: {fileID: 7081053377733927140}
   playerIsOnThePlatform: 0
   playerIsOnTheOtherPLatform: 0
-  isTheMainPlateform: 0
-  speed: 0.001
+  speed: 0.5
   plateformMoves: {x: 0, y: 0}
 --- !u!1 &7081053377733927140
 GameObject:
@@ -398,12 +397,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartingPoint: {fileID: 4944239121632954531}
-  DownPoint: {fileID: 0}
-  SecondPlateform: {fileID: 0}
+  DownPoint: {fileID: 7081053379055523494}
+  SecondPlateform: {fileID: 5021651230674085476}
   playerIsOnThePlatform: 0
   playerIsOnTheOtherPLatform: 0
-  isTheMainPlateform: 0
-  speed: 0
+  speed: 0.5
   plateformMoves: {x: 0, y: 0}
 --- !u!1 &7081053379055523494
 GameObject:

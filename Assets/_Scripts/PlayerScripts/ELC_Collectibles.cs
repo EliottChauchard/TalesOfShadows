@@ -28,8 +28,8 @@ public class ELC_Collectibles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        totalKeysCollected = PlayerPrefs.GetFloat("TotalKeysCollected");
-        totalJournaux = PlayerPrefs.GetInt("NumberOfCollectibles");
+        totalKeysCollected = PlayerPrefs.GetFloat("TotalKeysCollectedAtLevel" + GlobalScoreValues.levelNumber);
+        totalJournaux = PlayerPrefs.GetInt("NumberOfCollectiblesAtLevel" + GlobalScoreValues.levelNumber);
 
         if(numberOfKeys == 3)
         {
@@ -63,7 +63,7 @@ public class ELC_Collectibles : MonoBehaviour
         {
             numberOfKeys += 1;
             GlobalScoreValues.keysCollected += 1;
-            PlayerPrefs.SetFloat("TotalKeysCollected", totalKeysCollected + 1);
+            PlayerPrefs.SetFloat("TotalKeysCollectedAtLevel" + GlobalScoreValues.levelNumber, totalKeysCollected + 1);
             gameObjectTouched = collision.gameObject;
             FindObjectOfType<ELC_AudioManager>().Play("Collectibles", false);
             Destroy(gameObjectTouched);
@@ -73,7 +73,7 @@ public class ELC_Collectibles : MonoBehaviour
             journalNumber = collision.GetComponent<ELC_Journal>().refNumber;
             if (PlayerPrefs.GetInt("Collectible" + journalNumber) == 0)
             {
-                PlayerPrefs.SetInt("NumberOfCollectibles", (totalJournaux + 1));
+                PlayerPrefs.SetInt("NumberOfCollectiblesAtLevel" + GlobalScoreValues.levelNumber, (totalJournaux + 1));
                 PlayerPrefs.SetInt("Collectible" + journalNumber, 1);
             }
             FindObjectOfType<ELC_AudioManager>().Play("Journal", false);

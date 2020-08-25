@@ -16,6 +16,7 @@ public class ELC_EndLevelSave : MonoBehaviour
     private Vector3 positionToTP;
     private bool playerIsAtTheEnd;
     private bool hasBeenTriggered;
+    
 
     [SerializeField]
     private ELC_Timer timerScript;
@@ -36,15 +37,17 @@ public class ELC_EndLevelSave : MonoBehaviour
     [SerializeField]
     private float crossFadeTime;
 
+    private float corruption;
+
     [SerializeField]
     private float transitionTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        GlobalScoreValues.bestScore = PlayerPrefs.GetFloat("BestScore");
+        GlobalScoreValues.bestScore = PlayerPrefs.GetFloat("BestScoreAtLevel" + GlobalScoreValues.levelNumber);
         timerScript = timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<ELC_Timer>();
-        GlobalScoreValues.bestTime = PlayerPrefs.GetFloat("BestTime");
+        GlobalScoreValues.bestTime = PlayerPrefs.GetFloat("BestTimeAtlevel" + GlobalScoreValues.levelNumber);
     }
 
     // Update is called once per frame
@@ -58,9 +61,9 @@ public class ELC_EndLevelSave : MonoBehaviour
             GlobalScoreValues.actualTotalScore += GlobalScoreValues.timerScore;
 
             PlayerPrefs.SetFloat("LastTime", time);
-            if(time < PlayerPrefs.GetFloat("BestTime") || PlayerPrefs.GetFloat("BestTime") == 0)
+            if(time < PlayerPrefs.GetFloat("BestTimeAtLevel" + GlobalScoreValues.levelNumber) || PlayerPrefs.GetFloat("BestTimeAtLevel" + GlobalScoreValues.levelNumber) == 0)
             {
-                PlayerPrefs.SetFloat("BestTime", time);
+                PlayerPrefs.SetFloat("BestTimeAtLevel" + GlobalScoreValues.levelNumber, time);
             }
 
             for(int i = 0; i < GlobalScoreValues.playerDeaths; i++)
@@ -68,16 +71,25 @@ public class ELC_EndLevelSave : MonoBehaviour
                 GlobalScoreValues.actualTotalScore = GlobalScoreValues.actualTotalScore * GlobalScoreValues.percentOfLoosedScorePerDeath;
             }
 
+
+            corruption = GlobalScoreValues.playerDeaths / GlobalScoreValues.maxCorruption * 100;
+            //PlayerPrefs.SetFloat("BestCorruptionAtLevel" + GlobalScoreValues.levelNumber, corruption);
+            if (corruption < PlayerPrefs.GetFloat("BestCorruptionAtLevel" + GlobalScoreValues.levelNumber) || PlayerPrefs.HasKey("BestCorruptionAtLevel" + GlobalScoreValues.levelNumber) == false)
+            {
+                PlayerPrefs.SetFloat("BestCorruptionAtLevel" + GlobalScoreValues.levelNumber, corruption);
+            }
+            
+
             entireScore = (int)GlobalScoreValues.actualTotalScore;
             GlobalScoreValues.actualTotalScore = entireScore;
 
-            PlayerPrefs.SetFloat("LastScore", GlobalScoreValues.actualTotalScore);
+            PlayerPrefs.SetFloat("LastScoreAtLevel" + GlobalScoreValues.levelNumber, GlobalScoreValues.actualTotalScore);
 
-            GlobalScoreValues.bestScore = PlayerPrefs.GetFloat("BestScore");
+            GlobalScoreValues.bestScore = PlayerPrefs.GetFloat("BestScoreAtLevel" + GlobalScoreValues.levelNumber);
 
             if (GlobalScoreValues.bestScore < GlobalScoreValues.actualTotalScore)
             {
-                PlayerPrefs.SetFloat("BestScore", GlobalScoreValues.actualTotalScore);
+                PlayerPrefs.SetFloat("BestScoreAtLevel" + GlobalScoreValues.levelNumber, GlobalScoreValues.actualTotalScore);
             }
             playerIsAtTheEnd = false;
         }

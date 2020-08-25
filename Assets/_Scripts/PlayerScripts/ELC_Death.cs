@@ -31,7 +31,11 @@ public class ELC_Death : MonoBehaviour
         if(collision.gameObject.tag == "Monster" || collision.gameObject.tag == "Spikes" || collision.gameObject.tag == "Contamination")
         {
             Debug.Log("Touche l'ennemi");
-            GlobalScoreValues.playerDeaths += 1;
+            if(GlobalScoreValues.playerDeaths < GlobalScoreValues.maxCorruption)
+            {
+                GlobalScoreValues.playerDeaths += 1;
+            }
+
             StartCoroutine("Death");
         }
     }

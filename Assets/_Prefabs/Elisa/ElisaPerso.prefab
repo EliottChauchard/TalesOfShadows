@@ -303,7 +303,7 @@ MonoBehaviour:
   steamParticles: {fileID: 0}
   collisionMask:
     serializedVersion: 2
-    m_Bits: 131584
+    m_Bits: 655872
   canSteamPush: 1
   reloadTime: 0
   rayLenght: 1

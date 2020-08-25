@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GlobalScoreValues : MonoBehaviour
 {
-    public static float bestScore, actualTotalScore,
+    public static float bestScore, actualTotalScore, levelNumber, maxCorruption,
         imagesCollected, keysCollected, activateBasicLever, activateOneKeyMachine, activateTwoKeyMachine, activateThreeKeyMachine,
         littleEnemyKilled, mediumEnemyKilled,
         percentOfLoosedScorePerDeath, playerDeaths, endLevel,
@@ -18,26 +18,32 @@ public class ELC_ScoreScript : MonoBehaviour
     [SerializeField]
     private float Score;
     [SerializeField]
+    private float levelNumber;
+    [SerializeField]
     private float lastScoreSaved;
     [SerializeField]
     private float bestScoreSaved;
 
     [SerializeField]
-    private float imagesScore, keyScore, basicLeverScore, oneKeyMachineScore, twoKeyMachineScore, threeKeyMachineScore,
-        killLittleEnemyScore, killMediumEnemyScore,
+    private float imagesScore, maxCorruption, keyScore, basicLeverScore, oneKeyMachineScore, twoKeyMachineScore, threeKeyMachineScore,
+        killLittleEnemyScore, killMediumEnemyScore, playerDeaths,
         percentLoosedScorePerDeath, endLevelScore,
         maxTimeScore;
 
     private void Start()
     {
         timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<ELC_Timer>();
+        GlobalScoreValues.levelNumber = levelNumber;
     }
 
     // Update is called once per frame
     void Update()
     {
-        lastScoreSaved = PlayerPrefs.GetFloat("LastScore");
-        bestScoreSaved = PlayerPrefs.GetFloat("BestScore");
+        lastScoreSaved = PlayerPrefs.GetFloat("LastScoreAtLevel" + GlobalScoreValues.levelNumber);
+        bestScoreSaved = PlayerPrefs.GetFloat("BestScoreAtLevel" + GlobalScoreValues.levelNumber);
+        playerDeaths = GlobalScoreValues.playerDeaths;
+        GlobalScoreValues.maxCorruption = maxCorruption;
+
 
         if (timerScript.totalTimeInSeconds < maxTimeScore)
         {

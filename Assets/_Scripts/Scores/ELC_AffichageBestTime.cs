@@ -9,6 +9,8 @@ public class ELC_AffichageBestTime : MonoBehaviour
     private float minutesToDisplayValue;
     private float secondsToDisplayValue;
     private float totalTimeInSeconds;
+    [SerializeField]
+    private float levelNumber;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,7 @@ public class ELC_AffichageBestTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        totalTimeInSeconds = PlayerPrefs.GetFloat("BestTime");
+        totalTimeInSeconds = PlayerPrefs.GetFloat("BestTimeAtLevel" + levelNumber);
 
         minutesToDisplayValue = (int)(totalTimeInSeconds / 60);
 

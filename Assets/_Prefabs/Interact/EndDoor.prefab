@@ -184,6 +184,7 @@ MonoBehaviour:
   teleportDoor: 0
   finalScoreDoor: 0
   nextSceneName: 
-  crossFade: {fileID: 0}
+  crossFade: {fileID: 2332344852861290167, guid: 83345ff469a392b4894a999da665c79d,
+    type: 3}
   crossFadeTime: 0
   transitionTime: 0

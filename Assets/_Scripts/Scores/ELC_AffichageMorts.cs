@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ELC_AffichageMorts : MonoBehaviour
 {
     private Text textToDisplay;
+    [SerializeField]
+    private float levelNumber;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +18,6 @@ public class ELC_AffichageMorts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textToDisplay.text = "Deaths : " + GlobalScoreValues.playerDeaths;
+        textToDisplay.text = "Corruption : " + PlayerPrefs.GetFloat("BestCorruptionAtLevel" + levelNumber) + "%";
     }
 }

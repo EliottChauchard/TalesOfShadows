@@ -298,6 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490a714abf263204baed9a02c09b64c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelNumber: 10
 --- !u!114 &48942098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,7 +1381,8 @@ PrefabInstance:
         type: 3}
       propertyPath: crossFade
       value: 
-      objectReference: {fileID: 577596439}
+      objectReference: {fileID: 2332344852861290167, guid: 83345ff469a392b4894a999da665c79d,
+        type: 3}
     - target: {fileID: 7503301044947329984, guid: 56fb3b56cd525d542ab2fbc340b40400,
         type: 3}
       propertyPath: crossFadeTime
@@ -1390,6 +1392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: transitionTime
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503301044947329984, guid: 56fb3b56cd525d542ab2fbc340b40400,
+        type: 3}
+      propertyPath: levelNumber
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7503301044947329986, guid: 56fb3b56cd525d542ab2fbc340b40400,
         type: 3}
@@ -1630,6 +1637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1133bd921bbabd54c918b0d20503650f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelNumber: 10
 --- !u!1 &485283493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,12 +1802,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &577596439 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1658111437239310506, guid: 6dd18a4fc4a9d634685cfe0ecd84187f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1062466717}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &633905532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6040,6 +6042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4591b1c112d88e140b29a3c19a5f0b6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelNumber: 10
 --- !u!1 &1692794771
 GameObject:
   m_ObjectHideFlags: 0

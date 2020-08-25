@@ -29,13 +29,9 @@ public class HDO_Hub_Options : MonoBehaviour
 
         if(touched >= 1 && Input.GetKeyDown(KeyCode.JoystickButton1))
         {
-            ob.number = whatScene;
-            
+            ob.number = whatScene;            
         }
-        if(whatScene == 1 && ob.number == 1)
-        {
-            SceneManager.LoadScene(1);
-        }
+        
 
        
     }

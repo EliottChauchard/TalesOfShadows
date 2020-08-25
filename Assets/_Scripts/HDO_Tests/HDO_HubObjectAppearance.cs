@@ -24,7 +24,10 @@ public class HDO_HubObjectAppearance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(number);
+        if(number == 1)
+        {
+            SceneManager.LoadScene(1);
+        }
         if(number == 4)
         {
             SceneManager.LoadScene(4);
@@ -33,7 +36,11 @@ public class HDO_HubObjectAppearance : MonoBehaviour
         {
             SceneManager.LoadScene(6);
         }
-        if(number == 5)
+        if (number == 7)
+        {
+            SceneManager.LoadScene(7);
+        }
+        if (number == 5)
         {
             cvc.Follow = credits;
         }

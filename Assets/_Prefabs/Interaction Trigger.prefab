@@ -47,7 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 
   isInRange: 0
   animator: {fileID: 0}
   interactionIcon: {fileID: 6525121883777950442}

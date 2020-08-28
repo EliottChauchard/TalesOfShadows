@@ -144,7 +144,6 @@ public class ELC_SteamPush : MonoBehaviour
                 littleMonsterDetected = detection1.collider.gameObject;
                 StartCoroutine("StunMonster");
                 //detection1.rigidbody.AddForce(new Vector2(ejectMonsterForce * turnFace, 0f));
-                
             }
             else if (detection1.collider.CompareTag("SensibleObject"))
             {
@@ -287,7 +286,7 @@ public class ELC_SteamPush : MonoBehaviour
                 detection5.collider.gameObject.GetComponent<FLC_PathHiderScript>().discovered = true;
             }
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
         
         SteamPush = false;
     }

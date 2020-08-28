@@ -31,7 +31,6 @@ public class ELC_Tourniquets : MonoBehaviour
         {
             openDoorScript = doorToTrigger.GetComponent<ELC_OpenDoor>();
         }
-        
     }
     
     void Update()
@@ -47,6 +46,7 @@ public class ELC_Tourniquets : MonoBehaviour
             if (plateformToTrigger != null)
             {
                 plateformScript.startMoving();
+                plateformScript.GoToPoint();
             }
             if (doorToTrigger != null)
             {

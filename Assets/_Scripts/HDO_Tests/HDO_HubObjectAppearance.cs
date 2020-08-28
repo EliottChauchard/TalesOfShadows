@@ -24,13 +24,10 @@ public class HDO_HubObjectAppearance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(number == 1)
-        {
-            SceneManager.LoadScene(1);
-        }
+       
         if(number == 4)
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
         if(number == 6)
         {

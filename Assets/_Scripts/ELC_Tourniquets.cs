@@ -15,8 +15,6 @@ public class ELC_Tourniquets : MonoBehaviour
     [SerializeField]
     private bool canTrigger = true;
     [SerializeField]
-    private bool isActivated;
-    [SerializeField]
     private float timeBeforeDisable;
 
     
@@ -42,6 +40,7 @@ public class ELC_Tourniquets : MonoBehaviour
     {
         if (canTrigger == true)
         {
+            this.gameObject.GetComponent<Animator>().SetBool("IsActivated", true);
             canTrigger = false;
             if (plateformToTrigger != null)
             {
@@ -64,6 +63,7 @@ public class ELC_Tourniquets : MonoBehaviour
                 openDoorScript.doorIsOpen = false;
             }
             canTrigger = true;
+            this.gameObject.GetComponent<Animator>().SetBool("IsActivated", false);
         }
     }
 }

@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c62b8e5551d3e4182d367efc8063bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxVolume: 1
+  maxVolume: 0.3
   distanceBtwThem: {x: 0, y: 0}
   distanceMax: 5
   isPlayingSound: 0

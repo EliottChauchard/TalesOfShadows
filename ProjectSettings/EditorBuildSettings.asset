@@ -29,6 +29,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/ELC_JournalScene.unity
     guid: 0411f7895446e514ea09442f023e56cf
+  - enabled: 1
+    path: Assets/_Scenes/ELC_FinalScoreScenes/ELC_FinalScoreLVL1etLVL2.unity
+    guid: 573bb05bae58e7a459da9b58ae785b75
+  - enabled: 1
+    path: Assets/_Scenes/ELC_FinalScoreScenes/ELC_FinalScoreLVL3.unity
+    guid: a708895c79df40945a3179a422b99d30
+  - enabled: 1
+    path: Assets/_Scenes/ELC_FinalScoreScenes/ELC_FinalScoreLVL4.unity
+    guid: 829f9d867ca47e14185982838e2c2941
   - enabled: 0
     path: Assets/_Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729

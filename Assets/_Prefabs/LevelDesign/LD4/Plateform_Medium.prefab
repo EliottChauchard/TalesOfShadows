@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6190111128848851719}
   - component: {fileID: 6060229942765126366}
   - component: {fileID: 986586087650735267}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plateform_Medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.03, y: 0, z: 0.32999998, w: 0.06}
+    border: {x: 0.02, y: 0, z: 0.34, w: 0.06}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.97, y: 0.69}
     newSize: {x: 1.5762818, y: 0.68462646}
@@ -107,5 +107,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 1.09, y: 0.6}
+  m_Size: {x: 0.94, y: 0.69}
   m_EdgeRadius: 0

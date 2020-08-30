@@ -62,7 +62,7 @@ public class ELC_Button : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         tagOfTheObject = collision.tag;
-        if(tagOfTheObject == "SensibleObject" || tagOfTheObject == "Monster")
+        if(tagOfTheObject == "SensibleObject" || tagOfTheObject == "Monster" || tagOfTheObject == "Player")
         {
             isActivate = true;
         }
@@ -70,7 +70,7 @@ public class ELC_Button : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         tagOfTheObject = "Nothing";
-        if(collision.tag == "SensibleObject" || collision.tag == "Monster")
+        if(collision.tag == "SensibleObject" || collision.tag == "Monster" || collision.tag == "Player")
         {
             isActivate = false;
         }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2314260886906798883}
   - component: {fileID: 877347362152108145}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gear_Giant
   m_TagString: Untagged
   m_Icon: {fileID: 0}

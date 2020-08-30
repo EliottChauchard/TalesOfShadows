@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1496958990394610935}
   - component: {fileID: 3812728529017379193}
   - component: {fileID: 5678909643482728440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gear_Medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}

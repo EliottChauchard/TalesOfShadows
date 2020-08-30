@@ -7,6 +7,8 @@ public class ELC_Levier : MonoBehaviour
     [SerializeField]
     private GameObject movingPlateform;
     [SerializeField]
+    private GameObject movingPlateform2;
+    [SerializeField]
     private GameObject objectToSummon;
     [SerializeField]
     private GameObject objectToDesactivate;
@@ -283,12 +285,29 @@ public class ELC_Levier : MonoBehaviour
             movingPlateform.GetComponent<ELC_MovingPlateform>().GoToPoint();
 
         }
+        if(movingPlateform2 != null)
+        {
+            if(movingPlateform2.GetComponent<ELC_MovingPlateform>().activatePlateform == false)
+            {
+                movingPlateform2.GetComponent<ELC_MovingPlateform>().activatePlateform = true;
+                movingPlateform2.GetComponent<ELC_MovingPlateform>().startMoving();
+                movingPlateform2.GetComponent<ELC_MovingPlateform>().GoToPoint();
+
+            }
+        }
     }
     void DesactivateMovingPlateform()
     {
         if (movingPlateform.GetComponent<ELC_MovingPlateform>().activatePlateform == true)
         {
             movingPlateform.GetComponent<ELC_MovingPlateform>().Return();
+        }
+        if (movingPlateform2 != null)
+        {
+            if (movingPlateform.GetComponent<ELC_MovingPlateform>().activatePlateform == true)
+            {
+                movingPlateform.GetComponent<ELC_MovingPlateform>().Return();
+            }
         }
     }
 

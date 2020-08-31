@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameObject: {fileID: 6308297276956825782}
-  activationDuration: 3
-  desactivationDuration: 5
+  activationDuration: 1
+  desactivationDuration: 2
   finishOneTurn: 1
 --- !u!1001 &853194190324598253
 PrefabInstance:

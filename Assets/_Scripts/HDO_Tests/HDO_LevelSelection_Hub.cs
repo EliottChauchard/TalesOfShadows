@@ -29,7 +29,14 @@ public class HDO_LevelSelection_Hub : MonoBehaviour
             lvl2.enabled = true;
             lvl3.enabled = true;
             selector.enabled = true;
-            Time.timeScale = 0;
+            if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton1))
+            {
+                Time.timeScale = 1;
+            }
+            else
+            {
+                Time.timeScale = 0;
+            }
         }
         else
         {

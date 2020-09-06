@@ -47,7 +47,7 @@ public class HDO_ChooseLevel : MonoBehaviour
 
             }
 
-            if ((horizontalInput <= -0.5f && waitTime <= 0) || Input.GetKeyDown(KeyCode.JoystickButton7) && lsh.selectorMovement)
+            if ((horizontalInput <= -0.5f && waitTime <= 0) || Input.GetKeyDown(KeyCode.JoystickButton7) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 whatPos--;
                 if (whatPos < 0)
@@ -60,9 +60,20 @@ public class HDO_ChooseLevel : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton1))
             {
+                Time.timeScale = 1;
                 if (whatPos == 0)
                 {
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(2);
+                }
+
+                if(whatPos == 1)
+                {
+                    SceneManager.LoadScene(12);
+                }
+
+                if(whatPos == 2)
+                {
+                    SceneManager.LoadScene(11);
                 }
             }
 

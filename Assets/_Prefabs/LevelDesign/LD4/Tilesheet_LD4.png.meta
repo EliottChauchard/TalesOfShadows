@@ -437,6 +437,15 @@ TextureImporter:
   - first:
       213: 5350726580207756842
     second: Tilesheet_LD4_1
+  - first:
+      213: -3063550110281105676
+    second: PipePushExit
+  - first:
+      213: 8365494695450198744
+    second: PipePushEntry
+  - first:
+      213: -8199687608277445756
+    second: Plateform_Small
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1382,13 +1391,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roof_Destruction
+      name: PipePushExit
       rect:
         serializedVersion: 2
-        x: 937
-        y: 188
-        width: 67
-        height: 84
+        x: 519
+        y: 294
+        width: 19
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1697,6 +1706,27 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: PipePushEntry
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 294
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d249bc6a15381470800000000000000
+      internalID: 8365494695450198744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Plateform_Small
       rect:
         serializedVersion: 2
@@ -1705,14 +1735,14 @@ TextureImporter:
         width: 46
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 15, y: 1, z: 16, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a26268fa979914a40800000000000000
-      internalID: 5350726580207756842
+      spriteID: 4835377609bd43e80800000000000000
+      internalID: -8199687608277445756
       vertices: []
       indices: 
       edges: []

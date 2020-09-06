@@ -443,6 +443,9 @@ TextureImporter:
   - first:
       213: 8365494695450198744
     second: PipePushEntry
+  - first:
+      213: -8199687608277445756
+    second: Plateform_Small
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1396,7 +1399,7 @@ TextureImporter:
         width: 19
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1711,7 +1714,7 @@ TextureImporter:
         width: 32
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1719,6 +1722,27 @@ TextureImporter:
       bones: []
       spriteID: 8d249bc6a15381470800000000000000
       internalID: 8365494695450198744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateform_Small
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 255
+        width: 46
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4835377609bd43e80800000000000000
+      internalID: -8199687608277445756
       vertices: []
       indices: 
       edges: []

@@ -17,6 +17,8 @@ public class HDO_HubObjectAppearance : MonoBehaviour
     void Start()
     {
         cvc = virtualCam.GetComponent<CinemachineVirtualCamera>();
+        cvc.Follow = elisa;
+
         credits = GameObject.Find("Credits").GetComponent<Transform>();
         elisa = GameObject.Find("Elisa").GetComponent<Transform>();
     }

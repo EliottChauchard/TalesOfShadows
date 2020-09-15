@@ -74,17 +74,10 @@
     <Compile Include="Assets\PathCreator\Core\Runtime\Utility\MathUtility.cs" />
     <Compile Include="Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs" />
     <Reference Include="UnityEditor.UI">
-<<<<<<< HEAD
-      <HintPath>C:/Users/Keanu Faynot/Desktop/_ToS_Platformer/TalesOfShadows/TalesOfShadows/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Keanu Faynot/Desktop/_ToS_Platformer/TalesOfShadows/TalesOfShadows/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-=======
       <HintPath>W:/Bat_File/Work/RUBIAK LECOL 2 CREATION DE LE NUMERIK/TalesOfShadow/TOS/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>W:/Bat_File/Work/RUBIAK LECOL 2 CREATION DE LE NUMERIK/TalesOfShadow/TOS/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
->>>>>>> master
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>W:/Lozichiel/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -270,27 +263,13 @@
       <HintPath>W:/Lozichiel/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
-<<<<<<< HEAD
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.OSXStandalone.Extensions">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
-=======
       <HintPath>W:/Lozichiel/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
->>>>>>> master
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-<<<<<<< HEAD
-      <HintPath>C:/Users/Keanu Faynot/Desktop/_ToS_Platformer/TalesOfShadows/TalesOfShadows/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
-=======
       <HintPath>W:/Bat_File/Work/RUBIAK LECOL 2 CREATION DE LE NUMERIK/TalesOfShadow/TOS/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
->>>>>>> master
     </Reference>
     <Reference Include="netstandard">
       <HintPath>W:/Lozichiel/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

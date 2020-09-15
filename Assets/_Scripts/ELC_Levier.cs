@@ -298,15 +298,15 @@ public class ELC_Levier : MonoBehaviour
     }
     void DesactivateMovingPlateform()
     {
-        if (movingPlateform.GetComponent<ELC_MovingPlateform>().activatePlateform == true)
+        if (movingPlateform.GetComponent<ELC_MovingPlateform>().activatePlateform == true && movingPlateform.GetComponent<ELC_MovingPlateform>().isReturningToStartPosition == false)
         {
             movingPlateform.GetComponent<ELC_MovingPlateform>().Return();
         }
         if (movingPlateform2 != null)
         {
-            if (movingPlateform.GetComponent<ELC_MovingPlateform>().activatePlateform == true)
+            if (movingPlateform2.GetComponent<ELC_MovingPlateform>().activatePlateform == true)
             {
-                movingPlateform.GetComponent<ELC_MovingPlateform>().Return();
+                movingPlateform2.GetComponent<ELC_MovingPlateform>().Return();
             }
         }
     }

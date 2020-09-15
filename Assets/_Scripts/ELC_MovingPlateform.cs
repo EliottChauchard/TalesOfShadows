@@ -14,9 +14,11 @@ public class ELC_MovingPlateform : MonoBehaviour
     [SerializeField]
     public Vector2 movingDirection;
 
+    [SerializeField]
+    private bool resetStartingPointAtStart = true;
     public bool isAtStartPoint;
     [SerializeField]
-    private bool isReturningToStartPosition;
+    public bool isReturningToStartPosition;
     [SerializeField]
     public bool activatePlateform;
 
@@ -26,10 +28,21 @@ public class ELC_MovingPlateform : MonoBehaviour
 
     void Start()
     {
-        startingPosition = this.gameObject.transform.localPosition;
+        speed = speed * 40f;
+        if (resetStartingPointAtStart)
+        {
+            startingPosition = this.gameObject.transform.localPosition;
+            startingPoint.transform.localPosition = startingPosition;
+            
+        }
+        else
+        {
+            startingPosition = startingPoint.GetComponent<Transform>().localPosition;
+        }
+
         targetPosition = targetPoint.transform.localPosition;
-        startingPoint.transform.localPosition = startingPosition;
         movingDirection = Vector2.ClampMagnitude(targetPosition - startingPosition, speed);
+
     }
 
 
@@ -37,7 +50,7 @@ public class ELC_MovingPlateform : MonoBehaviour
     {
         if(activatePlateform == true)
         {
-            transform.Translate(movingDirection);
+            transform.Translate(movingDirection * Time.deltaTime);
         }
     }
 

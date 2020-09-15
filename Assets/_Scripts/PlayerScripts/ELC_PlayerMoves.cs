@@ -91,7 +91,8 @@ public class ELC_PlayerMoves : MonoBehaviour
     RaycastHit2D facePlayerHit;
     RaycastHit2D uponTheGroundHit;  //Détecteur pour voir si le joueur est dans le sol
     RaycastHit2D plateformDetectorHit;
-    
+
+    #region RaycastValues
     [SerializeField]
     private float UponTheGroundRayPositionY = 0.02f;
     [SerializeField]
@@ -116,6 +117,7 @@ public class ELC_PlayerMoves : MonoBehaviour
     private float plateformDetectorPositionY = 0.16f;
     [SerializeField]
     private float plateformDetectorLenght = 0.2f;
+    #endregion
 
     private Vector3 startPositionRaycastUnder;
     private Vector3 startPositionRaycastUponTheGround;
@@ -233,7 +235,7 @@ public class ELC_PlayerMoves : MonoBehaviour
             playerIsFalling = false;
         }
 
-        if(playerIsInGround)
+        if(playerIsInGround && isTouchingTop == false)
         {
             transform.localPosition = transform.localPosition + (new Vector3(0f, 0.02f, 0f));
         }

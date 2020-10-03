@@ -17,10 +17,11 @@ public class HDO_HubObjectAppearance : MonoBehaviour
     void Start()
     {
         cvc = virtualCam.GetComponent<CinemachineVirtualCamera>();
-        cvc.Follow = elisa;
+        
 
         credits = GameObject.Find("Credits").GetComponent<Transform>();
         elisa = GameObject.Find("Elisa").GetComponent<Transform>();
+        cvc.Follow = elisa;
     }
 
     // Update is called once per frame
@@ -43,8 +44,9 @@ public class HDO_HubObjectAppearance : MonoBehaviour
         {
             cvc.Follow = credits;
         }
-        else
+        if (cvc.Follow == credits && Input.GetKeyUp(KeyCode.JoystickButton1))
         {
+            number = 0;
             cvc.Follow = elisa;
         }
     }

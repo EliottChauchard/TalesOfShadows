@@ -286,7 +286,7 @@ public class ELC_SteamPush : MonoBehaviour
                 detection5.collider.gameObject.GetComponent<FLC_PathHiderScript>().discovered = true;
             }
         }
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
         
         SteamPush = false;
     }

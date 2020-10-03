@@ -61,6 +61,7 @@ public class HDO_ChooseLevel : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton1))
             {
                 Time.timeScale = 1;
+
                 if (whatPos == 0)
                 {
                     SceneManager.LoadScene(2);

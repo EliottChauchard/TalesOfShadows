@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDying: 0
-  waitTime: 0.5
+  waitTime: 0.6
 --- !u!114 &2080516999789509487
 MonoBehaviour:
   m_ObjectHideFlags: 0

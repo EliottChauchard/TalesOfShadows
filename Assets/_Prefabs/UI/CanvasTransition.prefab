@@ -533,13 +533,14 @@ GameObject:
   - component: {fileID: 2332344852861290168}
   - component: {fileID: 2332344852861290171}
   - component: {fileID: 2332344852861290167}
+  - component: {fileID: 962161051737420300}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CanvasTransition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2332344852861290166
 RectTransform:
   m_ObjectHideFlags: 0
@@ -644,6 +645,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &962161051737420300
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332344852861290170}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2332344853455692821
 GameObject:
   m_ObjectHideFlags: 0

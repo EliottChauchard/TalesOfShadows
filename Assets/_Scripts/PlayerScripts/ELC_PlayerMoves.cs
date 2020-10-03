@@ -15,6 +15,7 @@ public class ELC_PlayerMoves : MonoBehaviour
     [SerializeField]
     Animator animator;
     ELC_SteamFall SteamFallScript;
+    ELC_SteamPush SteamPushScript;
     
     [SerializeField]
     public int turnPlayerFace;
@@ -137,6 +138,7 @@ public class ELC_PlayerMoves : MonoBehaviour
     {
         SteamFallScript = GetComponent<ELC_SteamFall>();
         SteamJumpScript = GetComponent<ELC_SteamJump>();
+        SteamPushScript = GetComponent<ELC_SteamPush>();
     }
 
     // Update is called once per frame
@@ -176,7 +178,9 @@ public class ELC_PlayerMoves : MonoBehaviour
             }
         }
 
-        if(playerCanMove == false) //si le joueur charge son steamJump il ne peut plus bouger
+        
+
+        if(playerCanMove == false || SteamPushScript.SteamPush) //si le joueur charge son steamJump il ne peut plus bouger
         {
             horizontalSpeed = 0f;
         }
